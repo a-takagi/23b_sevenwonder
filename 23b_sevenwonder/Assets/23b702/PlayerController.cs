@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public float speed = 0.1f;
     // Start is called before the first frame update
-
-    private float speed = 0.05f;
     void Start()
     {
 
@@ -15,29 +14,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 position = transform.position;
+        float dx = Input.GetAxis ("Horizontal");
+        float dy = Input.GetAxis ("Vertical");
+        transform.Translate (speed * dx, speed * dy, 0.0F);
 
-        if (Input.GetKey("d"))
-        {
-            position.x += speed;
-        }
-
-        else if (Input.GetKey("a"))
-        {
-            position.x -= speed;
-        }
-
-        else if (Input.GetKey("w"))
-        {
-            position.y += speed;
-        }
-
-        else if (Input.GetKey("s"))
-        {
-            position.y -= speed;
-        }
-        
-        transform.position = position;
 
     }
 }
