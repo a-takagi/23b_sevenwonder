@@ -5,6 +5,11 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 0.1f;
+    
+    [SerializeField]
+　　　private float moveSpeed = 5.0f;
+
+    
     // Start is called before the first frame update
     void Start()
     {
