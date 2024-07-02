@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
            
         }
 
-        if(Input.GetButtonDown("jump")){
+        if(Input.GetButtonDown("Jump")){
            
         }
 
