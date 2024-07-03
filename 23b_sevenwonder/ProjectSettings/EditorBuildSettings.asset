@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/takagi/Scene/RoomTest.unity
+    guid: 3432dcc856f0c9742bebea9c5125337f
+  - enabled: 1
+    path: Assets/takagi/Scene/takagitest.unity
+    guid: cfac8e59a4c764d4bb0fd710fafa0167
   m_configObjects: {}
