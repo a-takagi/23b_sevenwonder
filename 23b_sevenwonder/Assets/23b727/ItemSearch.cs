@@ -19,7 +19,7 @@ public class ItemSearch : MonoBehaviour
     {
         if (collision.name == "Player")
         {
-            Debug.Log("Itemがボタンに触れる");
+            Debug.Log("Itemがプレイヤーに触れる");
 
             if (Input.GetButtonDown("Fire1"))
             {
