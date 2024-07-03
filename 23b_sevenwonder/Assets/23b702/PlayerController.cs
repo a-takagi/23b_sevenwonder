@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 0.1f;
+    public float speed = 100.0f;
     
     [SerializeField]
 　　　private float moveSpeed = 5.0f;
