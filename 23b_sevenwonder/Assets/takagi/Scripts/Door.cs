@@ -5,19 +5,40 @@ using UnityEngine.SceneManagement;
 
 public class Door : MonoBehaviour
 {
-    [SerializeField]
-    GameObject[] SpawnPoint;
 
     [SerializeField]
-    int SpawnNum=0;
+    GameObject SpawnPoint;
+
+    [SerializeField]
+    int DoorNum=1;
 
     [SerializeField]
     string SceneName;
 
+    GameManager gm;
+
     // Start is called before the first frame update
     void Start()
     {
-        PlayerSpawn(SpawnNum);
+        //GameManagerの取得
+        GameObject tmp;
+        tmp = GameObject.Find("GameManager");
+        gm=tmp.GetComponent<GameManager>();
+        if (!gm)
+        {
+            Debug.Log("Door.cs: GameManagerが見つかりません");
+        }
+
+        //シーン名でドア前からスタートするか決める
+        //本番用に後で変更すること
+        if (SceneManager.GetActiveScene().name == "takagitest")
+        { 
+            //校舎なのでスポーンポイントは設定しない
+        }
+        else
+        {
+            PlayerSpawn();
+        }
         
     }
 
@@ -37,21 +58,24 @@ public class Door : MonoBehaviour
             {
                 //Fire1ボタンが押された
                 Debug.Log("Doorに接触してFire1が押された:Scene遷移します。");
+                gm.SetSpawnPointNum(DoorNum);
+                gm.SetSpawnFlag(false);
                 SceneChange();
             }
         }
     }
 
-    private void PlayerSpawn(int n)
+    private void PlayerSpawn()
     {
         GameObject tmp=GameObject.Find("Player");
-        tmp.transform.SetPositionAndRotation(SpawnPoint[n].transform.position, Quaternion.identity);
+        tmp.transform.SetPositionAndRotation(SpawnPoint.transform.position, Quaternion.identity);
     }
 
     // Use this for initialization
     private void SceneChange()
     {
         StartCoroutine("LoadScene");
+
     }
 
     IEnumerator LoadScene()
