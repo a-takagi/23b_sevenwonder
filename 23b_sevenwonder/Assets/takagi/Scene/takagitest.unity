@@ -468,7 +468,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1632433826003479770, guid: 31c250c34254ec94a90ebbd934e6a895, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.5
+      value: -3.5
       objectReference: {fileID: 0}
     - target: {fileID: 1632433826003479770, guid: 31c250c34254ec94a90ebbd934e6a895, type: 3}
       propertyPath: m_LocalPosition.y
@@ -508,42 +508,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31c250c34254ec94a90ebbd934e6a895, type: 3}
---- !u!1 &1120522739
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1120522740}
-  m_Layer: 0
-  m_Name: EntrancePoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1120522740
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1120522739}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5, y: -2.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1362369886 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 66255300529881779, guid: ac9512882a32b5245a5ac0d6560b2ebb, type: 3}
-  m_PrefabInstance: {fileID: 66255301472779364}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2115957712
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,14 +704,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2996638808783965285, guid: fd461f191375d0a4eb2c41d6c4dbacbc, type: 3}
-      propertyPath: SpawnPoint.Array.data[0]
-      value: 
-      objectReference: {fileID: 1120522739}
-    - target: {fileID: 2996638808783965285, guid: fd461f191375d0a4eb2c41d6c4dbacbc, type: 3}
-      propertyPath: SpawnPoint.Array.data[1]
-      value: 
-      objectReference: {fileID: 1362369886}
     - target: {fileID: 2996638808783965286, guid: fd461f191375d0a4eb2c41d6c4dbacbc, type: 3}
       propertyPath: m_Name
       value: GameManager

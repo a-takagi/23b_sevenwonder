@@ -15,6 +15,8 @@ public class Door : MonoBehaviour
     [SerializeField]
     string SceneName;
 
+    bool isSceneChange = false;
+
     GameManager gm;
 
     // Start is called before the first frame update
@@ -50,17 +52,30 @@ public class Door : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.name == "Player")
+        if (isSceneChange == false)
         {
-            //Debug.Log("DoorにPlayerが触れた");
 
-            if (Input.GetButtonDown("Fire1"))
+            if (collision.name == "Player")
             {
-                //Fire1ボタンが押された
-                Debug.Log("Doorに接触してFire1が押された:Scene遷移します。");
+                //Debug.Log("DoorにPlayerが触れた");
+                Debug.Log("Doorに接触したので:Scene遷移します。");
                 gm.SetSpawnPointNum(DoorNum);
-                gm.SetSpawnFlag(false);
+                gm.setPlayerSpawnFlag(false);
+                isSceneChange = true;
+
                 SceneChange();
+
+                /*
+                //ボタンを押してドアを開くパターン
+                if (Input.GetButtonDown("Fire1"))
+                {
+                    //Fire1ボタンが押された
+                    Debug.Log("Doorに接触してFire1が押された:Scene遷移します。");
+                    gm.SetSpawnPointNum(DoorNum);
+                    gm.setPlayerSpawnFlag(false);
+                    SceneChange();
+                }
+                */
             }
         }
     }
@@ -74,8 +89,7 @@ public class Door : MonoBehaviour
     // Use this for initialization
     private void SceneChange()
     {
-        StartCoroutine("LoadScene");
-
+            StartCoroutine("LoadScene");
     }
 
     IEnumerator LoadScene()
@@ -108,7 +122,7 @@ public class Door : MonoBehaviour
         //loadingText.text = "Now Loading... "+"100%";
         //loadingBar.fillAmount = 1;
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
 
         async.allowSceneActivation = true;    // シーン遷移許可
 

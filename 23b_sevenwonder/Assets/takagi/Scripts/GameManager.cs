@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : SingletonMonoBehaviour<GameManager>
 {
@@ -8,12 +9,12 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     //マップのスタート位置の番号。扉から出てきたら扉の前。そうでない場合入り口
     public int StartPosition;
 
-    //Soawn位置。番号はStartPositionと一致させること
+    //Spawn位置。番号はStartPositionと一致させること
+    //SpawnPointのGameObjectはGameManger>SpawnPointListの中に入れて、Inspectorで設定すること
     [SerializeField]
     GameObject[] SpawnPoint;
-    //上記はうまくいきません！なぜならシーン遷移しちゃうと、GameObjectが消えるから
 
-    public bool setSpawn = false;
+    public bool setPlayerSpawn = false;
 
     public void Awake()
     {
@@ -28,22 +29,20 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     // Start is called before the first frame update
     void Start()
     {
-        if (setSpawn == false)
-        {
-            PlayerSpawn();
-            setSpawn = true;
-        }
+        Debug.Log("GameManager:Start:SpawnPoint.Length:" + SpawnPoint.Length);
+        PlayerSpawn();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (setSpawn == false)
+        if (setPlayerSpawn == false)
         {
             PlayerSpawn();
-            setSpawn = true;
         }
     }
+
 
     public void SetSpawnPointNum(int n)
     {
@@ -51,17 +50,29 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
         Debug.Log("GameManager:SetSpawnPointNum: StartPosition:" + n);
     }
 
-    public void SetSpawnFlag(bool t)
+    public void setPlayerSpawnFlag(bool t)
     {
-        setSpawn = t;
+        Debug.Log("GameManager:setPlayerSpawnFlag:" + t+"に設定します");
+        setPlayerSpawn = t;
     }
-
-    private void PlayerSpawn()
+    public void PlayerSpawn()
     {
-        GameObject tmp = GameObject.Find("Player");
-        tmp.transform.SetPositionAndRotation(SpawnPoint[StartPosition].transform.position, Quaternion.identity);
-
-        Debug.Log("GameManager:PlayerSpawn: StartPosition:" + StartPosition);
-
+        if (setPlayerSpawn == false)
+        {
+            //校舎だけでSpawnPointを設定する。それ以外は設定しない
+            //本番用に後で変更すること
+            if (SceneManager.GetActiveScene().name == "takagitest")
+            {
+                //メイン校舎なので
+                GameObject tmp = GameObject.Find("Player");
+                tmp.transform.SetPositionAndRotation(SpawnPoint[StartPosition].transform.position, Quaternion.identity);
+                Debug.Log("GameManager:PlayerSpawn: StartPosition:" + StartPosition);
+                setPlayerSpawn = true;
+            }
+            else
+            {
+                //校舎ではないのでスポーンポイントは設定しない
+            }
+        }
     }
 }
