@@ -23,6 +23,7 @@ public class ItemSearch : MonoBehaviour
 
             if (Input.GetButtonDown("Fire1"))
             {
+                 Destroy (this.gameObject);
                 //Fire1ボタンが押された
                 Debug.Log("Fire1が押された");
             }
