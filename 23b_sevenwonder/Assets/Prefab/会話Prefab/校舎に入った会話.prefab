@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5851242745552914163}
   - component: {fileID: 5851242745552914175}
   - component: {fileID: 5851242745552914172}
-  - component: {fileID: 5851242745552914162}
   - component: {fileID: 5851242745552914160}
   - component: {fileID: 5851242745552914161}
   - component: {fileID: 5851242745552914166}
@@ -20,6 +19,7 @@ GameObject:
   - component: {fileID: 5851242745552913930}
   - component: {fileID: 5851242745552914165}
   - component: {fileID: 5851242745552913931}
+  - component: {fileID: 2091963658}
   m_Layer: 0
   m_Name: "\u6821\u820E\u306B\u5165\u3063\u305F\u4F1A\u8A71"
   m_TagString: Untagged
@@ -34,7 +34,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5851242745552914174}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.5, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -68,8 +68,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 5851242745552914172}
-  selectedCommands:
-  - {fileID: 5851242745552913931}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -104,7 +103,7 @@ MonoBehaviour:
   itemId: 0
   blockName: "\u6821\u820E\u306B\u5165\u3063\u305F"
   description: 
-  eventHandler: {fileID: 5851242745552914162}
+  eventHandler: {fileID: 2091963658}
   commandList:
   - {fileID: 5851242745552914167}
   - {fileID: 5851242745552914161}
@@ -112,23 +111,6 @@ MonoBehaviour:
   - {fileID: 5851242745552913931}
   - {fileID: 5851242745552914165}
   suppressAllAutoSelections: 0
---- !u!114 &5851242745552914162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5851242745552914174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c23faba06619da442a984c0c71a87df4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 5851242745552914172}
-  suppressBlockAutoSelect: 0
-  tagFilter: []
-  FireOn: 1
-  collisionVar: {fileID: 0}
 --- !u!61 &5851242745552914160
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -139,7 +121,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -338,3 +320,20 @@ MonoBehaviour:
   move: 0
   shiftIntoPlace: 0
   waitUntilFinished: 0
+--- !u!114 &2091963658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5851242745552914174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78c1a9f24ac376a47838385391f83acc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 5851242745552914172}
+  suppressBlockAutoSelect: 0
+  tagFilter: []
+  FireOn: 1
+  colliderVar: {fileID: 0}
