@@ -15,10 +15,11 @@ public class ItemData : MonoBehaviour
     [SerializeField]
     private string ItemInfo;    //アイテムの詳細説明
 
-    public ItemData(int id,string name,string Info){
+    public ItemData(int id,string name,string Info,Sprite sprite){
         this.ItemId = id;
         this.ItemName = name;
         this.ItemInfo = Info;
+        this.ItemSprite = sprite;
     }
 
     public int GetId(){
@@ -44,9 +45,6 @@ public class ItemData : MonoBehaviour
     //画像関連のもの
     public Sprite GetSprite(){
         return this.ItemSprite;
-    }
-    public void SetSprite(Sprite Image){
-        this.ItemSprite = Image;
     }
 
     //アイテムの説明関連
