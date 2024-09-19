@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    //public int ItemId0; // 取得するアイテムのID
+    public int ItemId0; // 取得するアイテムのID
 
-    //private ItemManager itemManager;
+    private ItemManager itemManager;
 
     private void Start()
     {
-        // シーン内のItemManagerを取得
-        //itemManager = FindObjectOfType<ItemManager>();
+        //シーン内のItemManagerを取得
+        itemManager = FindObjectOfType<ItemManager>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        //f (other.CompareTag("Player"))
+        if(other.CompareTag("Player"))
         {
             // アイテムを取得
             //itemManager.AddItem(ItemId0);
