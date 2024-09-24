@@ -60,7 +60,7 @@ public class ItemManager : MonoBehaviour
         //Items.Add(new ItemData(2,"鍵","どこかで開けられる気がする",SpriteId2));
     }
 
-    void start(){
+    void Start(){
         Items.Add(new ItemData(1,"ひのき棒","旅の始まりのお供",SpriteId1));
         Items.Add(new ItemData(2,"鍵","どこかで開けられる気がする",SpriteId2));
         Items.Add(new ItemData(3, "xx03xx03xx", "xx0303xxxx0303xx", SpriteId3));
@@ -78,8 +78,8 @@ public class ItemManager : MonoBehaviour
         Items.Add(new ItemData(15, "xx15xx15xx", "xx1515xxxx1515xx", SpriteId15));
     
         Items[0].SetFlag(1);
-        // Items[1].SetFlag(1);
-        // Items[2].SetFlag(1);
+        Items[1].SetFlag(1);
+        Items[2].SetFlag(1);
         // Items[3].SetFlag(1);
         // Items[4].SetFlag(1);
         // Items[5].SetFlag(1);
@@ -148,23 +148,24 @@ public class ItemManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space)){
             Debug.Log("InputSpace");
 
-            //foreach(){
+            foreach(ItemData Item in Items){
+                Debug.Log("111");
+            if(Item.GetFlag() == 1){
 
-            //オブジェクトを生成する
-            GameObject CreatedItem = (GameObject)Instantiate(PrefabItemPanel,new Vector3(0.0f,0.0f,0.0f),Quaternion.identity);
-            
-            //画像を設定する
-            Image ItemImage = CreatedItem.transform.Find("ItemImage").GetComponentInChildren<Image>();
-            ItemImage.sprite = SpriteId9;
+                //オブジェクトを生成する
+                GameObject CreatedItem = (GameObject)Instantiate(PrefabItemPanel,new Vector3(0.0f,0.0f,0.0f),Quaternion.identity);
+                
+                //画像を設定する
+                Image ItemImage = CreatedItem.transform.Find("ItemImage").GetComponentInChildren<Image>();
+                ItemImage.sprite = Item.GetSprite();
 
-
-            //SetParent & localScale
-            CreatedItem.transform.SetParent(MainPanel.transform);
-            CreatedItem.GetComponent<RectTransform>().localScale = new Vector3(1.0f,1.0f,1.0f);
-
-            
-
-            //}
+                //SetParent & localScale
+                CreatedItem.transform.SetParent(MainPanel.transform);
+                CreatedItem.GetComponent<RectTransform>().localScale = new Vector3(1.0f,1.0f,1.0f);
+                
+                Debug.Log("CreatedItemPanel");
+            }
+            }
         }
 
     }
