@@ -1,10 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ItemManager : MonoBehaviour
 {
     private List<ItemData> Items = new List<ItemData>();
+
+    //参照系
+    [SerializeField] private GameObject PrefabItemPanel;
+    [SerializeField] private GameObject MainPanel;
 
     //カーソル関連
     [SerializeField] GameObject Cursor;
@@ -15,8 +20,8 @@ public class ItemManager : MonoBehaviour
     //入力関連
     private float InputVertical;
     private float InputHorizontal;
-    private float BeforeVertical;
-    private float BeforeHorizontal;
+    private float BeforeVertical = 0.0f;
+    private float BeforeHorizontal = 0.0f;
 
     [SerializeField]
     private Sprite SpriteId1;
@@ -72,6 +77,22 @@ public class ItemManager : MonoBehaviour
         Items.Add(new ItemData(14, "xx14xx14xx", "xx1414xxxx1414xx", SpriteId14));
         Items.Add(new ItemData(15, "xx15xx15xx", "xx1515xxxx1515xx", SpriteId15));
     
+        Items[0].SetFlag(1);
+        // Items[1].SetFlag(1);
+        // Items[2].SetFlag(1);
+        // Items[3].SetFlag(1);
+        // Items[4].SetFlag(1);
+        // Items[5].SetFlag(1);
+        // Items[6].SetFlag(1);
+        // Items[7].SetFlag(1);
+        // Items[8].SetFlag(1);
+        // Items[9].SetFlag(1);
+        // Items[10].SetFlag(1);
+        // Items[11].SetFlag(1);
+        // Items[12].SetFlag(1);
+        // Items[13].SetFlag(1);
+        // Items[14].SetFlag(1);
+        // Items[15].SetFlag(1);
 
     }
 
@@ -87,18 +108,35 @@ public class ItemManager : MonoBehaviour
         if( (InputVertical > 0.5f) && !(BeforeVertical > 0.5f) ){
             Debug.Log("Input Up");
 
+            Vector2 CursorPosition = Cursor.GetComponent<RectTransform>().anchoredPosition;
+            CursorPosition.y += 200.0f;
+            Cursor.GetComponent<RectTransform>().anchoredPosition = CursorPosition;
+            
+
         //下[Veticalが-0.5以下]
         }else if((InputVertical < -0.5f) && !(BeforeVertical < -0.5f)){
             Debug.Log("Input Down");
+
+            Vector2 CursorPosition = Cursor.GetComponent<RectTransform>().anchoredPosition;
+            CursorPosition.y -= 200.0f;
+            Cursor.GetComponent<RectTransform>().anchoredPosition = CursorPosition;
         
 
         //右
         }else if((InputHorizontal > 0.5f) && !(BeforeHorizontal > 0.5f)){
             Debug.Log("Input Right");
+
+            Vector2 CursorPosition = Cursor.GetComponent<RectTransform>().anchoredPosition;
+            CursorPosition.x += 200.0f;
+            Cursor.GetComponent<RectTransform>().anchoredPosition = CursorPosition;
         
         //左
         }else if((InputHorizontal < -0.5f) && !(BeforeHorizontal < -0.5f) ){
             Debug.Log("Input Left");
+
+            Vector2 CursorPosition = Cursor.GetComponent<RectTransform>().anchoredPosition;
+            CursorPosition.x -= 200.0f;
+            Cursor.GetComponent<RectTransform>().anchoredPosition = CursorPosition;
 
         }
         BeforeVertical = InputVertical;
@@ -107,9 +145,26 @@ public class ItemManager : MonoBehaviour
 
     void Update(){
         //スペースキーの入力処理
-        if(Input.GetButtonDown("Fire1")){
+        if(Input.GetKeyDown(KeyCode.Space)){
+            Debug.Log("InputSpace");
+
+            //foreach(){
+
             //オブジェクトを生成する
+            GameObject CreatedItem = (GameObject)Instantiate(PrefabItemPanel,new Vector3(0.0f,0.0f,0.0f),Quaternion.identity);
             
+            //画像を設定する
+            Image ItemImage = CreatedItem.transform.Find("ItemImage").GetComponentInChildren<Image>();
+            ItemImage.sprite = SpriteId9;
+
+
+            //SetParent & localScale
+            CreatedItem.transform.SetParent(MainPanel.transform);
+            CreatedItem.GetComponent<RectTransform>().localScale = new Vector3(1.0f,1.0f,1.0f);
+
+            
+
+            //}
         }
 
     }
