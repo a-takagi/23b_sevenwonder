@@ -33,7 +33,7 @@ public class Door : MonoBehaviour
 
         //シーン名でドア前からスタートするか決める
         //本番用に後で変更すること
-        if (SceneManager.GetActiveScene().name == "takagitest")
+        if (SceneManager.GetActiveScene().name == "e-5_1-3")
         { 
             //校舎なのでスポーンポイントは設定しない
         }

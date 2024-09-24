@@ -192,8 +192,12 @@ PrefabInstance:
       value: Door
       objectReference: {fileID: 0}
     - target: {fileID: 66255299716726611, guid: ac9512882a32b5245a5ac0d6560b2ebb, type: 3}
+      propertyPath: DoorNum
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 66255299716726611, guid: ac9512882a32b5245a5ac0d6560b2ebb, type: 3}
       propertyPath: SceneName
-      value: takagitest
+      value: e-5_1-3
       objectReference: {fileID: 0}
     - target: {fileID: 66255299716726611, guid: ac9512882a32b5245a5ac0d6560b2ebb, type: 3}
       propertyPath: SpawnPoint
