@@ -32,7 +32,7 @@ GameObject:
   - component: {fileID: -8202177207371060041}
   - component: {fileID: 2367005324781011089}
   m_Layer: 0
-  m_Name: "\u6E21\u308A\u5ECA\u4E0B\u306B\u5165\u3063\u305F\u4F1A\u8A71"
+  m_Name: "\u56F3\u66F8\u5BA4\u306B\u5165\u3063\u305F\u4F1A\u8A71 \uFF082\u56DE\u76EE\uFF09"
   m_TagString: Untagged
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 96.13476, y: 192.9}
+  scrollPos: {x: 41.681824, y: 318.36365}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 200
@@ -105,14 +105,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 62
+    x: 65
     y: 78.13636
-    width: 94
+    width: 86
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 0
-  blockName: "\u6E21\u308A\u5ECA\u4E0B"
+  blockName: "\u4FDD\u5065\u5BA4"
   description: 
   eventHandler: {fileID: 2091963658}
   commandList:
@@ -229,7 +229,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 61.565216
     y: 138
-    width: 94.8
+    width: 94
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
