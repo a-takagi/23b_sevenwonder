@@ -51,6 +51,24 @@ public class PlayerController : MonoBehaviour
             animater.SetBool("left", false);
         }
 
+        if (dy > 0.0f)
+        {
+            animater.SetBool("back", true);
+        }
+        else
+        {
+            animater.SetBool("back", false);
+        }
+
+        if (dy < 0.0f)
+        {
+            animater.SetBool("front", true);
+        }
+        else
+        {
+            animater.SetBool("front", false);
+        }
+
         if (Input.GetButtonDown("Fire1")){
             
         }
