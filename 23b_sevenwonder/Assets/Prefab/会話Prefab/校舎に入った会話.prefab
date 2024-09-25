@@ -76,8 +76,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 5851242745552914172}
-  selectedCommands:
-  - {fileID: 0}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -105,19 +104,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 65
     y: 78.13636
-    width: 86
+    width: 74
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 0
-  blockName: "\u4FDD\u5065\u5BA4"
+  blockName: "\u6821\u820E"
   description: 
   eventHandler: {fileID: 2091963658}
   commandList:
   - {fileID: 5851242745552914167}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 2554506333066814260}
   - {fileID: 5857618451813393339}
   - {fileID: 2225938917193074370}
