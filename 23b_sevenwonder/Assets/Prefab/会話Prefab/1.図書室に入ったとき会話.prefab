@@ -76,7 +76,7 @@ MonoBehaviour:
   scrollPos: {x: 42.49092, y: 174.96365}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 200
+  blockViewHeight: 415.8
   zoom: 1
   scrollViewRect:
     serializedVersion: 2
@@ -84,8 +84,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 5851242745552914172}
+  selectedCommands:
+  - {fileID: 5851242745552914167}
   variables: []
   description: 
   stepPause: 0
@@ -242,7 +244,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 61.565216
     y: 138
-    width: 96.4
+    width: 94.8
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -271,7 +273,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 0}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: ea8f56c43254d41728f5ac4e8299b6c9, type: 3}
+  portrait: {fileID: 21300000, guid: 0eb44407c87ffb846a722e7e776ab519, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 0}
