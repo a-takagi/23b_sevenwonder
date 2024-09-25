@@ -16,6 +16,8 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 
     public bool setPlayerSpawn = false;
 
+    bool LibrarySecond=false;
+
     public void Awake()
     {
         if (this != Instance)
@@ -75,4 +77,13 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
             }
         }
     }
+
+    public void SetLibrarySecond(bool t){
+        LibrarySecond=t;
+
+    }
+    public bool GetLibrarySecond(){
+        return LibrarySecond;
+    }
+
 }
