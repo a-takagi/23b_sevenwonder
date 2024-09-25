@@ -61,7 +61,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
         {
             //校舎だけでSpawnPointを設定する。それ以外は設定しない
             //本番用に後で変更すること
-            if (SceneManager.GetActiveScene().name == "e-5_1-3")
+            if (SceneManager.GetActiveScene().name == "roka-1")
             {
                 //メイン校舎なので
                 GameObject tmp = GameObject.Find("Player");

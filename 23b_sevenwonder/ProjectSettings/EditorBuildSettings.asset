@@ -17,10 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/takagi/Scene/takagitest.unity
     guid: cfac8e59a4c764d4bb0fd710fafa0167
-  - enabled: 1
-    path: Assets/Scenes/e-library-2.unity
-    guid: 6ac1bced96dea72409e938ce7ccbed2f
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/e-healthroom-1.unity
     guid: b122e239e07fac547b846f1493cb12c8
+  - enabled: 1
+    path: Assets/Scenes/e-stafferoom-1.unity
+    guid: 21af322eb4354b948905f6c4432162d5
   m_configObjects: {}
