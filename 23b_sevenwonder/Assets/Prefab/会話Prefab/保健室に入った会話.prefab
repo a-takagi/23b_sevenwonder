@@ -30,7 +30,6 @@ GameObject:
   - component: {fileID: 243249605331702965}
   - component: {fileID: -734885014866505982}
   - component: {fileID: -8202177207371060041}
-  - component: {fileID: 2367005324781011089}
   m_Layer: 0
   m_Name: "\u4FDD\u5065\u5BA4\u306B\u5165\u3063\u305F\u4F1A\u8A71"
   m_TagString: Untagged
@@ -66,7 +65,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 41.681824, y: 318.36365}
+  scrollPos: {x: 24.75, y: 318.36365}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 200
@@ -79,7 +78,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 5851242745552914172}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 5851242745552913931}
   variables: []
   description: 
   stepPause: 0
@@ -107,7 +107,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 65
     y: 78.13636
-    width: 112
+    width: 86
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -129,7 +129,6 @@ MonoBehaviour:
   - {fileID: -734885014866505982}
   - {fileID: 243249605331702965}
   - {fileID: -8202177207371060041}
-  - {fileID: 2367005324781011089}
   - {fileID: 5851242745552913931}
   - {fileID: 5851242745552914165}
   suppressAllAutoSelections: 0
@@ -173,7 +172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: "\u3084\u3063\u3071\u591C\u306F\u6697\u3044\u306A"
+  storyText: "\u304B\u3001\u770B\u8B77\u5A66\u3055\u3093\u304C\u3001\u8D64\u3061\u3083\u3093\u3042\u3084\u3057\u3066\u308B\uFF1F"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -200,7 +199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 2
   indentLevel: 0
-  storyText: "\u3042\u3001\u660E\u65E5\u306B\u3057\u3088\u3046\u3088"
+  storyText: "\u4E03\u4E0D\u601D\u8B70\u306E\u5E7D\u970A\u770B\u8B77\u5A66\u3063\u3066\u3042\u3093\u305F\u304B\uFF1F"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -373,7 +372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 8
   indentLevel: 0
-  storyText: "\u4F55\u8A00\u3063\u3066\u3093\u3060\u3001\u590F\u4F11\u307F\u306F\u660E\u65E5\u307E\u3067\u3060\u308D"
+  storyText: "\u4E03\u4E0D\u601D\u8B70\u304C\u4F55\u304B\u5B58\u3058\u4E0A\u3052\u307E\u305B\u3093\u304C\u3001\u79C1\u306F\u78BA\u304B\u306B\u770B\u8B77\u5A66\u3067\u3059\u3002\r\n\u4F55\u304B\u304A\u3053\u307E\u308A\u3067\u3059\u304B\uFF1F\r\n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -400,7 +399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 9
   indentLevel: 0
-  storyText: "\u4ECA\u65E5\u884C\u304B\u306A\u3044\u3068\u5348\u5F8C\u307E\u3067\u306B\u5BBF\u984C\u7D42\u308F\u3093\u306D\u30FC\u305E"
+  storyText: "\u3042\u3001\u8D64\u3061\u3083\u3093\u3092\u63A2\u3057\u3066\u308B\u5973\u306E\u4EBA\u304C\u3044\u308B\u3093\u3060\u2026\r\n\u3060\u3001\u3060\u304B\u3089\u8D64\u3061\u3083\u3093\u3092\u50D5\u305F\u3061\u304C\u2026\u3042\u3001\u9810\u304B\u308A\u305F\u3044\u3093\u3060\uFF01\uFF01"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -427,7 +426,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 10
   indentLevel: 0
-  storyText: "\u3042\u3001\u671D\u4E00\u3067\u53D6\u308A\u306B\u884C\u304F\u3088"
+  storyText: "\u3061\u3001\u5C0F\u3055\u3044\u2026\u3060\u3068\uFF1F\uFF1F\r\n\u3044\u3084\u3001\u305D\u308C\u306F\u56F0\u308B\u3002\u8D64\u3061\u3083\u3093\u3092\u63A2\u3057\u3066\u308B\u6BCD\u89AA\u304C\u3044\u308B\u3093\u3060\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -454,7 +453,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 11
   indentLevel: 0
-  storyText: "\u30B3\u30BF\u30ED\u30FC\u3001\u304A\u524D\u5348\u5F8C\u304B\u3089\u91CE\u7403\u3059\u308B\u7D04\u675F\u5FD8\u308C\u305F\u306E\u304B\n"
+  storyText: "\u3048\u2026\n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -481,7 +480,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 12
   indentLevel: 0
-  storyText: "\u5225\u306B\u5BBF\u984C\u306A\u3093\u3066\u660E\u65E5\u306E\u591C\u307E\u3067\u306B\u7D42\u308F\u3089\u305B\u308C\u3070\u3044\u3044\u3058\u3083\u3093"
+  storyText: "\u3044\u3051\u307E\u305B\u3093\u3002\u3042\u306A\u305F\u305F\u3061\u306E\u3088\u3046\u306A\u5C0F\u3055\u3044\u5B50\u3069\u3082\u304C\u8D64\u3061\u3083\u3093\u306E\r\u9762\u5012\u3092\u898B\u308C\u308B\u3068\u306F\u601D\u3048\u307E\u305B\u3093\u3002\r\n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -508,7 +507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 13
   indentLevel: 0
-  storyText: "\u3046\u3045\u3045\u2026"
+  storyText: "\u6E21\u308A\u5ECA\u4E0B\u306E\u8FD1\u304F\u306B\u3042\u308B\u93E1\u306B\u3001\u3044\u2026\u3044\u307E\u3059\u3002"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -535,7 +534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 14
   indentLevel: 0
-  storyText: "\u305D\u3046\u3044\u3063\u3066\u3001\u4FFA\u304C\u8D77\u3053\u3055\u306A\u304D\u3083\u5915\u65B9\u8FD1\u304F\u307E\u3067\u5BDD\u3066\u3093\u3058\u3083\u306D\u30FC\u304B"
+  storyText: "\u5206\u304B\u308A\u307E\u3057\u305F\u3002\u3067\u3057\u305F\u3089\u3001\u305D\u306E\u304A\u6BCD\u69D8\u306E\u5834\u6240\u307E\u3067\u79C1\u304C\u8D64\u3061\u3083\u3093\u3092\u304A\u9023\u308C\u81F4\u3057\u307E\u3059\u3002\n\u304A\u6BCD\u69D8\u304C\u3044\u308B\u5834\u6240\u3092\u304A\u6559\u3048\u304F\u3060\u3055\u3044\u3002"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -562,7 +561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 15
   indentLevel: 0
-  storyText: "\u2026\u56F3\u66F8\u5BA4"
+  storyText: "\u304D\u2026\u6D88\u3048\u3061\u3083\u3063\u305F\u2026\r\n\u3084\u3063\u3071\u308A\u3001\u4EBA\u9593\u3058\u3083\u306A\u3044\u3093\u3060\u306D\u2026\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -589,7 +588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 16
   indentLevel: 0
-  storyText: "\u3093\u3067\u3001\u5BBF\u984C\u306F\u3069\u3053\u306B\u5FD8\u308C\u3066\u305F\u3093\u3060\uFF1F"
+  storyText: "\u983C\u3093\u3060\u3001\u30AA\u30EC\u9054\u3082\u5F8C\u304B\u3089\u884C\u304F\u3088"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -616,34 +615,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 17
   indentLevel: 0
-  storyText: "\u3055\u3063\u3055\u3068\u5BBF\u984C\u56DE\u53CE\u3057\u3066\u5E30\u308B\u305E\u3002\n\u660E\u65E5\u306F\u5BBF\u984C\u7D42\u308F\u308B\u307E\u3067\u304A\u83D3\u5B50\u629C\u304D\u3060\u304B\u3089\u306A\u3002"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &2367005324781011089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5851242745552914174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 18
-  indentLevel: 0
-  storyText: "\u305D\u3093\u306A\u3041"
+  storyText: "\u3084\u308B\u3079\u304D\u3053\u3068\u306F\u3084\u3063\u305F\u3057\u3002\r\n\u4FFA\u305F\u3061\u3082\u6E21\u308A\u5ECA\u4E0B\u306B\u623B\u308D\u3046\u305C\u3002\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
