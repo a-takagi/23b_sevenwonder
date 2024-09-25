@@ -39,7 +39,7 @@ public class Library : MonoBehaviour
         {
             Debug.Log("Door.cs: GameManager‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ");
         }
-                tarohanakaiwa2obj.SetActive(false);
+        tarohanakaiwa2obj.SetActive(false);
 
         //2‰ñ–Ú‚©‚Ç‚¤‚©‚Ìˆ—
         if(gm.GetLibrarySecond()==true){
@@ -69,6 +69,6 @@ public class Library : MonoBehaviour
     public void TaroHana2Show(){
         //2‰ñ–Ú‚Ì‰ï˜b‚ğ•\¦‚µ‚½‚¢
 
-        tarohanakaiwa2obj.SetActive(true);
+        this.tarohanakaiwa2obj.SetActive(true);
     }
 }
