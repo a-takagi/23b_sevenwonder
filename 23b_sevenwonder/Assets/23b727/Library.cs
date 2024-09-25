@@ -13,11 +13,17 @@ public class Library : MonoBehaviour
     [SerializeField]
     GameObject kirakira3;
 
+    [SerializeField]
+    GameObject tarhanaobj;
+
     GameManager gm;
+
+    int kiranum = 0;
 
     // Start is called before the first frame update
     void Start()
     {
+        tarhanaobj.SetActive(false);
         //GameManager�̎擾
         GameObject tmp;
         tmp = GameObject.Find("GameManager");
@@ -33,5 +39,12 @@ public class Library : MonoBehaviour
     void Update()
     {
        
+    }
+
+    public void IncreaseKira(){
+        kiranum++;
+        if(kiranum>=3){
+        tarhanaobj.SetActive(true);
+        }
     }
 }
