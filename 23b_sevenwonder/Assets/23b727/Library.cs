@@ -14,7 +14,13 @@ public class Library : MonoBehaviour
     GameObject kirakira3;
 
     [SerializeField]
-    GameObject tarhanaobj;
+    GameObject tarohanaobj;
+
+     [SerializeField]
+    GameObject tarohanakaiwa1obj;
+
+     [SerializeField]
+    GameObject tarohanakaiwa2obj;
 
     GameManager gm;
 
@@ -23,7 +29,8 @@ public class Library : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        tarhanaobj.SetActive(false);
+        
+        tarohanaobj.SetActive(false);
         //GameManager‚ÌŽæ“¾
         GameObject tmp;
         tmp = GameObject.Find("GameManager");
@@ -32,7 +39,10 @@ public class Library : MonoBehaviour
         {
             Debug.Log("Door.cs: GameManager‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ");
         }
+                tarohanakaiwa2obj.SetActive(false);
 
+        //2‰ñ–Ú‚©‚Ç‚¤‚©‚Ìˆ—
+        gm.getLibrary;
     }
 
     // Update is called once per frame
@@ -44,7 +54,14 @@ public class Library : MonoBehaviour
     public void IncreaseKira(){
         kiranum++;
         if(kiranum>=3){
-        tarhanaobj.SetActive(true);
+        tarohanaobj.SetActive(true);
         }
+        gm.SetLibrarySecond(true);
+    }
+
+    public void TaroHana2Show(){
+        //2‰ñ–Ú‚Ì‰ï˜b‚ð•\Ž¦‚µ‚½‚¢
+
+        tarohanakaiwa2obj.SetActive(true);
     }
 }
