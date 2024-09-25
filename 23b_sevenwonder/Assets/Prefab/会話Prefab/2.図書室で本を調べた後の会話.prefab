@@ -68,7 +68,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 5851242745552914172}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 5851242745552914166}
   variables: []
   description: 
   stepPause: 0
@@ -94,8 +95,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 65
-    y: 78.13636
+    x: 53
+    y: 28.13636
     width: 105.2
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -154,7 +155,7 @@ MonoBehaviour:
   storyText: "\u4E03\u4E0D\u601D\u8B70\u306E\u5834\u6240\u304C\u5206\u304B\u3089\u306A\u3044\u3084\u3064\u306F\u3001\r\n\u306F\u2026\u82B1\u5B50\u3055\u3093\u305F\u3061\u306B\u805E\u3044\u3066\u307F\u3088\u3046\u3002"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 0eb44407c87ffb846a722e7e776ab519, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -181,7 +182,7 @@ MonoBehaviour:
   storyText: "\u305D\u3046\u3059\u308B\u304B\u3002"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 86aecd76a7bbf95409b37259efe6d20b, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1

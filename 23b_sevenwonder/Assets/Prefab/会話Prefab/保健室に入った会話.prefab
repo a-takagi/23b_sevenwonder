@@ -79,7 +79,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 5851242745552914172}
   selectedCommands:
-  - {fileID: 5851242745552913931}
+  - {fileID: -8202177207371060041}
   variables: []
   description: 
   stepPause: 0
@@ -175,7 +175,7 @@ MonoBehaviour:
   storyText: "\u304B\u3001\u770B\u8B77\u5A66\u3055\u3093\u304C\u3001\u8D64\u3061\u3083\u3093\u3042\u3084\u3057\u3066\u308B\uFF1F"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 0eb44407c87ffb846a722e7e776ab519, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -202,7 +202,7 @@ MonoBehaviour:
   storyText: "\u4E03\u4E0D\u601D\u8B70\u306E\u5E7D\u970A\u770B\u8B77\u5A66\u3063\u3066\u3042\u3093\u305F\u304B\uFF1F"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 86aecd76a7bbf95409b37259efe6d20b, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -228,7 +228,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 61.565216
     y: 138
-    width: 94
+    width: 96.4
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -402,7 +402,7 @@ MonoBehaviour:
   storyText: "\u3042\u3001\u8D64\u3061\u3083\u3093\u3092\u63A2\u3057\u3066\u308B\u5973\u306E\u4EBA\u304C\u3044\u308B\u3093\u3060\u2026\r\n\u3060\u3001\u3060\u304B\u3089\u8D64\u3061\u3083\u3093\u3092\u50D5\u305F\u3061\u304C\u2026\u3042\u3001\u9810\u304B\u308A\u305F\u3044\u3093\u3060\uFF01\uFF01"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 0eb44407c87ffb846a722e7e776ab519, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -429,7 +429,7 @@ MonoBehaviour:
   storyText: "\u3061\u3001\u5C0F\u3055\u3044\u2026\u3060\u3068\uFF1F\uFF1F\r\n\u3044\u3084\u3001\u305D\u308C\u306F\u56F0\u308B\u3002\u8D64\u3061\u3083\u3093\u3092\u63A2\u3057\u3066\u308B\u6BCD\u89AA\u304C\u3044\u308B\u3093\u3060\r"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 86aecd76a7bbf95409b37259efe6d20b, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -456,7 +456,7 @@ MonoBehaviour:
   storyText: "\u3048\u2026\n"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 0eb44407c87ffb846a722e7e776ab519, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -510,7 +510,7 @@ MonoBehaviour:
   storyText: "\u6E21\u308A\u5ECA\u4E0B\u306E\u8FD1\u304F\u306B\u3042\u308B\u93E1\u306B\u3001\u3044\u2026\u3044\u307E\u3059\u3002"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 0eb44407c87ffb846a722e7e776ab519, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -564,7 +564,7 @@ MonoBehaviour:
   storyText: "\u304D\u2026\u6D88\u3048\u3061\u3083\u3063\u305F\u2026\r\n\u3084\u3063\u3071\u308A\u3001\u4EBA\u9593\u3058\u3083\u306A\u3044\u3093\u3060\u306D\u2026\r"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 0eb44407c87ffb846a722e7e776ab519, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -591,7 +591,7 @@ MonoBehaviour:
   storyText: "\u983C\u3093\u3060\u3001\u30AA\u30EC\u9054\u3082\u5F8C\u304B\u3089\u884C\u304F\u3088"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 86aecd76a7bbf95409b37259efe6d20b, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -618,7 +618,7 @@ MonoBehaviour:
   storyText: "\u3084\u308B\u3079\u304D\u3053\u3068\u306F\u3084\u3063\u305F\u3057\u3002\r\n\u4FFA\u305F\u3061\u3082\u6E21\u308A\u5ECA\u4E0B\u306B\u623B\u308D\u3046\u305C\u3002\r"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 86aecd76a7bbf95409b37259efe6d20b, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1

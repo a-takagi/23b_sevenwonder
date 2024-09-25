@@ -64,8 +64,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 4332671590952916219}
+  selectedCommands:
+  - {fileID: 6443652314745589870}
   variables: []
   description: 
   stepPause: 0
@@ -92,7 +94,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 64
-    y: 44.13636
+    y: 45.13636
     width: 149.2
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -244,7 +246,7 @@ MonoBehaviour:
   storyText: "\u6821\u5185\u306E\u5730\u56F3\u3060\u3002"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 0eb44407c87ffb846a722e7e776ab519, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1

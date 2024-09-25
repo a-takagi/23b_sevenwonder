@@ -69,7 +69,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 5851242745552914172}
   selectedCommands:
-  - {fileID: 0}
+  - {fileID: 5851242745552914161}
   variables: []
   description: 
   stepPause: 0
@@ -109,7 +109,6 @@ MonoBehaviour:
   - {fileID: 5851242745552914167}
   - {fileID: 5851242745552914161}
   - {fileID: 5851242745552914166}
-  - {fileID: 0}
   - {fileID: 5851242745552913931}
   - {fileID: 5851242745552914165}
   suppressAllAutoSelections: 0
