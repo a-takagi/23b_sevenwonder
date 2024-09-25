@@ -42,7 +42,14 @@ public class Library : MonoBehaviour
                 tarohanakaiwa2obj.SetActive(false);
 
         //2‰ñ–Ú‚©‚Ç‚¤‚©‚Ìˆ—
-        gm.getLibrary;
+        if(gm.GetLibrarySecond()==true){
+            tarohanaobj.SetActive(true);
+            kirakira1.SetActive(false);
+            kirakira2.SetActive(false);
+            kirakira3.SetActive(false);
+            TaroHana2Show();
+            tarohanakaiwa1obj.SetActive(false);
+        }
     }
 
     // Update is called once per frame
