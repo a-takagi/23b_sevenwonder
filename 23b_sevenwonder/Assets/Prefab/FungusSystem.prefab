@@ -51,6 +51,59 @@ MonoBehaviour:
   portraitsFace: 0
   setSayDialog: {fileID: 3026554444035242378}
   description: 
+--- !u!1 &402773466906964648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5450215801517889043}
+  - component: {fileID: 3213205944212228736}
+  m_Layer: 0
+  m_Name: "\u7537\u306E\u5B50B"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5450215801517889043
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402773466906964648}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3026554445053774372}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3213205944212228736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402773466906964648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: "\u7537\u306E\u5B50B"
+  nameColor: {r: 0.427451, g: 0.41960788, b: 0.5176471, a: 1}
+  soundEffect: {fileID: 0}
+  portraits:
+  - {fileID: 21300000, guid: 86aecd76a7bbf95409b37259efe6d20b, type: 3}
+  portraitsFace: 0
+  setSayDialog: {fileID: 3026554444035242378}
+  description: "\u304D\u306E\u3053:Conversation\u306E\u3066\u3059\u3068\u3067\u3059\r\n\u304D\u306E\u3053:\u3053\u3053\u306F\u3069\u3053\u306A\u3093\u3060\r\n:\uFF08\u304D\u3087\u308D\u304D\u3087\u308D\uFF09\r\n\u304D\u306E\u3053:\u4F1A\u8A71\u30C6\u30B9\u30C8\u30B7\u30FC\u30F3\u306E\u3088\u3046\u3060\u3002\\n\u6539\u884C\u306E\u3067\u304D\u308B\u304B\u306A\u3002\r\n\u304D\u306E\u3053
+    Mushroom:\u7ACB\u3061\u7D75\u304C\u8868\u793A\u3055\u308C\u308B\u304B\u30C6\u30B9\u30C8\u3002"
 --- !u!1 &3026554443099621397
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,7 +267,7 @@ GameObject:
   - component: {fileID: 3026554443521222515}
   - component: {fileID: 3026554443521222514}
   m_Layer: 0
-  m_Name: Character
+  m_Name: "\u304D\u306E\u3053"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -254,8 +307,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ea8f56c43254d41728f5ac4e8299b6c9, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 3026554444035242378}
-  description: "\u304D\u306E\u3053:Conversation\u306E\u3066\u3059\u3068\u3067\u3059\r\n\u304D\u306E\u3053:\u3053\u3053\u306F\u3069\u3053\u306A\u3093\u3060\r\n
-    :\uFF08\u304D\u3087\u308D\u304D\u3087\u308D\uFF09\r\n\u304D\u306E\u3053:\u4F1A\u8A71\u30C6\u30B9\u30C8\u30B7\u30FC\u30F3\u306E\u3088\u3046\u3060\u3002\\n\u6539\u884C\u306E\u3067\u304D\u308B\u304B\u306A\u3002\r\n\u304D\u306E\u3053
+  description: "\u304D\u306E\u3053:Conversation\u306E\u3066\u3059\u3068\u3067\u3059\r\n\u304D\u306E\u3053:\u3053\u3053\u306F\u3069\u3053\u306A\u3093\u3060\r\n:\uFF08\u304D\u3087\u308D\u304D\u3087\u308D\uFF09\r\n\u304D\u306E\u3053:\u4F1A\u8A71\u30C6\u30B9\u30C8\u30B7\u30FC\u30F3\u306E\u3088\u3046\u3060\u3002\\n\u6539\u884C\u306E\u3067\u304D\u308B\u304B\u306A\u3002\r\n\u304D\u306E\u3053
     Mushroom:\u7ACB\u3061\u7D75\u304C\u8868\u793A\u3055\u308C\u308B\u304B\u30C6\u30B9\u30C8\u3002"
 --- !u!1 &3026554443563666120
 GameObject:
@@ -1605,6 +1657,61 @@ Transform:
   - {fileID: 3026554444035242369}
   - {fileID: 3026554443521222515}
   - {fileID: 1023049538}
+  - {fileID: 5021957429638077428}
+  - {fileID: 5450215801517889043}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5443848135510085741
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5021957429638077428}
+  - component: {fileID: 1615348662436837012}
+  m_Layer: 0
+  m_Name: "\u7537\u306E\u5B50A"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5021957429638077428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5443848135510085741}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3026554445053774372}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1615348662436837012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5443848135510085741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: "\u7537\u306E\u5B50A"
+  nameColor: {r: 0.8745099, g: 0.21568629, b: 0.21568629, a: 1}
+  soundEffect: {fileID: 0}
+  portraits:
+  - {fileID: 21300000, guid: 0eb44407c87ffb846a722e7e776ab519, type: 3}
+  portraitsFace: 0
+  setSayDialog: {fileID: 3026554444035242378}
+  description: "\u304D\u306E\u3053:Conversation\u306E\u3066\u3059\u3068\u3067\u3059\r\n\u304D\u306E\u3053:\u3053\u3053\u306F\u3069\u3053\u306A\u3093\u3060\r\n:\uFF08\u304D\u3087\u308D\u304D\u3087\u308D\uFF09\r\n\u304D\u306E\u3053:\u4F1A\u8A71\u30C6\u30B9\u30C8\u30B7\u30FC\u30F3\u306E\u3088\u3046\u3060\u3002\\n\u6539\u884C\u306E\u3067\u304D\u308B\u304B\u306A\u3002\r\n\u304D\u306E\u3053
+    Mushroom:\u7ACB\u3061\u7D75\u304C\u8868\u793A\u3055\u308C\u308B\u304B\u30C6\u30B9\u30C8\u3002"

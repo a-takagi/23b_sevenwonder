@@ -198,6 +198,9 @@ public class ItemManager : MonoBehaviour
             }
             }
             
+            //カーソルの初期化
+            //CursorXとCursorYを初期化 ＆ カーソルのオブジェクト自体の位置も初期化 
+
             PreviewedCanvas = true;
             PreviewItemInfo();
 
