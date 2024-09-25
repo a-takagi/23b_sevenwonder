@@ -24,7 +24,7 @@ public class Library : MonoBehaviour
 
     GameManager gm;
 
-    int kiranum = 0;
+    int kiranum;
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +43,7 @@ public class Library : MonoBehaviour
 
         //2‰ñ–Ú‚©‚Ç‚¤‚©‚Ìˆ—
         if(gm.GetLibrarySecond()==true){
+            kiranum=3;
             tarohanaobj.SetActive(true);
             kirakira1.SetActive(false);
             kirakira2.SetActive(false);
