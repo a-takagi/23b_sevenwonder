@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &111361498
 Transform:
   m_ObjectHideFlags: 0
@@ -150,11 +150,11 @@ Transform:
   m_GameObject: {fileID: 111361497}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &111361499
 SpriteRenderer:
@@ -334,7 +334,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &811047512
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -400,7 +400,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &811047514
 Animator:
@@ -496,7 +496,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1522801243
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -562,7 +562,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1522801245
 Animator:
@@ -747,6 +747,14 @@ PrefabInstance:
     - target: {fileID: 6307615872504789506, guid: 3657c0922a4448f4692e0868a1866466, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6307615872504789507, guid: 3657c0922a4448f4692e0868a1866466, type: 3}
+      propertyPath: right
+      value: 
+      objectReference: {fileID: 1678673606}
+    - target: {fileID: 6307615872504789507, guid: 3657c0922a4448f4692e0868a1866466, type: 3}
+      propertyPath: animater
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6307615873716862130, guid: 3657c0922a4448f4692e0868a1866466, type: 3}
       propertyPath: m_IsActive
