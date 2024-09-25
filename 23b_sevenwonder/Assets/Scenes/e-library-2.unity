@@ -279,7 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1105403861}
+  selectedFlowchart: {fileID: 1196673617}
 --- !u!4 &716064832
 Transform:
   m_ObjectHideFlags: 1
@@ -513,10 +513,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97ae5c9c92a68ca4d826cdb7da28cf5c, type: 3}
---- !u!114 &1105403861 stripped
+--- !u!114 &1196673617 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4460679476285858430, guid: 97ae5c9c92a68ca4d826cdb7da28cf5c, type: 3}
-  m_PrefabInstance: {fileID: 1105403856}
+  m_PrefabInstance: {fileID: 3172132536084367364}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -938,7 +938,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7349498098375789383, guid: 97ae5c9c92a68ca4d826cdb7da28cf5c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.060578674
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7349498098375789383, guid: 97ae5c9c92a68ca4d826cdb7da28cf5c, type: 3}
       propertyPath: m_LocalRotation.w
