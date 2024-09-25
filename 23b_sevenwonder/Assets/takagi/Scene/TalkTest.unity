@@ -246,7 +246,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8202177207371060041, guid: 7ed7cce850b425746878a0a21439e3f1, type: 3}
       propertyPath: storyText
-      value: "\u78BA\u304B\u3001\u56F3\u66F8\u5BA4\u306F\u968E\u6BB5\u3092\u4E0A\u3063\u305F\u5DE6\u5074\u306E\u6559\u5BA4\u3060\u3088\u306A\u3002"
+      value: "\u78BA\u304B\u3001\u56F3\u66F8\u5BA4\u306F\u968E\u6BB5\u3092\u4E0A\u3063\u305F\u5DE6\u5965\u306E\u6559\u5BA4\u3060\u3088\u306A\u3002"
       objectReference: {fileID: 0}
     - target: {fileID: 5851242745552914163, guid: 7ed7cce850b425746878a0a21439e3f1, type: 3}
       propertyPath: m_RootOrder
