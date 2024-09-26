@@ -19,7 +19,13 @@ GameObject:
   - component: {fileID: 5851242745552913930}
   - component: {fileID: 5851242745552914165}
   - component: {fileID: 5851242745552913931}
-  - component: {fileID: 2091963658}
+  - component: {fileID: 1171737126}
+  - component: {fileID: 1171737127}
+  - component: {fileID: 1171737128}
+  - component: {fileID: 1171737129}
+  - component: {fileID: 1171737130}
+  - component: {fileID: 1171737131}
+  - component: {fileID: 1171737132}
   m_Layer: 0
   m_Name: "2.\u56F3\u66F8\u5BA4\u3067\u672C\u3092\u8ABF\u3079\u305F\u5F8C\u306E\u4F1A\u8A71"
   m_TagString: Untagged
@@ -58,7 +64,7 @@ MonoBehaviour:
   scrollPos: {x: 41.681824, y: 318.36365}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 200
+  blockViewHeight: 319.8
   zoom: 1
   scrollViewRect:
     serializedVersion: 2
@@ -66,10 +72,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 5851242745552914172}
-  selectedCommands:
-  - {fileID: 5851242745552914166}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -95,16 +99,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 53
-    y: 28.13636
-    width: 105.2
+    x: 56
+    y: -0.86363983
+    width: 102.8
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 0
   blockName: "\u56F3\u66F8\u5BA4_\u672C"
   description: 
-  eventHandler: {fileID: 2091963658}
+  eventHandler: {fileID: 0}
   commandList:
   - {fileID: 5851242745552914167}
   - {fileID: 5851242745552914161}
@@ -285,7 +289,7 @@ MonoBehaviour:
   itemId: 6
   indentLevel: 0
   targetFlowchart: {fileID: 5851242745552914175}
-  targetBlock: {fileID: 5851242745552914164}
+  targetBlock: {fileID: 1171737132}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -321,7 +325,7 @@ MonoBehaviour:
   move: 0
   shiftIntoPlace: 0
   waitUntilFinished: 0
---- !u!114 &2091963658
+--- !u!114 &1171737126
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -333,8 +337,140 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78c1a9f24ac376a47838385391f83acc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentBlock: {fileID: 5851242745552914172}
+  parentBlock: {fileID: 1171737131}
   suppressBlockAutoSelect: 0
   tagFilter: []
   FireOn: 1
   colliderVar: {fileID: 0}
+--- !u!114 &1171737127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5851242745552914174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 13
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 5851242745552914164}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &1171737128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5851242745552914174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 12
+  indentLevel: 0
+  targetObject: {fileID: 0}
+  methodName: KaiwaOwatade
+  delay: 0
+--- !u!114 &1171737129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5851242745552914174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 11
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 5851242745552914172}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &1171737130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5851242745552914174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 10
+  indentLevel: 0
+  targetObject: {fileID: 0}
+  methodName: KaiwaNau
+  delay: 0
+--- !u!114 &1171737131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5851242745552914174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 49.318176
+    y: -71.36365
+    width: 113.2
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 9
+  blockName: KaiwaStart
+  description: 
+  eventHandler: {fileID: 1171737126}
+  commandList:
+  - {fileID: 1171737130}
+  - {fileID: 1171737129}
+  suppressAllAutoSelections: 0
+--- !u!114 &1171737132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5851242745552914174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 52.318176
+    y: 66.63635
+    width: 107.6
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 8
+  blockName: KaiwaEnd
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1171737128}
+  - {fileID: 1171737127}
+  suppressAllAutoSelections: 0
