@@ -6,17 +6,21 @@ using UnityEngine.SceneManagement;
 public class GameManager : SingletonMonoBehaviour<GameManager>
 {
 
-    //ƒ}ƒbƒv‚ÌƒXƒ^[ƒgˆÊ’u‚Ì”Ô†B”à‚©‚ço‚Ä‚«‚½‚ç”à‚Ì‘OB‚»‚¤‚Å‚È‚¢ê‡“ü‚èŒû
+    //ï¿½}ï¿½bï¿½vï¿½ÌƒXï¿½^ï¿½[ï¿½gï¿½Ê’uï¿½Ì”Ôï¿½ï¿½Bï¿½ï¿½ï¿½ï¿½ï¿½ï¿½oï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì‘Oï¿½Bï¿½ï¿½ï¿½ï¿½ï¿½Å‚È‚ï¿½ï¿½ê‡ï¿½ï¿½ï¿½ï¿½ï¿½
     public int StartPosition;
 
-    //SpawnˆÊ’uB”Ô†‚ÍStartPosition‚Æˆê’v‚³‚¹‚é‚±‚Æ
-    //SpawnPoint‚ÌGameObject‚ÍGameManger>SpawnPointList‚Ì’†‚É“ü‚ê‚ÄAInspector‚Åİ’è‚·‚é‚±‚Æ
+    //Spawnï¿½Ê’uï¿½Bï¿½Ôï¿½ï¿½ï¿½StartPositionï¿½Æˆï¿½vï¿½ï¿½ï¿½ï¿½ï¿½é‚±ï¿½ï¿½
+    //SpawnPointï¿½ï¿½GameObjectï¿½ï¿½GameManger>SpawnPointListï¿½Ì’ï¿½ï¿½É“ï¿½ï¿½ï¿½ÄAInspectorï¿½Åİ’è‚·ï¿½é‚±ï¿½ï¿½
     [SerializeField]
     GameObject[] SpawnPoint;
 
     public bool setPlayerSpawn = false;
 
     bool LibrarySecond=false;
+
+    //ä¼šè©±ä¸­ã‹ã©ã†ã‹ã®ãƒ•ãƒ©ã‚°ã§ã™[Byã•ã„ã¨ãƒ¼]
+    //ä¼šè©±ä¸­ï¼štrue ä¼šè©±ã—ã¦ãªã„ï¼šfalse
+    private bool KaiwaFlag = false;
 
     public void Awake()
     {
@@ -54,18 +58,18 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 
     public void setPlayerSpawnFlag(bool t)
     {
-        Debug.Log("GameManager:setPlayerSpawnFlag:" + t+"‚Éİ’è‚µ‚Ü‚·");
+        Debug.Log("GameManager:setPlayerSpawnFlag:" + t+"ï¿½Éİ’è‚µï¿½Ü‚ï¿½");
         setPlayerSpawn = t;
     }
     public void PlayerSpawn()
     {
         if (setPlayerSpawn == false)
         {
-            //ZÉ‚¾‚¯‚ÅSpawnPoint‚ğİ’è‚·‚éB‚»‚êˆÈŠO‚Íİ’è‚µ‚È‚¢
-            //–{”Ô—p‚ÉŒã‚Å•ÏX‚·‚é‚±‚Æ
+            //ï¿½Zï¿½É‚ï¿½ï¿½ï¿½ï¿½ï¿½SpawnPointï¿½ï¿½İ’è‚·ï¿½ï¿½Bï¿½ï¿½ï¿½ï¿½ÈŠOï¿½Íİ’è‚µï¿½È‚ï¿½
+            //ï¿½{ï¿½Ô—pï¿½ÉŒï¿½Å•ÏXï¿½ï¿½ï¿½é‚±ï¿½ï¿½
             if (SceneManager.GetActiveScene().name == "roka-1")
             {
-                //ƒƒCƒ“ZÉ‚È‚Ì‚Å
+                //ï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½Zï¿½É‚È‚Ì‚ï¿½
                 GameObject tmp = GameObject.Find("Player");
                 tmp.transform.SetPositionAndRotation(SpawnPoint[StartPosition].transform.position, Quaternion.identity);
                 Debug.Log("GameManager:PlayerSpawn: StartPosition:" + StartPosition);
@@ -73,7 +77,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
             }
             else
             {
-                //ZÉ‚Å‚Í‚È‚¢‚Ì‚ÅƒXƒ|[ƒ“ƒ|ƒCƒ“ƒg‚Íİ’è‚µ‚È‚¢
+                //ï¿½Zï¿½É‚Å‚Í‚È‚ï¿½ï¿½Ì‚ÅƒXï¿½|ï¿½[ï¿½ï¿½ï¿½|ï¿½Cï¿½ï¿½ï¿½gï¿½Íİ’è‚µï¿½È‚ï¿½
             }
         }
     }
@@ -85,5 +89,20 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     public bool GetLibrarySecond(){
         return LibrarySecond;
     }
+
+    //ä¼šè©±ã—ã¦ã„ã‚‹æ™‚ã«ä½¿ã†
+    public void KaiwaNau(){
+        KaiwaFlag = true;
+    }
+
+    //ä¼šè©±ãŒçµ‚ã‚ã£ãŸæ™‚ã«ä½¿ã†
+    public void KaiwaOwatade(){
+        KaiwaFlag = false;
+    }
+
+    public bool GetKaiwaFlag(){
+        return KaiwaFlag;
+    }
+    
 
 }
