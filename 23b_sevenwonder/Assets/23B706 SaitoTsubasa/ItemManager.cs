@@ -8,6 +8,8 @@ public class ItemManager : MonoBehaviour
 {
     private List<ItemData> Items = new List<ItemData>();
 
+    public bool KaiwaFlag = false;
+
     //参照系
     [SerializeField] private GameObject PrefabItemPanel;
     [SerializeField] private GameObject MainPanel;
@@ -109,6 +111,9 @@ public class ItemManager : MonoBehaviour
         InputVertical = Input.GetAxis("Vertical");
         InputHorizontal = Input.GetAxis("Horizontal");
 
+        Debug.Log(InputVertical.ToString());
+        Debug.Log(InputHorizontal.ToString());
+
         //Debug.Log(InputVertical.ToString());
 
 
@@ -154,7 +159,7 @@ public class ItemManager : MonoBehaviour
         }else if((InputHorizontal < -0.5f) && !(BeforeHorizontal < -0.5f) ){
             Debug.Log("Input Left");
 
-            if(MaxCursorX > 0){
+            if(CursorX > 0){
             Vector2 CursorPosition = Cursor.GetComponent<RectTransform>().anchoredPosition;
             CursorPosition.x -= 200.0f;
             Cursor.GetComponent<RectTransform>().anchoredPosition = CursorPosition;
@@ -169,8 +174,10 @@ public class ItemManager : MonoBehaviour
     }
 
     void Update(){
-        //スペースキーの入力処理
-        if(Input.GetKeyDown(KeyCode.Space)){
+        Debug.Log(KaiwaFlag.ToString());
+        if(KaiwaFlag == false){
+        //入力処理
+        if(Input.GetButtonDown("Fire1")){
             Debug.Log("InputSpace");
 
             if(PreviewedCanvas == false){
@@ -213,6 +220,7 @@ public class ItemManager : MonoBehaviour
                 ItemMenuCanvas.SetActive(false);
             }
         }
+        }
 
     }
 
@@ -239,6 +247,14 @@ public class ItemManager : MonoBehaviour
             //アイテム情報を空にする
             InfoText.text = "";
         }
+    }
+
+    public void KaiwaNau(){
+        KaiwaFlag = true;
+    }
+
+    public void KaiwaOwatade(){
+        KaiwaFlag = false;
     }
 
     
