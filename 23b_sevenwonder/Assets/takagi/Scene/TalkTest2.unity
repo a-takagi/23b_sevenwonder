@@ -1456,7 +1456,6 @@ PrefabInstance:
       propertyPath: selectedCommands.Array.size
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< HEAD
     - target: {fileID: 6664155602480911380, guid: 2774bf63d573bc24aaa42c6efc494a85, type: 3}
       propertyPath: portrait
       value: 
@@ -1473,8 +1472,6 @@ PrefabInstance:
       propertyPath: character
       value: 
       objectReference: {fileID: 553003946}
-=======
->>>>>>> cc8d93b34a128963612eb3b5c13874f8fb17aecc
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2774bf63d573bc24aaa42c6efc494a85, type: 3}
 --- !u!114 &1916740995 stripped

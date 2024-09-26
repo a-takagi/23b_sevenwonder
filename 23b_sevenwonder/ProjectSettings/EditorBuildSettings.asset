@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: 799f0132709dd504e9906207ce4e3d8d
+  - enabled: 1
     path: Assets/Scenes/roka-1.unity
     guid: 4aa0d5709477ba74bb413091e51d5e43
   - enabled: 1

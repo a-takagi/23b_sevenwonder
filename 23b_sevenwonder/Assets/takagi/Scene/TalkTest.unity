@@ -236,22 +236,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 517ec39dce72b5f49a1b1bc1fd835f86, type: 3}
-<<<<<<< HEAD
 --- !u!114 &332307506 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5851242745552913931, guid: 87e5c2e1530d2bb40ae60e7b8f6dbb8c, type: 3}
   m_PrefabInstance: {fileID: 1299109449}
-=======
---- !u!114 &290840778 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5851242745552914175, guid: 2774bf63d573bc24aaa42c6efc494a85, type: 3}
-  m_PrefabInstance: {fileID: 1916740994}
->>>>>>> 780ed873284f657eddb215aa42a1d33c130d997e
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -264,9 +256,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-=======
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
->>>>>>> 780ed873284f657eddb215aa42a1d33c130d997e
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &475198590
@@ -288,7 +277,6 @@ PrefabInstance:
       propertyPath: storyText
       value: "\u78BA\u304B\u3001\u56F3\u66F8\u5BA4\u306F\u968E\u6BB5\u3092\u4E0A\u3063\u305F\u5DE6\u5965\u306E\u6559\u5BA4\u3060\u3088\u306A\u3002"
       objectReference: {fileID: 0}
-<<<<<<< HEAD
     - target: {fileID: -734885014866505982, guid: 7ed7cce850b425746878a0a21439e3f1, type: 3}
       propertyPath: portrait
       value: 
@@ -325,13 +313,10 @@ PrefabInstance:
       propertyPath: portrait
       value: 
       objectReference: {fileID: 21300000, guid: 86aecd76a7bbf95409b37259efe6d20b, type: 3}
-=======
->>>>>>> 780ed873284f657eddb215aa42a1d33c130d997e
     - target: {fileID: 2554506333066814260, guid: 7ed7cce850b425746878a0a21439e3f1, type: 3}
       propertyPath: character
       value: 
       objectReference: {fileID: 1638750100}
-<<<<<<< HEAD
     - target: {fileID: 3114103683828243506, guid: 7ed7cce850b425746878a0a21439e3f1, type: 3}
       propertyPath: portrait
       value: 
@@ -340,8 +325,6 @@ PrefabInstance:
       propertyPath: character
       value: 
       objectReference: {fileID: 1638750100}
-=======
->>>>>>> 780ed873284f657eddb215aa42a1d33c130d997e
     - target: {fileID: 5851242745552914163, guid: 7ed7cce850b425746878a0a21439e3f1, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -628,11 +611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   selectedFlowchart: {fileID: 539533526}
-=======
-  selectedFlowchart: {fileID: 290840778}
->>>>>>> 780ed873284f657eddb215aa42a1d33c130d997e
 --- !u!4 &623141530
 Transform:
   m_ObjectHideFlags: 1
