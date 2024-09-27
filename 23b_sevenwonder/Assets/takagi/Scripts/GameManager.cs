@@ -118,7 +118,11 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     public bool GetKaiwaFlag(){
         return KaiwaFlag;
     }
-    
+    public void SetKaiwaFlag(bool t)
+    {
+        KaiwaFlag=t;
+    }
+
     public void SetisKaiwaFirst(bool t)
     {
         isKaiwaFirst = t;

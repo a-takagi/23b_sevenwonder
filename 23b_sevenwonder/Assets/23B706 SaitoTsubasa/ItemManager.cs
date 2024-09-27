@@ -107,8 +107,12 @@ public class ItemManager : MonoBehaviour
         Items[13].SetFlag(1);
         Items[14].SetFlag(1);
 
-        if(GameObject.Find("GameObject") != null){
-        gm = GameObject.Find("GameObject").GetComponent<GameManager>();
+        GameObject tmp;
+        tmp = GameObject.Find("GameManager");
+        gm = tmp.GetComponent<GameManager>();
+        if (!gm)
+        {
+            Debug.Log("ItemManager.cs: GameManagerが見つかりません");
         }
 
         DontDestroyOnLoad(gameObject);
@@ -183,10 +187,16 @@ public class ItemManager : MonoBehaviour
     }
 
     void Update(){
+
+
+        //会話フラグはGameManagerから取ってくる
+        KaiwaFlag = gm.GetKaiwaFlag();
+
         Debug.Log(KaiwaFlag.ToString());
-        if(KaiwaFlag == false){
+
+        if (KaiwaFlag == false){
         //入力処理
-        if(Input.GetButtonDown("Fire1")){
+        if(Input.GetButtonDown("Fire3")){
             Debug.Log("InputSpace");
 
             if(PreviewedCanvas == false){
@@ -260,6 +270,7 @@ public class ItemManager : MonoBehaviour
 
     public void SetKaiwaFlag(bool flag){
         KaiwaFlag = flag;
+        gm.SetKaiwaFlag(flag);
     }
 
     
