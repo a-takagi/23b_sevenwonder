@@ -192,7 +192,7 @@ public class ItemManager : MonoBehaviour
         //会話フラグはGameManagerから取ってくる
         KaiwaFlag = gm.GetKaiwaFlag();
 
-        Debug.Log(KaiwaFlag.ToString());
+        //Debug.Log(KaiwaFlag.ToString());
 
         if (KaiwaFlag == false){
         //入力処理
