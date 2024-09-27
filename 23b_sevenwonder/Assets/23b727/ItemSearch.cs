@@ -4,10 +4,24 @@ using UnityEngine;
 
 public class ItemSearch : MonoBehaviour
 {
+    [SerializeField]
+    GameObject heaKey;
+
+    GameManager gm;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        heaKey.SetActive(false);
+        //GameManagerの取得
+        GameObject tmp;
+        tmp = GameObject.Find("GameManager");
+        gm=tmp.GetComponent<GameManager>();
+        if (!gm)
+        {
+            Debug.Log("GameManagerが見つかりません");
+        }
+                
     }
 
     void update()
@@ -23,9 +37,9 @@ public class ItemSearch : MonoBehaviour
 
             if (Input.GetButtonDown("Fire1"))
             {
-                 Destroy (this.gameObject);
-                //Fire1ボタンが押された
-                Debug.Log("Fire1が押された");
+                Destroy (this.gameObject);
+                
+                return;
             }
         }
     }
