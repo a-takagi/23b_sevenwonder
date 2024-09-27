@@ -121,9 +121,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f073b4177d7a45489b123042180fc62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KaiwaFlag: 0
+  GameManager: {fileID: 0}
   PrefabItemPanel: {fileID: 5343524875586290901, guid: a6006a2142f86c540a5da41530dadbd9, type: 3}
   MainPanel: {fileID: 9038646607550748087}
   ItemMenuCanvas: {fileID: 9038646607905869482}
+  ItemInfoText: {fileID: 9038646606573864549}
   Cursor: {fileID: 716598749}
   CursorMoveWidth: 200
   MaxCursorX: 7
@@ -326,6 +329,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ItemMenuCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6288249165700983549, guid: 341cd98cfd7877842b527aff543dad98, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6288249166077507590, guid: 341cd98cfd7877842b527aff543dad98, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -344,6 +351,11 @@ PrefabInstance:
       objectReference: {fileID: -3121146871600903541, guid: 229c531823740534a9d73204820cc7b8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 341cd98cfd7877842b527aff543dad98, type: 3}
+--- !u!1 &9038646606573864549 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6288249166516986418, guid: 341cd98cfd7877842b527aff543dad98, type: 3}
+  m_PrefabInstance: {fileID: 3038769213117572183}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &9038646607550748087 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6288249165539324384, guid: 341cd98cfd7877842b527aff543dad98, type: 3}
