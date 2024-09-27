@@ -6,11 +6,11 @@ using UnityEngine.SceneManagement;
 public class GameManager : SingletonMonoBehaviour<GameManager>
 {
 
-    //�}�b�v�̃X�^�[�g�ʒu�̔ԍ��B������o�Ă�������̑O�B�����łȂ��ꍇ�����
+    //マップのスタート位置の番号。扉から出てきたら扉の前。そうでない場合入り口
     public int StartPosition;
 
-    //Spawn�ʒu�B�ԍ���StartPosition�ƈ�v�����邱��
-    //SpawnPoint��GameObject��GameManger>SpawnPointList�̒��ɓ���āAInspector�Őݒ肷�邱��
+    //Spawn位置。番号はStartPositionと一致させること
+    //SpawnPointのGameObjectはGameManger>SpawnPointListの中に入れて、Inspectorで設定すること
     [SerializeField]
     GameObject[] SpawnPoint;
 
@@ -58,18 +58,18 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 
     public void setPlayerSpawnFlag(bool t)
     {
-        Debug.Log("GameManager:setPlayerSpawnFlag:" + t+"�ɐݒ肵�܂�");
+        Debug.Log("GameManager:setPlayerSpawnFlag:" + t+ "に設定します");
         setPlayerSpawn = t;
     }
     public void PlayerSpawn()
     {
         if (setPlayerSpawn == false)
         {
-            //�Z�ɂ�����SpawnPoint��ݒ肷��B����ȊO�͐ݒ肵�Ȃ�
-            //�{�ԗp�Ɍ�ŕύX���邱��
+            //校舎だけでSpawnPointを設定する。それ以外は設定しない
+            //本番用に後で変更すること
             if (SceneManager.GetActiveScene().name == "roka-1")
             {
-                //���C���Z�ɂȂ̂�
+                //メイン校舎なので
                 GameObject tmp = GameObject.Find("Player");
                 tmp.transform.SetPositionAndRotation(SpawnPoint[StartPosition].transform.position, Quaternion.identity);
                 Debug.Log("GameManager:PlayerSpawn: StartPosition:" + StartPosition);
@@ -77,7 +77,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
             }
             else
             {
-                //�Z�ɂł͂Ȃ��̂ŃX�|�[���|�C���g�͐ݒ肵�Ȃ�
+                //校舎ではないのでスポーンポイントは設定しない
             }
         }
     }
