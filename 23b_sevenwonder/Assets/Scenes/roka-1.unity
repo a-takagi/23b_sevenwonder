@@ -249,6 +249,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1505467600, guid: 7ed7cce850b425746878a0a21439e3f1, type: 3}
+      propertyPath: nodeRect.width
+      value: 106
+      objectReference: {fileID: 0}
+    - target: {fileID: 1505467600, guid: 7ed7cce850b425746878a0a21439e3f1, type: 3}
+      propertyPath: commandList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1505467600, guid: 7ed7cce850b425746878a0a21439e3f1, type: 3}
+      propertyPath: commandList.Array.data[0]
+      value: 
+      objectReference: {fileID: 1670142478}
+    - target: {fileID: 1505467600, guid: 7ed7cce850b425746878a0a21439e3f1, type: 3}
+      propertyPath: commandList.Array.data[1]
+      value: 
+      objectReference: {fileID: 701622658}
+    - target: {fileID: 1505467603, guid: 7ed7cce850b425746878a0a21439e3f1, type: 3}
+      propertyPath: targetObject
+      value: 
+      objectReference: {fileID: 1165988446}
     - target: {fileID: 1505467605, guid: 7ed7cce850b425746878a0a21439e3f1, type: 3}
       propertyPath: nodeRect.width
       value: 112
@@ -257,6 +277,14 @@ PrefabInstance:
       propertyPath: commandList.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1505467605, guid: 7ed7cce850b425746878a0a21439e3f1, type: 3}
+      propertyPath: commandList.Array.data[0]
+      value: 
+      objectReference: {fileID: 1670142479}
+    - target: {fileID: 1505467605, guid: 7ed7cce850b425746878a0a21439e3f1, type: 3}
+      propertyPath: commandList.Array.data[1]
+      value: 
+      objectReference: {fileID: 701622657}
     - target: {fileID: 1505467605, guid: 7ed7cce850b425746878a0a21439e3f1, type: 3}
       propertyPath: commandList.Array.data[2]
       value: 
@@ -314,11 +342,44 @@ PrefabInstance:
       value: "\u6821\u820E\u306B\u5165\u3063\u305F\u4F1A\u8A71"
       objectReference: {fileID: 0}
     - target: {fileID: 5851242745552914175, guid: 7ed7cce850b425746878a0a21439e3f1, type: 3}
+      propertyPath: blockViewHeight
+      value: 418
+      objectReference: {fileID: 0}
+    - target: {fileID: 5851242745552914175, guid: 7ed7cce850b425746878a0a21439e3f1, type: 3}
       propertyPath: selectedBlocks.Array.size
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1505467603, guid: 7ed7cce850b425746878a0a21439e3f1, type: 3}
+    - {fileID: 1505467601, guid: 7ed7cce850b425746878a0a21439e3f1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ed7cce850b425746878a0a21439e3f1, type: 3}
+--- !u!1 &701622656 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5851242745552914174, guid: 7ed7cce850b425746878a0a21439e3f1, type: 3}
+  m_PrefabInstance: {fileID: 701622655}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &701622657 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1505467604, guid: 7ed7cce850b425746878a0a21439e3f1, type: 3}
+  m_PrefabInstance: {fileID: 701622655}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701622656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &701622658 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1505467599, guid: 7ed7cce850b425746878a0a21439e3f1, type: 3}
+  m_PrefabInstance: {fileID: 701622655}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701622656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &780427893
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -456,6 +517,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1165988446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1165988448}
+  - component: {fileID: 1165988447}
+  m_Layer: 0
+  m_Name: Roka1Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1165988447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165988446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c42bd65f44f31a4c8f3f1b015f2c063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KaiwaFirst: {fileID: 701622656}
+--- !u!4 &1165988448
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165988446}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1201800989
 PrefabInstance:
@@ -780,12 +886,68 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5851242745552914175, guid: 7ed7cce850b425746878a0a21439e3f1, type: 3}
   m_PrefabInstance: {fileID: 701622655}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 701622656}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1670142478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701622656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 29
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1165988446}
+  targetComponentAssemblyName: Roka1Manager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: Roka1Manager
+  targetMethod: KaiwaStop
+  targetMethodText: 'KaiwaStop (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1670142479
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701622656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 28
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1165988446}
+  targetComponentAssemblyName: Roka1Manager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: Roka1Manager
+  targetMethod: KaiwaStart
+  targetMethodText: 'KaiwaStart (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!1001 &2104274714
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -37,7 +37,7 @@ public class Library : MonoBehaviour
         gm=tmp.GetComponent<GameManager>();
         if (!gm)
         {
-            Debug.Log("Door.cs: GameManager‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ");
+            Debug.Log("Library.cs: GameManager‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ");
         }
         tarohanakaiwa2obj.SetActive(false);
 
