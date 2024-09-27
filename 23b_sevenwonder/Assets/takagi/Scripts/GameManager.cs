@@ -25,6 +25,8 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     bool isKaiwaFirst; //校舎に入ったところの会話を見たフラグ
     bool LibrarySecond = false; //図書館の2回目以降の入室だよフラグ
     bool HealthRoomSecond = false; //保健室の2回目以降の入室だよフラグ
+    bool isHokenKey = false; //保健室のカギを入手したかどうか
+    bool isHokenOpen = false; //保健室が開いているかどうか
 
 
     public void Awake()
@@ -133,4 +135,23 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
         return isKaiwaFirst;
     }
 
+    public void SetisHokenKey(bool t)
+    {
+        isHokenKey = t;
+    }
+
+    public bool GetisHokenKey()
+    {
+        return isHokenKey;
+    }
+
+    public void SetisHokenOpen(bool t)
+    {
+        isHokenOpen = t;
+    }
+
+    public bool GetisHokenOpen()
+    {
+        return isHokenOpen;
+    }
 }
