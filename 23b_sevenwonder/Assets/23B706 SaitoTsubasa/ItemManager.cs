@@ -8,7 +8,7 @@ public class ItemManager : MonoBehaviour
 {
     private List<ItemData> Items = new List<ItemData>();
 
-    public bool KaiwaFlag = false;
+    
 
     //参照系
     [SerializeField] private GameObject GameManager;
@@ -27,6 +27,7 @@ public class ItemManager : MonoBehaviour
 
     //入力関連
     private GameManager gm;
+    public bool KaiwaFlag = false;
     private bool PreviewedCanvas = false;
     private float InputVertical;
     private float InputHorizontal;
@@ -106,7 +107,9 @@ public class ItemManager : MonoBehaviour
         Items[13].SetFlag(1);
         Items[14].SetFlag(1);
 
-        gm = GameManager.GetComponent<GameManager>();
+        if(GameObject.Find("GameObject") != null){
+        gm = GameObject.Find("GameObject").GetComponent<GameManager>();
+        }
 
         DontDestroyOnLoad(gameObject);
     }
@@ -180,8 +183,8 @@ public class ItemManager : MonoBehaviour
     }
 
     void Update(){
-        Debug.Log(gm.GetKaiwaFlag().ToString());
-        if(gm.GetKaiwaFlag() == false){
+        Debug.Log(KaiwaFlag.ToString());
+        if(KaiwaFlag == false){
         //入力処理
         if(Input.GetButtonDown("Fire1")){
             Debug.Log("InputSpace");
@@ -253,6 +256,10 @@ public class ItemManager : MonoBehaviour
             //アイテム情報を空にする
             InfoText.text = "";
         }
+    }
+
+    public void SetKaiwaFlag(bool flag){
+        KaiwaFlag = flag;
     }
 
     
