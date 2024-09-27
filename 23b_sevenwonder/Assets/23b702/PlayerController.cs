@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     float vx = 0;
     float vy = 0;
 
+    GameManager gm;
+
     [SerializeField] GameObject right;
 
 
@@ -21,6 +23,14 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         animater = right.GetComponent<Animator>();
+
+        GameObject tmp;
+        tmp = GameObject.Find("GameManager");
+        gm = tmp.GetComponent<GameManager>();
+        if (!gm)
+        {
+            Debug.Log("Player.cs: GameManager‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ");
+        }
     }
 
     // Update is called once per frame
@@ -29,44 +39,48 @@ public class PlayerController : MonoBehaviour
         // –ˆƒtƒŒ[ƒ€”’l‚ð‰Šú‰»
         vx = 0;
         vy = 0;
+        if (gm.GetKaiwaFlag() == false)
+        {
 
-        float dx = Input.GetAxis ("Horizontal");
-        float dy = Input.GetAxis ("Vertical");
-        transform.Translate (speed * dx, speed * dy, 0.0F);
+            float dx = Input.GetAxis("Horizontal");
+            float dy = Input.GetAxis("Vertical");
+            transform.Translate(speed * dx, speed * dy, 0.0F);
 
-        if (dx > 0.0f) {
-            animater.SetBool("right", true);
-        }
-        else
-        {
-            animater.SetBool("right", false);
-        }
+            if (dx > 0.0f)
+            {
+                animater.SetBool("right", true);
+            }
+            else
+            {
+                animater.SetBool("right", false);
+            }
 
-        if (dx < 0.0f)
-        {
-            animater.SetBool("left", true);
-        }
-        else
-        {
-            animater.SetBool("left", false);
-        }
+            if (dx < 0.0f)
+            {
+                animater.SetBool("left", true);
+            }
+            else
+            {
+                animater.SetBool("left", false);
+            }
 
-        if (dy > 0.0f)
-        {
-            animater.SetBool("back", true);
-        }
-        else
-        {
-            animater.SetBool("back", false);
-        }
+            if (dy > 0.0f)
+            {
+                animater.SetBool("back", true);
+            }
+            else
+            {
+                animater.SetBool("back", false);
+            }
 
-        if (dy < 0.0f)
-        {
-            animater.SetBool("front", true);
-        }
-        else
-        {
-            animater.SetBool("front", false);
+            if (dy < 0.0f)
+            {
+                animater.SetBool("front", true);
+            }
+            else
+            {
+                animater.SetBool("front", false);
+            }
         }
 
         if (Input.GetButtonDown("Fire1")){
