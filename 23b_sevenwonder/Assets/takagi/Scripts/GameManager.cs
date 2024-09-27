@@ -16,14 +16,16 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 
     public bool setPlayerSpawn = false;
 
-    bool LibrarySecond=false;
 
     //会話中かどうかのフラグです[Byさいとー]
     //会話中：true 会話してない：false
     private bool KaiwaFlag = false;
 
-    //各部屋の会話フラグをここに列挙。GetSetを作ること
-    bool isKaiwaFirst; //校舎に入ったところのフラグ
+    //各部屋のフラグをここに列挙。GetSetを作ること
+    bool isKaiwaFirst; //校舎に入ったところの会話を見たフラグ
+    bool LibrarySecond = false; //図書館の2回目以降の入室だよフラグ
+    bool HealthRoomSecond = false; //保健室の2回目以降の入室だよフラグ
+
 
     public void Awake()
     {
@@ -91,6 +93,16 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     }
     public bool GetLibrarySecond(){
         return LibrarySecond;
+    }
+
+    public void SetHealthRoomSecond(bool t)
+    {
+        HealthRoomSecond = t;
+
+    }
+    public bool GetHealthRoomSecond()
+    {
+        return HealthRoomSecond;
     }
 
     //会話している時に使う
