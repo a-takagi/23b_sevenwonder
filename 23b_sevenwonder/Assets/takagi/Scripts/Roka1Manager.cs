@@ -12,12 +12,16 @@ public class Roka1Manager : MonoBehaviour
     [SerializeField] GameObject StopHokenshitsu;
     [SerializeField] GameObject HokenshitsuDoor;
     [SerializeField] GameObject HokenshitsuKeyOpenMessage;
+    [SerializeField] GameObject Ghost1;
+    [SerializeField] GameObject Ghost2;
+
 
     //各種フラグ
     bool isKaiwaFirst; //最初の会話を表示したかどうか
     bool isLibrary; //最初の図書館にいったかどうか
     bool isHokenKey; //保健室のカギを入手したかどうか
     bool isHokenOpen; //保健室が開いたかどうか
+
 
     // Start is called before the first frame update
     void Start()
@@ -80,10 +84,14 @@ public class Roka1Manager : MonoBehaviour
             HokenshitsuDoor.SetActive(true);
             HokenshitsuKeyOpenMessage.SetActive(false);
             StopHokenshitsu.SetActive(false);
+            Ghost1.SetActive(false);
+            Ghost2.SetActive(true);
         }
         else
         {
             HokenshitsuDoor.SetActive(false);
+            Ghost1.SetActive(true);
+            Ghost2.SetActive(false);
         }
 
     }

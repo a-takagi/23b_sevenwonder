@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/e-stafferoom-1.unity
     guid: 21af322eb4354b948905f6c4432162d5
+  - enabled: 1
+    path: Assets/Scenes/TGSEnd.unity
+    guid: 335d5768afdce2b469d2a7b0f07f493a
   m_configObjects: {}

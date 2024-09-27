@@ -336,6 +336,222 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &257880202
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1221425224, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+      propertyPath: commandList.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1221425224, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+      propertyPath: commandList.Array.data[0]
+      value: 
+      objectReference: {fileID: 257880207}
+    - target: {fileID: 1221425224, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+      propertyPath: commandList.Array.data[1]
+      value: 
+      objectReference: {fileID: 257880209}
+    - target: {fileID: 1221425224, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+      propertyPath: commandList.Array.data[2]
+      value: 
+      objectReference: {fileID: 257880205}
+    - target: {fileID: 1221425229, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+      propertyPath: nodeRect.x
+      value: 49.900024
+      objectReference: {fileID: 0}
+    - target: {fileID: 1221425229, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+      propertyPath: nodeRect.y
+      value: -41.76364
+      objectReference: {fileID: 0}
+    - target: {fileID: 1221425229, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+      propertyPath: commandList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1221425229, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+      propertyPath: commandList.Array.data[0]
+      value: 
+      objectReference: {fileID: 257880208}
+    - target: {fileID: 1221425229, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+      propertyPath: commandList.Array.data[1]
+      value: 
+      objectReference: {fileID: 257880204}
+    - target: {fileID: 5851242745552914160, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+      propertyPath: m_Size.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5851242745552914160, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+      propertyPath: m_Size.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5851242745552914163, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 5851242745552914163, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5851242745552914163, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5851242745552914163, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5851242745552914163, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5851242745552914163, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5851242745552914163, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5851242745552914163, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5851242745552914163, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5851242745552914163, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5851242745552914163, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5851242745552914174, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+      propertyPath: m_Name
+      value: "\u5E7D\u970A\u770B\u8B77\u5A66\u3068\u93E1 2"
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1221425227, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+    - {fileID: 1221425223, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+--- !u!1 &257880203 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5851242745552914174, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+  m_PrefabInstance: {fileID: 257880202}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &257880204 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1221425226, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+  m_PrefabInstance: {fileID: 257880202}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257880203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &257880205 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1221425225, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+  m_PrefabInstance: {fileID: 257880202}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257880203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &257880206 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5851242745552914175, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+  m_PrefabInstance: {fileID: 257880202}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257880203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &257880207
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257880203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 20
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1165988446}
+  targetComponentAssemblyName: Roka1Manager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: Roka1Manager
+  targetMethod: KaiwaStop
+  targetMethodText: 'KaiwaStop (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &257880208
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257880203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 19
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1165988446}
+  targetComponentAssemblyName: Roka1Manager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: Roka1Manager
+  targetMethod: KaiwaStart
+  targetMethodText: 'KaiwaStart (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &257880209
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257880203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 21
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: TGSEnd
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
 --- !u!1 &302736969 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2996638808783965286, guid: fd461f191375d0a4eb2c41d6c4dbacbc, type: 3}
@@ -830,6 +1046,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &619958657 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5851242745552914174, guid: 87e5c2e1530d2bb40ae60e7b8f6dbb8c, type: 3}
+  m_PrefabInstance: {fileID: 2145346834}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &701622655
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1850,6 +2071,8 @@ MonoBehaviour:
   StopHokenshitsu: {fileID: 62180602}
   HokenshitsuDoor: {fileID: 1601204709}
   HokenshitsuKeyOpenMessage: {fileID: 576433226}
+  Ghost1: {fileID: 619958657}
+  Ghost2: {fileID: 257880203}
 --- !u!4 &1165988448
 Transform:
   m_ObjectHideFlags: 0
@@ -2184,7 +2407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 2145346835}
+  selectedFlowchart: {fileID: 257880206}
 --- !u!4 &1335143786
 Transform:
   m_ObjectHideFlags: 1
@@ -2940,7 +3163,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1547269247
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2958,8 +3181,8 @@ MonoBehaviour:
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: Roka1Manager
-  targetMethod: HideKaiwaFirst
-  targetMethodText: 'HideKaiwaFirst (): Void'
+  targetMethod: SetisHokenOpen
+  targetMethodText: 'SetisHokenOpen (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -3757,6 +3980,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1479890430, guid: 87e5c2e1530d2bb40ae60e7b8f6dbb8c, type: 3}
+      propertyPath: commandList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1479890430, guid: 87e5c2e1530d2bb40ae60e7b8f6dbb8c, type: 3}
+      propertyPath: commandList.Array.data[0]
+      value: 
+      objectReference: {fileID: 2145346853}
+    - target: {fileID: 1479890430, guid: 87e5c2e1530d2bb40ae60e7b8f6dbb8c, type: 3}
+      propertyPath: commandList.Array.data[1]
+      value: 
+      objectReference: {fileID: 2145346842}
+    - target: {fileID: 1479890432, guid: 87e5c2e1530d2bb40ae60e7b8f6dbb8c, type: 3}
+      propertyPath: targetObject
+      value: 
+      objectReference: {fileID: 1886804023}
+    - target: {fileID: 1479890434, guid: 87e5c2e1530d2bb40ae60e7b8f6dbb8c, type: 3}
+      propertyPath: commandList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1479890434, guid: 87e5c2e1530d2bb40ae60e7b8f6dbb8c, type: 3}
+      propertyPath: commandList.Array.data[0]
+      value: 
+      objectReference: {fileID: 2145346854}
+    - target: {fileID: 1479890434, guid: 87e5c2e1530d2bb40ae60e7b8f6dbb8c, type: 3}
+      propertyPath: commandList.Array.data[1]
+      value: 
+      objectReference: {fileID: 2145346839}
     - target: {fileID: 5851242745552914160, guid: 87e5c2e1530d2bb40ae60e7b8f6dbb8c, type: 3}
       propertyPath: m_Size.x
       value: 3
@@ -3813,19 +4064,88 @@ PrefabInstance:
       propertyPath: m_Name
       value: "\u5E7D\u970A\u770B\u8B77\u5A66\u3068\u93E1 1"
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1479890432, guid: 87e5c2e1530d2bb40ae60e7b8f6dbb8c, type: 3}
+    - {fileID: 1479890429, guid: 87e5c2e1530d2bb40ae60e7b8f6dbb8c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 87e5c2e1530d2bb40ae60e7b8f6dbb8c, type: 3}
---- !u!114 &2145346835 stripped
+--- !u!114 &2145346839 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5851242745552914175, guid: 87e5c2e1530d2bb40ae60e7b8f6dbb8c, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1479890431, guid: 87e5c2e1530d2bb40ae60e7b8f6dbb8c, type: 3}
   m_PrefabInstance: {fileID: 2145346834}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 619958657}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2145346842 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1479890428, guid: 87e5c2e1530d2bb40ae60e7b8f6dbb8c, type: 3}
+  m_PrefabInstance: {fileID: 2145346834}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619958657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2145346853
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619958657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 15
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1165988446}
+  targetComponentAssemblyName: Roka1Manager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: Roka1Manager
+  targetMethod: KaiwaStop
+  targetMethodText: 'KaiwaStop (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &2145346854
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619958657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 14
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1165988446}
+  targetComponentAssemblyName: Roka1Manager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: Roka1Manager
+  targetMethod: KaiwaStart
+  targetMethodText: 'KaiwaStart (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!1839735485 &9035283503901849139
 Tilemap:
   m_ObjectHideFlags: 0
