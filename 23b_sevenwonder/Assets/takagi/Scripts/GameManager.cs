@@ -22,6 +22,9 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     //会話中：true 会話してない：false
     private bool KaiwaFlag = false;
 
+    //各部屋の会話フラグをここに列挙。GetSetを作ること
+    bool isKaiwaFirst; //校舎に入ったところのフラグ
+
     public void Awake()
     {
         if (this != Instance)
@@ -104,5 +107,14 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
         return KaiwaFlag;
     }
     
+    public void SetisKaiwaFirst(bool t)
+    {
+        isKaiwaFirst = t;
+    }
+
+    public bool GetisKaiwaFirst()
+    {
+        return isKaiwaFirst;
+    }
 
 }

@@ -8,6 +8,7 @@ public class Roka1Manager : MonoBehaviour
     GameManager gm;
 
     [SerializeField] GameObject KaiwaFirst;
+    bool isKaiwaFirst;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +20,18 @@ public class Roka1Manager : MonoBehaviour
         if (!gm)
         {
             Debug.Log("Roka1Manager.cs: GameManager‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ");
+        }
+
+        //‰ï˜b•¶‚ª•\¦‚³‚ê‚Ä‚¢‚é‚©‚Ç‚¤‚©‚Ìˆ—
+        isKaiwaFirst = gm.GetisKaiwaFirst();
+
+        if (isKaiwaFirst)
+        {
+            KaiwaFirst.SetActive(false);
+        }
+        else
+        {
+            KaiwaFirst.SetActive(true);
         }
 
     }
@@ -37,5 +50,21 @@ public class Roka1Manager : MonoBehaviour
     public void KaiwaStop()
     {
         gm.KaiwaOwatade();
+    }
+
+    public void SetisKaiwaFirst(bool t)
+    {
+        isKaiwaFirst = t;
+        gm.SetisKaiwaFirst(t);
+    }
+
+    public bool GetisKaiwaFirst()
+    {
+        return isKaiwaFirst;
+    }
+
+    public void HideKaiwaFirst()
+    {
+        KaiwaFirst.SetActive(false);
     }
 }
