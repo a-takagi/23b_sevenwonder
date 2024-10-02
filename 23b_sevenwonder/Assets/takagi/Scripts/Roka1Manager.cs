@@ -8,7 +8,20 @@ public class Roka1Manager : MonoBehaviour
     GameManager gm;
 
     [SerializeField] GameObject KaiwaFirst;
-    bool isKaiwaFirst;
+    [SerializeField] GameObject StopRouka;
+    [SerializeField] GameObject StopHokenshitsu;
+    [SerializeField] GameObject HokenshitsuDoor;
+    [SerializeField] GameObject HokenshitsuKeyOpenMessage;
+    [SerializeField] GameObject Ghost1;
+    [SerializeField] GameObject Ghost2;
+
+
+    //各種フラグ
+    bool isKaiwaFirst; //最初の会話を表示したかどうか
+    bool isLibrary; //最初の図書館にいったかどうか
+    bool isHokenKey; //保健室のカギを入手したかどうか
+    bool isHokenOpen; //保健室が開いたかどうか
+
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +35,8 @@ public class Roka1Manager : MonoBehaviour
             Debug.Log("Roka1Manager.cs: GameManagerが見つかりません");
         }
 
-        //会話文が表示されているかどうかの処理
+
+        //最初の会話文が表示されているかどうかの処理
         isKaiwaFirst = gm.GetisKaiwaFirst();
 
         if (isKaiwaFirst)
@@ -32,6 +46,52 @@ public class Roka1Manager : MonoBehaviour
         else
         {
             KaiwaFirst.SetActive(true);
+        }
+
+        //図書館に行ったあと。渡り廊下に行けるようになる
+        isLibrary = gm.GetLibrarySecond();
+        if (isLibrary)
+        {
+            //渡り廊下が開く
+            StopRouka.SetActive(false);
+        }
+        else
+        {
+            //通れない
+            StopRouka.SetActive(true);
+        }
+
+        //保健室の鍵を入手している
+        isHokenKey = gm.GetisHokenKey();
+        if (isHokenKey)
+        {
+            HokenshitsuKeyOpenMessage.SetActive(true);
+            HokenshitsuDoor.SetActive(false);
+            StopHokenshitsu.SetActive(false);
+        }
+        else
+        {
+            HokenshitsuKeyOpenMessage.SetActive(false);
+            HokenshitsuDoor.SetActive(false);
+            StopHokenshitsu.SetActive(true);
+        }
+
+
+        //保健室が開いている
+        isHokenOpen= gm.GetisHokenOpen();
+        if (isHokenOpen)
+        {
+            HokenshitsuDoor.SetActive(true);
+            HokenshitsuKeyOpenMessage.SetActive(false);
+            StopHokenshitsu.SetActive(false);
+            Ghost1.SetActive(false);
+            Ghost2.SetActive(true);
+        }
+        else
+        {
+            HokenshitsuDoor.SetActive(false);
+            Ghost1.SetActive(true);
+            Ghost2.SetActive(false);
         }
 
     }
@@ -66,5 +126,10 @@ public class Roka1Manager : MonoBehaviour
     public void HideKaiwaFirst()
     {
         KaiwaFirst.SetActive(false);
+    }
+
+    public void SetisHokenOpen()
+    {
+        gm.SetisHokenOpen(true);
     }
 }
