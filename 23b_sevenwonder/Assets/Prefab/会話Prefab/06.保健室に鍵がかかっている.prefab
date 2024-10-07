@@ -19,15 +19,15 @@ GameObject:
   - component: {fileID: 5851242745552913930}
   - component: {fileID: 5851242745552914165}
   - component: {fileID: 5851242745552913931}
-  - component: {fileID: 1171737126}
-  - component: {fileID: 1171737127}
-  - component: {fileID: 1171737128}
-  - component: {fileID: 1171737129}
-  - component: {fileID: 1171737130}
-  - component: {fileID: 1171737131}
-  - component: {fileID: 1171737132}
+  - component: {fileID: 1479890428}
+  - component: {fileID: 1479890429}
+  - component: {fileID: 1479890430}
+  - component: {fileID: 1479890431}
+  - component: {fileID: 1479890432}
+  - component: {fileID: 1479890433}
+  - component: {fileID: 1479890434}
   m_Layer: 0
-  m_Name: 00
+  m_Name: "06.\u4FDD\u5065\u5BA4\u306B\u9375\u304C\u304B\u304B\u3063\u3066\u3044\u308B"
   m_TagString: Untagged
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -61,10 +61,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 41.681824, y: 318.36365}
+  scrollPos: {x: 95.099976, y: 251.76364}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 319.8
+  blockViewHeight: 200
   zoom: 1
   scrollViewRect:
     serializedVersion: 2
@@ -100,14 +100,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 56
-    y: -0.86363983
-    width: 103
+    x: 64
+    y: 8.13636
+    width: 113.2
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 0
-  blockName: "\u56F3\u66F8\u5BA4_\u672C"
+  blockName: "\u4FDD\u5065\u5BA4\u306E\u30C9\u30A2"
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -157,10 +157,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: "\u4E03\u4E0D\u601D\u8B70\u306E\u5834\u6240\u304C\u5206\u304B\u3089\u306A\u3044\u3084\u3064\u306F\u3001\r\n\u306F\u2026\u82B1\u5B50\u3055\u3093\u305F\u3061\u306B\u805E\u3044\u3066\u307F\u3088\u3046\u3002"
+  storyText: "\u9375\u304C\u304B\u304B\u3063\u3066\u3044\u308B\u3002"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 0eb44407c87ffb846a722e7e776ab519, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -184,10 +184,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 2
   indentLevel: 0
-  storyText: "\u305D\u3046\u3059\u308B\u304B\u3002"
+  storyText: "\u9375\u3092\u3069\u3053\u304B\u3067\u56DE\u53CE\u3057\u306A\u3044\u3068\u958B\u3051\u3089\u308C\u306A\u3044\u3088\u3046\u3060\u3002"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 86aecd76a7bbf95409b37259efe6d20b, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -213,7 +213,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 61.565216
     y: 138
-    width: 94
+    width: 96.4
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -290,7 +290,7 @@ MonoBehaviour:
   itemId: 6
   indentLevel: 0
   targetFlowchart: {fileID: 5851242745552914175}
-  targetBlock: {fileID: 1171737132}
+  targetBlock: {fileID: 1479890430}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -326,24 +326,7 @@ MonoBehaviour:
   move: 0
   shiftIntoPlace: 0
   waitUntilFinished: 0
---- !u!114 &1171737126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5851242745552914174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78c1a9f24ac376a47838385391f83acc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 1171737131}
-  suppressBlockAutoSelect: 0
-  tagFilter: []
-  FireOn: 1
-  colliderVar: {fileID: 0}
---- !u!114 &1171737127
+--- !u!114 &1479890428
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -364,7 +347,7 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
---- !u!114 &1171737128
+--- !u!114 &1479890429
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -381,7 +364,35 @@ MonoBehaviour:
   targetObject: {fileID: 0}
   methodName: KaiwaOwatade
   delay: 0
---- !u!114 &1171737129
+--- !u!114 &1479890430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5851242745552914174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 54.900024
+    y: 77.23636
+    width: 107.6
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 11
+  blockName: KaiwaEnd
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1479890429}
+  - {fileID: 1479890428}
+  suppressAllAutoSelections: 0
+--- !u!114 &1479890431
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -393,7 +404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 11
+  itemId: 10
   indentLevel: 0
   targetFlowchart: {fileID: 0}
   targetBlock: {fileID: 5851242745552914172}
@@ -402,7 +413,7 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
---- !u!114 &1171737130
+--- !u!114 &1479890432
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -414,12 +425,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 10
+  itemId: 9
   indentLevel: 0
   targetObject: {fileID: 0}
   methodName: KaiwaNau
   delay: 0
---- !u!114 &1171737131
+--- !u!114 &1479890433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5851242745552914174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78c1a9f24ac376a47838385391f83acc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 1479890434}
+  suppressBlockAutoSelect: 0
+  tagFilter: []
+  FireOn: 1
+  colliderVar: {fileID: 0}
+--- !u!114 &1479890434
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -433,45 +461,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 49.318176
-    y: -71.36365
-    width: 112
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 9
-  blockName: KaiwaStart
-  description: 
-  eventHandler: {fileID: 1171737126}
-  commandList:
-  - {fileID: 1171737130}
-  - {fileID: 1171737129}
-  suppressAllAutoSelections: 0
---- !u!114 &1171737132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5851242745552914174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 52.318176
-    y: 66.63635
-    width: 106
+    x: 54.900024
+    y: -56.76364
+    width: 115.6
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 8
-  blockName: KaiwaEnd
+  blockName: KaiwaStart
   description: 
-  eventHandler: {fileID: 0}
+  eventHandler: {fileID: 1479890433}
   commandList:
-  - {fileID: 1171737128}
-  - {fileID: 1171737127}
+  - {fileID: 1479890432}
+  - {fileID: 1479890431}
   suppressAllAutoSelections: 0
