@@ -108,7 +108,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: -6389786655184850807}
+  - {fileID: 4008987146747546498}
   selectedCommands: []
   variables: []
   description: 
@@ -638,7 +638,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 27
   indentLevel: 0
-  storyText: "\u9003\u3052\u308D\u3001\u9003\u3052\u308D\u3001\u30CF\u30C3\u30CF\u30C3\u30CF\u30C3"
+  storyText: "\u9003\u3052\u3066\u3001\u6050\u6016\u3057\u308D\u3002\u304A\u524D\u306F\u3001\u7121\u529B\u306B\u546A\u308F\u308C\u3066\u6B7B\u306C\u3002"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1361,7 +1361,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 65
   indentLevel: 0
-  storyText: "\u6B8B\u5FF5\u3060\u3063\u305F\u306A\u3001\u304A\u524D\u3082\u546A\u308F\u308C\u3066\u6B7B\u306D\uFF01\uFF01"
+  storyText: "\u6B8B\u5FF5\u3060\u3063\u305F\u306A\u3001\u304A\u524D\u3082\u546A\u308F\u308C\u3066\u6B7B\u3093\u3067\u3044\u304F\u304C\u3044\u3044\u3002"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
