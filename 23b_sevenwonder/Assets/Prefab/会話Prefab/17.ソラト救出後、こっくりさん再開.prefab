@@ -77,8 +77,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 5851242745552914172}
+  selectedCommands:
+  - {fileID: -4162460218659928541}
   variables: []
   description: 
   stepPause: 0
@@ -552,7 +554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 32
   indentLevel: 0
-  storyText: "\u30AF\u30BD\u30C3\u2026\u2026\u306F\u3044"
+  storyText: "\u2026\u2026\u306F\u3044"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
