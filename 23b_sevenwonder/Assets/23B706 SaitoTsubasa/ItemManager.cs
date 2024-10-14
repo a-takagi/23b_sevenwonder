@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class ItemManager : MonoBehaviour
+public class ItemManager : SingletonMonoBehaviour<ItemManager>
 {
     private List<ItemData> Items = new List<ItemData>();
 
@@ -74,6 +74,16 @@ public class ItemManager : MonoBehaviour
         //Items.Add(new ItemData(2,"鍵","どこかで開けられる気がする",SpriteId2));
     }
 
+    void Awake()
+    {
+        if (this != Instance)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        DontDestroyOnLoad(gameObject);
+    }
+
     void Start(){
         Items.Add(new ItemData(1,"ひのき棒","旅の始まりのお供[0]",SpriteId1));
         Items.Add(new ItemData(2,"鍵","どこかで開けられる気がする[1]",SpriteId2));
@@ -114,8 +124,6 @@ public class ItemManager : MonoBehaviour
         {
             Debug.Log("ItemManager.cs: GameManagerが見つかりません");
         }
-
-        DontDestroyOnLoad(gameObject);
     }
 
     void FixedUpdate(){

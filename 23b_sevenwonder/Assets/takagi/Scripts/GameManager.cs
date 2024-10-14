@@ -22,11 +22,11 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     private bool KaiwaFlag = false;
 
     //各部屋のフラグをここに列挙。GetSetを作ること
-    bool isKaiwaFirst; //校舎に入ったところの会話を見たフラグ
-    bool LibrarySecond = false; //図書館の2回目以降の入室だよフラグ
-    bool HealthRoomSecond = false; //保健室の2回目以降の入室だよフラグ
-    bool isHokenKey = false; //保健室のカギを入手したかどうか
-    bool isHokenOpen = false; //保健室が開いているかどうか
+    [SerializeField] bool isKaiwaFirst; //校舎に入ったところの会話を見たフラグ
+    [SerializeField] bool LibrarySecond = false; //図書館の2回目以降の入室だよフラグ
+    [SerializeField] bool HealthRoomSecond = false; //保健室の2回目以降の入室だよフラグ
+    [SerializeField] bool isHokenKey = false; //保健室のカギを入手したかどうか
+    [SerializeField] bool isHokenOpen = false; //保健室が開いているかどうか
 
 
     public void Awake()
