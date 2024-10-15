@@ -35,7 +35,7 @@ GameObject:
   - component: {fileID: 1505467604}
   - component: {fileID: 1505467605}
   m_Layer: 0
-  m_Name: 01
+  m_Name: "01.\u6821\u820E\u306B\u5165\u3063\u305F\u4F1A\u8A71"
   m_TagString: Untagged
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -174,7 +174,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 55.565216
     y: 252
-    width: 94.8
+    width: 96.4
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -253,7 +253,7 @@ MonoBehaviour:
   storyText: "\u4ECA\u65E5\u884C\u304B\u306A\u3044\u3068\u5348\u5F8C\u307E\u3067\u306B\u5BBF\u984C\u7D42\u308F\u3093\u306D\u30FC\u305E"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 86aecd76a7bbf95409b37259efe6d20b, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -334,7 +334,7 @@ MonoBehaviour:
   storyText: "\u5225\u306B\u5BBF\u984C\u306A\u3093\u3066\u660E\u65E5\u306E\u591C\u307E\u3067\u306B\u7D42\u308F\u3089\u305B\u308C\u3070\u3044\u3044\u3058\u3083\u3093"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 0eb44407c87ffb846a722e7e776ab519, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -691,7 +691,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 49.799988
     y: -10.963654
-    width: 113.2
+    width: 115.6
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
