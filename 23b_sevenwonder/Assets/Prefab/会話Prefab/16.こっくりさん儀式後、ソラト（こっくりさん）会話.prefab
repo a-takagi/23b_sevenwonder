@@ -61,6 +61,8 @@ GameObject:
   - component: {fileID: -1392405836389453713}
   - component: {fileID: -6644750584889533734}
   - component: {fileID: 492813746968426189}
+  - component: {fileID: 1994690655}
+  - component: {fileID: 1994690656}
   m_Layer: 0
   m_Name: "16.\u3053\u3063\u304F\u308A\u3055\u3093\u5100\u5F0F\u5F8C\u3001\u30BD\u30E9\u30C8\uFF08\u3053\u3063\u304F\u308A\u3055\u3093\uFF09\u4F1A\u8A71"
   m_TagString: Untagged
@@ -107,8 +109,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 4008987146747546498}
+  selectedBlocks: []
   selectedCommands: []
   variables: []
   description: 
@@ -479,7 +480,7 @@ MonoBehaviour:
   storyText: "\u30BD\u30E9\u30C8\u304C\u2026\u3069\u3046\u3057\u3088\u3046"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: d49b72429e10e4b4c81776e61c5577d9, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -506,7 +507,7 @@ MonoBehaviour:
   storyText: "\u5C0F\u50E7\u3092\u52A9\u3051\u305F\u3044\u304B\uFF1F"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 90d560f77f145604ca5c2b5a75d2155e, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -533,7 +534,7 @@ MonoBehaviour:
   storyText: "\u3060\u3001\u8AB0\uFF1F\uFF01\uFF1F\uFF01"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: d49b72429e10e4b4c81776e61c5577d9, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -560,7 +561,7 @@ MonoBehaviour:
   storyText: "\u4EBA\u306B\u5C0B\u306D\u308B\u3088\u308A\u3001\u53CB\u4EBA\u306E\u5FC3\u914D\u3092\u3059\u308B\u3093\u3060\u306A"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 90d560f77f145604ca5c2b5a75d2155e, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -587,7 +588,7 @@ MonoBehaviour:
   storyText: "\u7E67\uFF73\u7E67\uFF7F\u7E5D\uFF6D\u7E5D\uFF7C\u7E3A\uFF6B\u7E3A\u5075\uFF4D"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c8ef272c8a670f34a899aee9df90be80, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -614,7 +615,7 @@ MonoBehaviour:
   storyText: "\u30BD\u30E9\u30C8\uFF01\uFF01"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: d49b72429e10e4b4c81776e61c5577d9, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -641,7 +642,7 @@ MonoBehaviour:
   storyText: "\u9003\u3052\u3066\u3001\u6050\u6016\u3057\u308D\u3002\u304A\u524D\u306F\u3001\u7121\u529B\u306B\u546A\u308F\u308C\u3066\u6B7B\u306C\u3002"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 90d560f77f145604ca5c2b5a75d2155e, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -668,7 +669,7 @@ MonoBehaviour:
   storyText: "\u50D5\u306F\u3001\u7D76\u5BFE\u306B\u9003\u3052\u306A\u3044\uFF01\uFF01"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: d49b72429e10e4b4c81776e61c5577d9, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -816,7 +817,9 @@ MonoBehaviour:
   - {fileID: -880841080965413484}
   - {fileID: -4394600127543508950}
   - {fileID: 396656992186643478}
+  - {fileID: 1994690656}
   - {fileID: -5987852662224914015}
+  - {fileID: 1994690655}
   - {fileID: 4094970432887706756}
   - {fileID: -5942505108973708633}
   - {fileID: 6624537232778896378}
@@ -869,7 +872,7 @@ MonoBehaviour:
   storyText: "\u304F\u3089\u3048\uFF01\uFF01"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: d49b72429e10e4b4c81776e61c5577d9, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -974,7 +977,7 @@ MonoBehaviour:
   storyText: "\u3046\u3045\u2026"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c8ef272c8a670f34a899aee9df90be80, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1001,7 +1004,7 @@ MonoBehaviour:
   storyText: "\u30BD\u30E9\u30C8\uFF01\uFF01\u5927\u4E08\u592B\u2049"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: d49b72429e10e4b4c81776e61c5577d9, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1028,7 +1031,7 @@ MonoBehaviour:
   storyText: "\u306A\u3093\u3068\u304B\u306A"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c8ef272c8a670f34a899aee9df90be80, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1052,10 +1055,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 42
   indentLevel: 0
-  storyText: "\u3053\u3063\u304F\u308A\u3055\u3093\u306F\u3069\u3053\u3060\uFF1F"
+  storyText: "\u305D\u308C\u3088\u308A\u3001\u3053\u3063\u304F\u308A\u3055\u3093\u306F\u3069\u3053\u3060\uFF1F"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c8ef272c8a670f34a899aee9df90be80, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1079,10 +1082,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 43
   indentLevel: 0
-  storyText: "\u5B9F\u306F\u306D\u2026\u304B\u304F\u304B\u304F\u3057\u304B\u3058\u304B\u2026"
+  storyText: "\u5B9F\u306F\u306D\u2026"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: d49b72429e10e4b4c81776e61c5577d9, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1106,10 +1109,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 44
   indentLevel: 0
-  storyText: "\u307E\u3058\u304B\u3088\u3002\u3042\u308A\u304C\u3068\u306A\u3001\u30B3\u30BF\u30ED\u30FC\u3002"
+  storyText: "\u307E\u3058\u304B\u3088\u3001\u3042\u308A\u304C\u3068\u306A\u3002"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c8ef272c8a670f34a899aee9df90be80, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1133,10 +1136,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 45
   indentLevel: 0
-  storyText: "\u50D5\u306F\u5927\u4E08\u592B\u3060\u3088\u3002\n\u4E00\u7DD2\u306B\u3053\u3063\u304F\u308A\u3055\u3093\u3092\u7D42\u308F\u3089\u305B\u3088\u3046\u3002"
+  storyText: "\u50D5\u306F\u5927\u4E08\u592B\u3060\u3088\u3002\n\u306F\u3084\u304F\u3001\u4E00\u7DD2\u306B\u3053\u3063\u304F\u308A\u3055\u3093\u3092\u7D42\u308F\u3089\u305B\u3088\u3046\u3002"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: d49b72429e10e4b4c81776e61c5577d9, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1163,7 +1166,7 @@ MonoBehaviour:
   storyText: "\u304A\u3046\uFF01\uFF01\uFF01"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c8ef272c8a670f34a899aee9df90be80, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1193,7 +1196,7 @@ MonoBehaviour:
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 3
+  itemId: 69
   blockName: Destroy 2
   description: 
   eventHandler: {fileID: 0}
@@ -1241,7 +1244,7 @@ MonoBehaviour:
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 8
+  itemId: 70
   blockName: KaiwaEnd 2
   description: 
   eventHandler: {fileID: 0}
@@ -1307,7 +1310,7 @@ MonoBehaviour:
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 33
+  itemId: 71
   blockName: "\u305D\u306E\u4ED6\u306E\u9078\u629E\u80A2"
   description: 
   eventHandler: {fileID: 0}
@@ -1364,7 +1367,7 @@ MonoBehaviour:
   storyText: "\u6B8B\u5FF5\u3060\u3063\u305F\u306A\u3001\u304A\u524D\u3082\u546A\u308F\u308C\u3066\u6B7B\u3093\u3067\u3044\u304F\u304C\u3044\u3044\u3002"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 90d560f77f145604ca5c2b5a75d2155e, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1440,6 +1443,60 @@ MonoBehaviour:
   itemId: 68
   indentLevel: 0
   storyText: "\u30B0\u30A1\u30A1\uFF01\uFF01"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 90d560f77f145604ca5c2b5a75d2155e, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1994690655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5851242745552914174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 73
+  indentLevel: 0
+  storyText: "\u30B3\u30BF\u30ED\u30FC\u306F\u3001\u306A\u3093\u3068\u3082\u306A\u3044\u304B\uFF1F"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c8ef272c8a670f34a899aee9df90be80, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1994690656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5851242745552914174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 72
+  indentLevel: 0
+  storyText: "\u30B3\u30BF\u30ED\u30FC\u306F\u3001\u30BD\u30E9\u30C8\u304C\u53D6\u308A\u3064\u304B\u308C\u3066\u304B\u3089\u306E\u3053\u3068\u3092\u8A71\u3057\u305F\u3002"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}

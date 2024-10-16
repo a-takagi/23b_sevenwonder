@@ -253,7 +253,7 @@ MonoBehaviour:
   storyText: "\u4ECA\u65E5\u884C\u304B\u306A\u3044\u3068\u5348\u5F8C\u307E\u3067\u306B\u5BBF\u984C\u7D42\u308F\u3093\u306D\u30FC\u305E"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c8ef272c8a670f34a899aee9df90be80, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -280,7 +280,7 @@ MonoBehaviour:
   storyText: "\u3042\u3001\u671D\u4E00\u3067\u53D6\u308A\u306B\u884C\u304F\u3088"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 0eb44407c87ffb846a722e7e776ab519, type: 3}
+  portrait: {fileID: 21300000, guid: d49b72429e10e4b4c81776e61c5577d9, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -307,7 +307,7 @@ MonoBehaviour:
   storyText: "\u30B3\u30BF\u30ED\u30FC\u3001\u304A\u524D\u5348\u5F8C\u304B\u3089\u91CE\u7403\u3059\u308B\u7D04\u675F\u5FD8\u308C\u305F\u306E\u304B\n"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 86aecd76a7bbf95409b37259efe6d20b, type: 3}
+  portrait: {fileID: 21300000, guid: c8ef272c8a670f34a899aee9df90be80, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -334,7 +334,7 @@ MonoBehaviour:
   storyText: "\u5225\u306B\u5BBF\u984C\u306A\u3093\u3066\u660E\u65E5\u306E\u591C\u307E\u3067\u306B\u7D42\u308F\u3089\u305B\u308C\u3070\u3044\u3044\u3058\u3083\u3093"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: d49b72429e10e4b4c81776e61c5577d9, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -361,7 +361,7 @@ MonoBehaviour:
   storyText: "\u3046\u3045\u3045\u2026"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 0eb44407c87ffb846a722e7e776ab519, type: 3}
+  portrait: {fileID: 21300000, guid: d49b72429e10e4b4c81776e61c5577d9, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -388,7 +388,7 @@ MonoBehaviour:
   storyText: "\u305D\u3046\u3044\u3063\u3066\u3001\u4FFA\u304C\u8D77\u3053\u3055\u306A\u304D\u3083\u5915\u65B9\u8FD1\u304F\u307E\u3067\u5BDD\u3066\u3093\u3058\u3083\u306D\u30FC\u304B"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 86aecd76a7bbf95409b37259efe6d20b, type: 3}
+  portrait: {fileID: 21300000, guid: c8ef272c8a670f34a899aee9df90be80, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -415,7 +415,7 @@ MonoBehaviour:
   storyText: "\u2026\u56F3\u66F8\u5BA4"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 0eb44407c87ffb846a722e7e776ab519, type: 3}
+  portrait: {fileID: 21300000, guid: d49b72429e10e4b4c81776e61c5577d9, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -442,7 +442,7 @@ MonoBehaviour:
   storyText: "\u3093\u3067\u3001\u5BBF\u984C\u306F\u3069\u3053\u306B\u5FD8\u308C\u3066\u305F\u3093\u3060\uFF1F"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 86aecd76a7bbf95409b37259efe6d20b, type: 3}
+  portrait: {fileID: 21300000, guid: c8ef272c8a670f34a899aee9df90be80, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -469,7 +469,7 @@ MonoBehaviour:
   storyText: "\u78BA\u304B\u3001\u56F3\u66F8\u5BA4\u306F\u968E\u6BB5\u3092\u4E0A\u3063\u305F\u5DE6\u5965\u306E\u6559\u5BA4\u3060\u3088\u306A\u3002"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 86aecd76a7bbf95409b37259efe6d20b, type: 3}
+  portrait: {fileID: 21300000, guid: c8ef272c8a670f34a899aee9df90be80, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -496,7 +496,7 @@ MonoBehaviour:
   storyText: "\u3055\u3063\u3055\u3068\u5BBF\u984C\u56DE\u53CE\u3057\u3066\u5E30\u308B\u305E\u3002\n\u660E\u65E5\u306F\u5BBF\u984C\u7D42\u308F\u308B\u307E\u3067\u304A\u83D3\u5B50\u629C\u304D\u3060\u304B\u3089\u306A\u3002"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 86aecd76a7bbf95409b37259efe6d20b, type: 3}
+  portrait: {fileID: 21300000, guid: c8ef272c8a670f34a899aee9df90be80, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -544,7 +544,7 @@ MonoBehaviour:
   storyText: "\u305D\u3093\u306A\u3041"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 0eb44407c87ffb846a722e7e776ab519, type: 3}
+  portrait: {fileID: 21300000, guid: d49b72429e10e4b4c81776e61c5577d9, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
