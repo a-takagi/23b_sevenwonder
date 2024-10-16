@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 2295568300510123021}
   - component: {fileID: 2295568300510123022}
   - component: {fileID: 2295568300510123251}
-  - component: {fileID: 7940408814502220392}
   - component: {fileID: 5685994032740377848}
   - component: {fileID: 5685994032740377849}
   - component: {fileID: 5685994032740377850}
@@ -69,7 +68,7 @@ MonoBehaviour:
   scrollPos: {x: 61.80001, y: 235.96365}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 358.8
+  blockViewHeight: 200
   zoom: 1
   scrollViewRect:
     serializedVersion: 2
@@ -77,8 +76,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 2295568300510123013}
+  selectedBlocks: []
   selectedCommands: []
   variables: []
   description: 
@@ -107,7 +105,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 42
     y: 29.13636
-    width: 133
+    width: 133.2
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -117,7 +115,6 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 2295568300510123022}
-  - {fileID: 7940408814502220392}
   - {fileID: 5685994032740377848}
   - {fileID: 5685994032740377854}
   - {fileID: 5685994032740377853}
@@ -169,7 +166,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 61.565216
     y: 157
-    width: 94
+    width: 96.4
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -231,33 +228,6 @@ MonoBehaviour:
     floatRef: {fileID: 0}
     floatVal: 0
   targetGameObjectOLD: {fileID: 0}
---- !u!114 &7940408814502220392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2295568300510123015}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 18
-  indentLevel: 0
-  storyText: "\u3042\u3089\u3001\u623B\u3063\u3066\u304D\u305F\u306E\uFF1F"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &5685994032740377848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -326,7 +296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 24
   indentLevel: 0
-  storyText: "\u8077\u54E1\u5BA4\u306F\u3001\u56F3\u66F8\u5BA4\u3092\u51FA\u3066\u3064\u304D\u3042\u305F\u308A\u306B\u3042\u308B\u968E\u6BB5\u3092\r\u964D\u308A\u305F\u968E\u306B\u3042\u308B\u308F\u3002"
+  storyText: "\u307E\u3041\u8077\u54E1\u5BA4\u306F\u3001\u56F3\u66F8\u5BA4\u3092\u51FA\u3066\u3064\u304D\u3042\u305F\u308A\u306B\u3042\u308B\u968E\u6BB5\u3092\r\u964D\u308A\u305F\u968E\u306B\u3042\u308B\u3002"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -462,7 +432,7 @@ MonoBehaviour:
   itemId: 26
   indentLevel: 0
   targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 2295568300510123021}
+  targetBlock: {fileID: 1631074706}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -518,7 +488,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 50.19999
     y: -39.963654
-    width: 112
+    width: 115.6
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -545,7 +515,7 @@ MonoBehaviour:
   itemId: 32
   indentLevel: 0
   targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 0}
+  targetBlock: {fileID: 2295568300510123021}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -584,7 +554,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 52.19999
     y: 90.03635
-    width: 106
+    width: 107.6
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
