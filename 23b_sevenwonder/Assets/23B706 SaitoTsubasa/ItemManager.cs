@@ -64,6 +64,9 @@ public class ItemManager : SingletonMonoBehaviour<ItemManager>
         DontDestroyOnLoad(gameObject);
     }
 
+    //TMProのフォント作成方法
+    //https://yurinchi2525.com/2023011howtoaddtextmeshpro/
+
     void Start(){
         Items.Add(new ItemData(1,"保健室の鍵","東棟1階にある保健室の鍵[0]",KeySprite));
         Items.Add(new ItemData(2,"お守り","いざという危機から身を守ってくれるかも[1]",OmamoriSprite));
@@ -240,6 +243,48 @@ public class ItemManager : SingletonMonoBehaviour<ItemManager>
         KaiwaFlag = flag;
         gm.SetKaiwaFlag(flag);
     }
+    
+    //鍵を手に入れた時
+    public void GetKey(){
+        Items[0].SetFlag(1);
+    }
+    //鍵を失った時
+    public void LostKey(){
+        Items[0].SetFlag(0);
+    }
+
+    //お守り用
+    public void GetOmamori(){
+        Items[1].SetFlag(1);
+    }
+    public void LostOmamori(){
+        Items[1].SetFlag(0);
+    }
+
+    //10円玉用
+    public void GetCoin(){
+        Items[2].SetFlag(1);
+    }
+    public void LostCoin(){
+        Items[2].SetFlag(0);
+    }
+
+    //こっくりさんの紙用
+     public void GetKokkuriSheet(){
+        Items[3].SetFlag(1);
+    }
+     public void LostKokkuriSheet(){
+        Items[3].SetFlag(0);
+    }
+
+    //宿題用
+     public void GetSyukudai(){
+        Items[4].SetFlag(1);
+    }
+     public void LostSyukudai(){
+        Items[4].SetFlag(0);
+    }
+
 
     
 
@@ -266,6 +311,10 @@ public class ItemManager : SingletonMonoBehaviour<ItemManager>
             }
         }
         return HasItems;
+    }
+
+    public bool GetItemCanvasPreviewed(){
+        return PreviewedCanvas;
     }
     
 }

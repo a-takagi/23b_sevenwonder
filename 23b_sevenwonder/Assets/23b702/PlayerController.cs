@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
 
     GameManager gm;
 
+    ItemManager Im;
+
     [SerializeField] GameObject right;
 
 
@@ -27,19 +29,30 @@ public class PlayerController : MonoBehaviour
         GameObject tmp;
         tmp = GameObject.Find("GameManager");
         gm = tmp.GetComponent<GameManager>();
+
+        GameObject tmp1;
+        tmp1 = GameObject.Find("ItemManger");
+        Im = tmp1.GetComponent<ItemManager>();
         if (!gm)
         {
-            Debug.Log("Player.cs: GameManager‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ");
+            Debug.Log("Player.cs: GameManagerãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“");
+        }
+
+        if(!Im)
+        {
+            Debug.Log("Player.cs: ItemManagerãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“");
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        // –ˆƒtƒŒ[ƒ€”’l‚ğ‰Šú‰»
+        // æ¯ãƒ•ãƒ¬ãƒ¼ãƒ æ•°å€¤ã‚’åˆæœŸåŒ–
         vx = 0;
         vy = 0;
         if (gm.GetKaiwaFlag() == false)
+        {
+        if (Im.GetItemCanvasPreviewed() == false)
         {
 
             float dx = Input.GetAxis("Horizontal");
@@ -81,6 +94,7 @@ public class PlayerController : MonoBehaviour
             {
                 animater.SetBool("front", false);
             }
+        }
         }
 
         if (Input.GetButtonDown("Fire1")){
