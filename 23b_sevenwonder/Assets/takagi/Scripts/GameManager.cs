@@ -21,6 +21,9 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     //会話中：true 会話してない：false
     private bool KaiwaFlag = false;
 
+    //いろいろなフラグを配列で管理する。番号はGoogleSpreadsheet参照
+    [SerializeField] bool[] isFlag = new bool[100];
+
     //各部屋のフラグをここに列挙。GetSetを作ること
     [SerializeField] bool isKaiwaFirst; //校舎に入ったところの会話を見たフラグ
     [SerializeField] bool LibrarySecond = false; //図書館の2回目以降の入室だよフラグ
@@ -153,5 +156,14 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     public bool GetisHokenOpen()
     {
         return isHokenOpen;
+    }
+
+    public bool GetisFlag(int n) {
+        return isFlag[n];
+    }
+
+    public void SetisFlag(int n, bool t)
+    {
+        isFlag[n] = t;
     }
 }
