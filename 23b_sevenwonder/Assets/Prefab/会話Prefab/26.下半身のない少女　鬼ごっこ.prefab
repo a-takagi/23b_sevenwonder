@@ -75,7 +75,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1997688878293985636}
   selectedCommands:
-  - {fileID: -7111244445598454330}
+  - {fileID: -1117072637890566566}
   variables: []
   description: 
   stepPause: 0
@@ -406,7 +406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 20
   indentLevel: 0
-  storyText: "\u307F\u3043\u2026\u3064\u3051\u2026\u305F\u3041\u2026\u79C1\u306E\u4E0B\u534A\u8EAB\u2661"
+  storyText: "\u307F\u3043\u2026\u3064\u3051\u2026\u305F\u3041\u2026\u79C1\u306E\u4E0B\u534A\u8EAB\uFF01\uFF01"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
