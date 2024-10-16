@@ -222,7 +222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 0}
+  selectedFlowchart: {fileID: 5851242745552914175, guid: e89f73ee7998b1a45beeb4f01cc4c476, type: 3}
 --- !u!4 &716064832
 Transform:
   m_ObjectHideFlags: 1
@@ -366,6 +366,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6604568404712928454, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
+      propertyPath: tarohanakaiwa2obj
+      value: 
+      objectReference: {fileID: 5851242745552914174, guid: e89f73ee7998b1a45beeb4f01cc4c476, type: 3}
+    - target: {fileID: 6604568404712928454, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
+      propertyPath: tarohanakaiwa3obj
+      value: 
+      objectReference: {fileID: 1225791631600272874, guid: 45932fb2c0942bf438a83bf6aff3a09c, type: 3}
     - target: {fileID: 7349498097651903598, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.5
