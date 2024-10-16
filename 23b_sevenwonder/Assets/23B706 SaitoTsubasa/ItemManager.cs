@@ -38,35 +38,15 @@ public class ItemManager : SingletonMonoBehaviour<ItemManager>
     private List<ItemData> PreviewItems = new List<ItemData>();
 
     [SerializeField]
-    private Sprite SpriteId1;
+    private Sprite KeySprite;
     [SerializeField]
-    private Sprite SpriteId2;
+    private Sprite OmamoriSprite;
     [SerializeField]
-    private Sprite SpriteId3;
+    private Sprite CoinSprite;
     [SerializeField]
-    private Sprite SpriteId4;
+    private Sprite KokkuriSheetSprite;
     [SerializeField]
-    private Sprite SpriteId5;
-    [SerializeField]
-    private Sprite SpriteId6;
-    [SerializeField]
-    private Sprite SpriteId7;
-    [SerializeField]
-    private Sprite SpriteId8;
-    [SerializeField]
-    private Sprite SpriteId9;
-    [SerializeField]
-    private Sprite SpriteId10;
-    [SerializeField]
-    private Sprite SpriteId11;
-    [SerializeField]
-    private Sprite SpriteId12;
-    [SerializeField]
-    private Sprite SpriteId13;
-    [SerializeField]
-    private Sprite SpriteId14;
-    [SerializeField]
-    private Sprite SpriteId15;
+    private Sprite SyukudaiSprite;
 
     //コンストラクタ
     public ItemManager(){
@@ -85,37 +65,17 @@ public class ItemManager : SingletonMonoBehaviour<ItemManager>
     }
 
     void Start(){
-        Items.Add(new ItemData(1,"ひのき棒","旅の始まりのお供[0]",SpriteId1));
-        Items.Add(new ItemData(2,"鍵","どこかで開けられる気がする[1]",SpriteId2));
-        Items.Add(new ItemData(3, "xx03xx03xx", "xx0303xxxx0303xx[2]", SpriteId3));
-        Items.Add(new ItemData(4, "xx04xx04xx", "xx0404xxxx0404xx[壁]", SpriteId4));
-        Items.Add(new ItemData(5, "xx05xx05xx", "xx0505xxxx0505xx[3]", SpriteId5));
-        Items.Add(new ItemData(6, "xx06xx06xx", "xx0606xxxx0606xx[4]", SpriteId6));
-        Items.Add(new ItemData(7, "xx07xx07xx", "xx0707xxxx0707xx[5]", SpriteId7));
-        Items.Add(new ItemData(8, "xx08xx08xx", "xx0808xxxx0808xx[×]", SpriteId8));
-        Items.Add(new ItemData(9, "xx09xx09xx", "xx0909xxxx0909xx[6]", SpriteId9));
-        Items.Add(new ItemData(10, "xx10xx10xx", "xx1010xxxx1010xx[7]", SpriteId10));
-        Items.Add(new ItemData(11, "xx11xx11xx", "xx1111xxxx1111xx[8]", SpriteId11));
-        Items.Add(new ItemData(12, "xx12xx12xx", "xx1212xxxx1212xx[●]", SpriteId12));
-        Items.Add(new ItemData(13, "xx13xx13xx", "xx1313xxxx1313xx[9]", SpriteId13));
-        Items.Add(new ItemData(14, "xx14xx14xx", "xx1414xxxx1414xx[A]", SpriteId14));
-        Items.Add(new ItemData(15, "xx15xx15xx", "xx1515xxxx1515xx[B]", SpriteId15));
+        Items.Add(new ItemData(1,"保健室の鍵","東棟1階にある保健室の鍵[0]",KeySprite));
+        Items.Add(new ItemData(2,"お守り","いざという危機から身を守ってくれるかも[1]",OmamoriSprite));
+        Items.Add(new ItemData(3, "10円玉", "こっくりさんを行うために必要なコイン(～～で行う)[2]", CoinSprite));
+        Items.Add(new ItemData(4, "こっくりさんの紙", "こっくりさんを呼び出すのに必要な用紙", KokkuriSheetSprite));
+        Items.Add(new ItemData(5, "宿題", "提出しないと先生に怒られちゃう！[3]", SyukudaiSprite));
     
         Items[0].SetFlag(1);
         Items[1].SetFlag(1);
         Items[2].SetFlag(1);
         Items[3].SetFlag(1);
         Items[4].SetFlag(1);
-        Items[5].SetFlag(1);
-        Items[6].SetFlag(1);
-        Items[7].SetFlag(1);
-        Items[8].SetFlag(1);
-        Items[9].SetFlag(1);
-        Items[10].SetFlag(1);
-        Items[11].SetFlag(1);
-        Items[12].SetFlag(1);
-        Items[13].SetFlag(1);
-        Items[14].SetFlag(1);
 
         GameObject tmp;
         tmp = GameObject.Find("GameManager");
