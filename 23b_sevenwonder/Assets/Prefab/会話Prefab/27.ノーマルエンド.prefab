@@ -29,6 +29,8 @@ GameObject:
   - component: {fileID: -6305925456816685792}
   - component: {fileID: 1665074330690728092}
   - component: {fileID: -2376173654518433050}
+  - component: {fileID: -4656029763332858768}
+  - component: {fileID: 5677815806053414868}
   m_Layer: 0
   m_Name: "27.\u30CE\u30FC\u30DE\u30EB\u30A8\u30F3\u30C9"
   m_TagString: Untagged
@@ -78,7 +80,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1997688878293985636}
   selectedCommands:
-  - {fileID: 0}
+  - {fileID: 5677815806053414868}
   variables: []
   description: 
   stepPause: 0
@@ -120,9 +122,10 @@ MonoBehaviour:
   - {fileID: 3227935517203590209}
   - {fileID: 1945600887922901181}
   - {fileID: -6305925456816685792}
+  - {fileID: -4656029763332858768}
   - {fileID: 1665074330690728092}
   - {fileID: -2376173654518433050}
-  - {fileID: 0}
+  - {fileID: 5677815806053414868}
   - {fileID: 3962424014909566296}
   suppressAllAutoSelections: 0
 --- !u!61 &1997688878293985640
@@ -494,7 +497,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 25
   indentLevel: 0
-  storyText: "\u30B3\u30BF\u30ED\u30FC\u306F\u3001\u30BD\u30E9\u30C8\u306E\u540D\u524D\u3092\u547C\u3073\u306A\u304C\u3089\u8D70\u3063\u3066\u8FD1\u3065\u3053\u3046\u3068\u3059\u308B\u304C\u3001\r\u4E0B\u534A\u8EAB\u306E\u7121\u3044\u5C11\u5973\u306E\u65B9\u304C\u65E9\u304F\u30BD\u30E9\u30C8\u306B\u8972\u3044\u639B\u304B\u308A\u3001\r\n\u30BD\u30E9\u30C8\u306E\u4E0B\u534A\u8EAB\u304C\u7121\u304F\u306A\u3063\u3066\u3057\u307E\u3046\u2026\u2026\r\n"
+  storyText: "\u30B3\u30BF\u30ED\u30FC\u306F\u3001\u30BD\u30E9\u30C8\u306E\u540D\u524D\u3092\u547C\u3073\u306A\u304C\u3089\u8D70\u3063\u3066\u8FD1\u3065\u3053\u3046\u3068\u3059\u308B\u304C\u3001\n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -548,7 +551,61 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 27
   indentLevel: 0
-  storyText: "\u4E0B\u534A\u8EAB\u306E\u7121\u3044\u5C11\u5973\u304C\u3001\u30B3\u30BF\u30ED\u30FC\u306B\u72D9\u3044\u3092\u5B9A\u3081\u305F\u77AC\u9593\u3001\r\n\u30B3\u30BF\u30ED\u30FC\u306F\u6050\u6016\u306E\u3042\u307E\u308A\u30BD\u30E9\u30C8\u3092\u304A\u3044\u3066\u3001\u5B66\u6821\u304B\u3089\u9003\u3052\u51FA\u3057\u305F\u3002"
+  storyText: "\u4E0B\u534A\u8EAB\u306E\u306A\u3044\u5C11\u5973\u304C\u3001\u30B3\u30BF\u30ED\u30FC\u306B\u72D9\u3044\u3092\u5B9A\u3081\u305F\u77AC\u9593\u3001\r\n"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &-4656029763332858768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997688878293985638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 28
+  indentLevel: 0
+  storyText: "\r\u4E0B\u534A\u8EAB\u306E\u306A\u3044\u5C11\u5973\u306E\u65B9\u304C\u65E9\u304F\u30BD\u30E9\u30C8\u306B\u8972\u3044\u639B\u304B\u308A\u3001\r\u30BD\u30E9\u30C8\u306E\u4E0B\u534A\u8EAB\u304C\u7121\u304F\u306A\u3063\u3066\u3057\u307E\u3046\u2026\u2026\r\n"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &5677815806053414868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997688878293985638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 29
+  indentLevel: 0
+  storyText: "\u30B3\u30BF\u30ED\u30FC\u306F\u6050\u6016\u306E\u3042\u307E\u308A\u30BD\u30E9\u30C8\u3092\u304A\u3044\u3066\u3001\u5B66\u6821\u304B\u3089\u9003\u3052\u51FA\u3057\u305F\u3002"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
