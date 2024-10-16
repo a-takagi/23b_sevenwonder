@@ -1145,17 +1145,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &587370621 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1997688878293985639, guid: d165dab7e99f9fe43bef2819d46e580e, type: 3}
-  m_PrefabInstance: {fileID: 1966804304}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1966804305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &623141528
 GameObject:
   m_ObjectHideFlags: 1
@@ -1185,7 +1174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 587370621}
+  selectedFlowchart: {fileID: 1994690657}
 --- !u!4 &623141530
 Transform:
   m_ObjectHideFlags: 1
@@ -3805,11 +3794,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5851242745552914163, guid: 5aa3f4ee966a2a94b8eb4399e0fcef70, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.96
+      value: -13.63
       objectReference: {fileID: 0}
     - target: {fileID: 5851242745552914163, guid: 5aa3f4ee966a2a94b8eb4399e0fcef70, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.92
+      value: -5.93
       objectReference: {fileID: 0}
     - target: {fileID: 5851242745552914163, guid: 5aa3f4ee966a2a94b8eb4399e0fcef70, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5189,6 +5178,17 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &1994690657 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5851242745552914175, guid: 5aa3f4ee966a2a94b8eb4399e0fcef70, type: 3}
+  m_PrefabInstance: {fileID: 1552962694}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994690601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2051726994 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8381579011151839855, guid: 55626f602533825409e2b9f0a78114ed, type: 3}
