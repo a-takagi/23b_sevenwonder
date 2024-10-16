@@ -28,12 +28,12 @@ GameObject:
   - component: {fileID: -1110119360092050710}
   - component: {fileID: 7374093705314308004}
   m_Layer: 0
-  m_Name: 12
+  m_Name: "12.\u897F\u68DF2F\u7A7A\u304D\u6559\u5BA4\u5230\u7740"
   m_TagString: Untagged
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5851242745552914163
 Transform:
   m_ObjectHideFlags: 0
@@ -75,8 +75,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 5851242745552914172}
-  selectedCommands:
-  - {fileID: 7374093705314308004}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -292,7 +291,7 @@ MonoBehaviour:
   storyText: "\u9053\u5177\u304C\u3001\u898B\u5F53\u305F\u3089\u306A\u3044\u3088\u3002\u3069\u3046\u3057\u3088\u3046\u2026"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: d49b72429e10e4b4c81776e61c5577d9, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -468,7 +467,7 @@ MonoBehaviour:
   storyText: "\u5C11\u3057\u5468\u308A\u3092\u63A2\u3057\u3066\u307F\u308B\u304B\u3002"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c8ef272c8a670f34a899aee9df90be80, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -495,7 +494,7 @@ MonoBehaviour:
   storyText: "\u305D\u3046\u3060\u306D\u3002\u63A2\u3057\u3066\u307F\u3088\u3046\u3002"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: d49b72429e10e4b4c81776e61c5577d9, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
