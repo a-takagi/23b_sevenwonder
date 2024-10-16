@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 998380067}
   - component: {fileID: -2779018381649986627}
   m_Layer: 0
-  m_Name: 23
+  m_Name: "23.\u546A\u3044\u306E\u30B2\u30FC\u30E0\u3000\u5316\u3051\u7269\u767B\u5834"
   m_TagString: Untagged
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -237,7 +237,7 @@ MonoBehaviour:
   storyText: "\u9003\u3052\u308B\u305E\u3001\u30B3\u30BF\u30ED\u30FC\uFF01\uFF01"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c8ef272c8a670f34a899aee9df90be80, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -434,7 +434,7 @@ MonoBehaviour:
   storyText: "\u3048\uFF01\uFF1F\uFF01\uFF1F"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: d49b72429e10e4b4c81776e61c5577d9, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1

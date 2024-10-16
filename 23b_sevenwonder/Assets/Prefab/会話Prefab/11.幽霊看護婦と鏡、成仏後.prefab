@@ -28,7 +28,7 @@ GameObject:
   - component: {fileID: 1221425228}
   - component: {fileID: 1221425229}
   m_Layer: 0
-  m_Name: 11
+  m_Name: "11.\u5E7D\u970A\u770B\u8B77\u5A66\u3068\u93E1\u3001\u6210\u4ECF\u5F8C"
   m_TagString: Untagged
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -73,8 +73,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 5851242745552914172}
+  selectedBlocks: []
   selectedCommands: []
   variables: []
   description: 
@@ -162,7 +161,7 @@ MonoBehaviour:
   storyText: "\u3053\u308C\u3067\u3084\u3063\u3068\u3001\u897F\u68DF2F\u306E\u7A7A\u304D\u6559\u5BA4\u306B\u884C\u3051\u308B\u306A\u3002"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c8ef272c8a670f34a899aee9df90be80, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -189,7 +188,7 @@ MonoBehaviour:
   storyText: "\u3046\u3093\u3001\u305D\u3046\u3060\u306D\u3002"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: d49b72429e10e4b4c81776e61c5577d9, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -345,7 +344,7 @@ MonoBehaviour:
   storyText: "\u300E\u3053\u3063\u304F\u308A\u3055\u3093\u300F\u521D\u3081\u3066\u3084\u308B\u304B\u3089\u3001\r\u3061\u3083\u3093\u3068\u3067\u304D\u308B\u304B\u4E0D\u5B89\u3060\u306A\u3041\u3002\r\n"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: d49b72429e10e4b4c81776e61c5577d9, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
