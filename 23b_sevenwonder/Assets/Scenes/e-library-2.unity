@@ -1196,14 +1196,6 @@ PrefabInstance:
       propertyPath: selectedBlocks.Array.size
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3483517078179244270, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3483517078179244270, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.8
-      objectReference: {fileID: 0}
     - target: {fileID: 3646722221182903699, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: nodeRect.width
       value: 91.025635
@@ -1320,14 +1312,6 @@ PrefabInstance:
       propertyPath: tarohanakaiwa3obj
       value: 
       objectReference: {fileID: 1473455016}
-    - target: {fileID: 6699514128097106544, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6699514128097106544, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.8
-      objectReference: {fileID: 0}
     - target: {fileID: 6848519763778045367, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: targetObject
       value: 
@@ -1781,7 +1765,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!114 &1579406326
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1798,7 +1782,7 @@ MonoBehaviour:
   delay: 0
 --- !u!114 &1579406327
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1815,7 +1799,7 @@ MonoBehaviour:
   delay: 0
 --- !u!114 &1579406328
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2191,7 +2175,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1866185554
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2208,7 +2192,7 @@ MonoBehaviour:
   delay: 0
 --- !u!114 &1866185589
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
