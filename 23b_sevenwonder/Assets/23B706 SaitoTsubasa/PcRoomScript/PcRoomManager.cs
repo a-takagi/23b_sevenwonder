@@ -16,6 +16,7 @@ public class PcRoomManager : MonoBehaviour
     [SerializeField] private GameObject LockerKira;
     [SerializeField] private GameObject DeskKira;
     [SerializeField] private GameObject ShelfKira;
+    [SerializeField] private GameObject Enemy;
 
     //参照系
     private GameManager gm;
@@ -66,5 +67,11 @@ public class PcRoomManager : MonoBehaviour
         LockerKira.SetActive(true);
         DeskKira.SetActive(true);
         ShelfKira.SetActive(true);
+        Enemy.SetActive(true);
+    }
+
+    public void GetKey(){
+        //ItemManagerに画像追加
+        //GameManagerにフラグ渡す
     }
 }

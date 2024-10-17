@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -138,5 +139,16 @@ public class PlayerController : MonoBehaviour
                 break;
         }
         animater.SetInteger("nowWalk", nowAnim);
+    }
+
+    
+    void OnTriggerEnter2D(Collider2D col){
+        if(col.gameObject.name == "Enemy" ){
+            Debug.Log("hit Enemy");
+            //シーンを変える処理
+            SceneManager.LoadScene("Title");
+
+        }
+        Debug.Log(col.gameObject.name);
     }
 }
