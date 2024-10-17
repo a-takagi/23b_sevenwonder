@@ -8,8 +8,7 @@ public class Stafferoom : MonoBehaviour
     GameManager gm;
 
     ItemManager im;
-    
-    GameManager gm;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,5 +36,20 @@ public class Stafferoom : MonoBehaviour
     void Update()
     {
         
+    }
+
+    //会話を始めた時用メソッド
+    public void KaiwaNau(){
+        gm.KaiwaNau();
+    }
+
+    //会話終わった時用メソッド
+    public void KaiwaOwatade(){
+        gm.KaiwaOwatade();
+    }
+
+    public void healkey(){
+        Debug.Log("GetKey");
+        im.GetKey();
     }
 }
