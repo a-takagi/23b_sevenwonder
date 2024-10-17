@@ -982,7 +982,7 @@ PrefabInstance:
       objectReference: {fileID: 1653217503}
     - target: {fileID: 993703145, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1105291421, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: nodeRect.width
@@ -998,7 +998,7 @@ PrefabInstance:
       objectReference: {fileID: 1473455020}
     - target: {fileID: 1910566838, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1910566839, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: nodeRect.y
@@ -1100,6 +1100,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LibraryManager
       objectReference: {fileID: 0}
+    - target: {fileID: 769683474597086702, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3172a1e9e33ec8b43b29471afb8e08b0, type: 3}
     - target: {fileID: 1197297630482904214, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: nodeRect.width
       value: 107.14285
@@ -1190,7 +1194,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3172132537046475581, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483517078179244270, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483517078179244270, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 3646722221182903699, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: nodeRect.width
@@ -1232,6 +1244,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5508168358466602505, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bf9e7cf0b90986540b74ba20830904c4, type: 3}
     - target: {fileID: 5851242746990354913, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: zoom
       value: 0.97
@@ -1246,7 +1262,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5851242746990354913, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5851242746990354913, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: selectedCommands.Array.size
@@ -1304,6 +1320,14 @@ PrefabInstance:
       propertyPath: tarohanakaiwa3obj
       value: 
       objectReference: {fileID: 1473455016}
+    - target: {fileID: 6699514128097106544, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6699514128097106544, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8
+      objectReference: {fileID: 0}
     - target: {fileID: 6848519763778045367, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: targetObject
       value: 
@@ -1350,7 +1374,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8210267795473092084, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8210267795473092084, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: selectedCommands.Array.size
