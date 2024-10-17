@@ -6,6 +6,10 @@ public class Stafferoom : MonoBehaviour
 {
     
     GameManager gm;
+
+    ItemManager im;
+    
+    GameManager gm;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +20,15 @@ public class Stafferoom : MonoBehaviour
         if (!gm)
         {
             Debug.Log("Stafferoom.cs: GameManager‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ");
+        }
+                
+        //ItemManager‚ÌŽæ“¾
+        GameObject imp;
+        imp = GameObject.Find("ItemManger");
+        im=imp.GetComponent<ItemManager>();
+        if (!im)
+        {
+            Debug.Log("Library.cs: ItemManger‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ");
         }
                
     }
