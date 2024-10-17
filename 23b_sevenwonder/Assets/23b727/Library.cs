@@ -27,6 +27,8 @@ public class Library : MonoBehaviour
 
     GameManager gm;
 
+    ItemManager im;
+
     int kiranum;
 
     // Start is called before the first frame update
@@ -43,6 +45,15 @@ public class Library : MonoBehaviour
             Debug.Log("Library.cs: GameManagerが見つかりません");
         }
         tarohanakaiwa3obj.SetActive(false);
+
+        //ItemManagerの取得
+        GameObject imp;
+        imp = GameObject.Find("ItemManger");
+        im=imp.GetComponent<ItemManager>();
+        if (!im)
+        {
+            Debug.Log("Library.cs: ItemMangerが見つかりません");
+        }
 
         //2回目かどうかの処理
         if(gm.GetLibrarySecond()==true){
@@ -71,6 +82,11 @@ public class Library : MonoBehaviour
     //会話終わった時用メソッド
     public void KaiwaOwatade(){
         gm.KaiwaOwatade();
+    }
+
+    public void Omamori(){
+        Debug.Log("GetOmamori");
+        im.GetOmamori();
     }
 
     // 初回の会話フロー
