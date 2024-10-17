@@ -42,7 +42,6 @@ public class Library : MonoBehaviour
         {
             Debug.Log("Library.cs: GameManagerが見つかりません");
         }
-        tarohanakaiwa2obj.SetActive(false);
         tarohanakaiwa3obj.SetActive(false);
 
         //2回目かどうかの処理
@@ -53,8 +52,8 @@ public class Library : MonoBehaviour
             kirakira2.SetActive(false);
             kirakira3.SetActive(false);
             FirstTarohana();
-            TaroHana3Show();
             tarohanakaiwa2obj.SetActive(false);
+            TaroHana3Show();
         }
     }
 
@@ -77,16 +76,16 @@ public class Library : MonoBehaviour
     // 初回の会話フロー
     void FirstTarohana()
     {
-        tarohanakaiwa1obj.SetActive(true); // 最初の会話を表示
         StartCoroutine(TaroHana2Show()); // 会話終了後に次の会話を表示
     }
 
     // tarohanakaiwa1の後にtarohanakaiwa2を表示
     IEnumerator TaroHana2Show()
     {
-        yield return new WaitForSeconds(5); // 5秒待機（会話が終わるまでの時間）
+        yield return new WaitForSeconds(1); // 1秒待機（会話が終わるまでの時間）
         tarohanakaiwa1obj.SetActive(false); // 最初の会話を非表示に
         tarohanakaiwa2obj.SetActive(true);  // 次の会話を表示
+        tarohanakaiwa2obj.SetActive(false);  // 次の会話を表示
     }
 
     public void IncreaseKira(){
@@ -99,7 +98,6 @@ public class Library : MonoBehaviour
    
     public void TaroHana3Show(){
         //2回目の会話を表示したい
-
-        this.tarohanakaiwa3obj.SetActive(true);
+       this.tarohanakaiwa3obj.SetActive(true);
     }
 }
