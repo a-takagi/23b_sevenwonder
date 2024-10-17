@@ -1368,6 +1368,26 @@ PrefabInstance:
       propertyPath: nodeRect.width
       value: 108.60805
       objectReference: {fileID: 0}
+    - target: {fileID: 8210267795473092087, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
+      propertyPath: commandList.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8210267795473092087, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
+      propertyPath: commandList.Array.data[9]
+      value: 
+      objectReference: {fileID: 1579406328}
+    - target: {fileID: 8210267795473092087, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
+      propertyPath: commandList.Array.data[10]
+      value: 
+      objectReference: {fileID: 1579406264}
+    - target: {fileID: 8210267795473092087, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
+      propertyPath: commandList.Array.data[11]
+      value: 
+      objectReference: {fileID: 1579406319}
+    - target: {fileID: 8210267795473092087, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
+      propertyPath: commandList.Array.data[12]
+      value: 
+      objectReference: {fileID: 1579406320}
     - target: {fileID: 8210267795473092088, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1647,6 +1667,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1579406264 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6585295819778462, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
+  m_PrefabInstance: {fileID: 1473455014}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473455017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1579406268 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 56780847530421819, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
@@ -1702,6 +1733,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1579406319 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8210267795473091840, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
+  m_PrefabInstance: {fileID: 1473455014}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473455017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1579406320 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8210267795473092094, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
+  m_PrefabInstance: {fileID: 1473455014}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473455017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1579406326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1735,6 +1788,23 @@ MonoBehaviour:
   indentLevel: 0
   targetObject: {fileID: 1473455020}
   methodName: KaiwaNau
+  delay: 0
+--- !u!114 &1579406328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473455017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 103
+  indentLevel: 0
+  targetObject: {fileID: 1473455020}
+  methodName: Omamori
   delay: 0
 --- !u!1 &1632883677
 GameObject:
