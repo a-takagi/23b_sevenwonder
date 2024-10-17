@@ -11,9 +11,9 @@ public class wroom2Manager : MonoBehaviour
     [SerializeField] GameObject kaiwa12;
     [SerializeField] GameObject kaiwa13;
     [SerializeField] GameObject kaiwa14;
-    [SerializeField] GameObject kaiwa15;
     [SerializeField] GameObject kaiwa16;
     [SerializeField] GameObject kaiwa17;
+    [SerializeField] GameObject kokkursan;
     [SerializeField] GameObject kirakira;
     [SerializeField] GameObject kirakira2;
     [SerializeField] GameObject kirakira3;
@@ -30,7 +30,7 @@ public class wroom2Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        kirakira3.SetActive(false);
+        kokkursan.SetActive(false);
         //GameManager‚Ìæ“¾
         GameObject tmp;
         tmp = GameObject.Find("GameManager");
@@ -42,7 +42,7 @@ public class wroom2Manager : MonoBehaviour
 
         //‰ï˜b12‚Ì•\¦‚³‚ê‚Ä‚¢‚é‚©‚Ç‚¤‚©‚Ìˆ—
         isKaiwa12 = gm.GetisFlag(7);
-        if (gm.GetisFlag(7) == true)
+        if (isKaiwa12 == true)
         {
             kaiwa12.SetActive(false);
         }
@@ -53,7 +53,7 @@ public class wroom2Manager : MonoBehaviour
 
         //10‰~‹Ê‚ğ“üè‚µ‚Ä‚¢‚é
         isYen10 = gm.GetisFlag(2);
-        if (gm.GetisFlag(2) == true)
+        if (isYen10 == true)
         {
             kaiwa13.SetActive(false);
         }
@@ -64,7 +64,7 @@ public class wroom2Manager : MonoBehaviour
 
         //‚±‚Á‚­‚è‚³‚ñ‚Ì‹V®‚Ì†‚ğ“üè‚µ‚Ä‚¢‚é
         isKami = gm.GetisFlag(3);
-        if (gm.GetisFlag(3) == true)
+        if (isKami == true)
         {
             kaiwa14.SetActive(false);
         }
@@ -76,9 +76,12 @@ public class wroom2Manager : MonoBehaviour
         //‚±‚Á‚­‚è‚³‚ñ‚ÌƒLƒ‰ƒLƒ‰
         if (gm.GetisFlag(8) == true)
         {
-            kiranum = 2;
-            kirakira.SetActive(false);
-            kirakira2.SetActive(false);
+            isKaiwa15 = isYen10 && isKami;
+
+            kokkursan.SetActive(true);
+            kaiwa13.SetActive(false);
+            kaiwa14.SetActive(false);
+            
 
         }
 
@@ -90,15 +93,6 @@ public class wroom2Manager : MonoBehaviour
         
     }
 
-    public void IncreaseKira()
-    {
-        kiranum++;
-        if(kiranum >= 2) 
-        {
-            kirakira3.SetActive (true);
-        }
-        gm.SetisFlag(8,true);
-    }
     public void KaiwaStart() 
     {
         gm.KaiwaNau();
@@ -113,12 +107,27 @@ public class wroom2Manager : MonoBehaviour
     {
         gm.SetisFlag(2, true);
         isYen10 = true;
+
+        // 10‰~‹Ê‚Æ†‚ğ—¼•ûæ“¾‚µ‚½‚çkaiwa15‚ğ•\¦
+        isKaiwa15 = isYen10 && isKami;
+        kokkursan.SetActive(isKaiwa15);
+
     }
 
+    // †‚ğæ“¾‚µ‚½Û‚Ìˆ—
     public void GetKami()
     {
-        gm.SetisFlag (3, true);
+        gm.SetisFlag(3, true);
         isKami = true;
+
+        // 10‰~‹Ê‚Æ†‚ğ—¼•ûæ“¾‚µ‚½‚çkaiwa15‚ğ•\¦
+        isKaiwa15 = isYen10 && isKami;
+        kokkursan.SetActive(isKaiwa15);
+
+        if(isKami)
+        {
+            kaiwa14.SetActive(false);
+        }
     }
 
 }
