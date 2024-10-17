@@ -6,13 +6,11 @@ using UnityEngine.SceneManagement;
 public class GameManager : SingletonMonoBehaviour<GameManager>
 {
 
-    //マップのスタート位置の番号。扉から出てきたら扉の前。そうでない場合入り口
-    public int StartPosition;
-
-    //Spawn位置。番号はStartPositionと一致させること
-    //SpawnPointのGameObjectはGameManger>SpawnPointListの中に入れて、Inspectorで設定すること
+    //Let's New Array
     [SerializeField]
-    GameObject[] SpawnPoint;
+    Vector3[] SpawnPointPos;
+    [SerializeField]
+    int NowSpawnNum;
 
     public bool setPlayerSpawn = false;
 
@@ -45,8 +43,9 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("GameManager:Start:SpawnPoint.Length:" + SpawnPoint.Length);
-        PlayerSpawn();
+        Debug.Log("GameManager:Start:");
+        //PlayerSpawn();
+         PlayerSpawnPos();
 
     }
 
@@ -55,15 +54,9 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     {
         if (setPlayerSpawn == false)
         {
-            PlayerSpawn();
+            //PlayerSpawn();
+            PlayerSpawnPos();
         }
-    }
-
-
-    public void SetSpawnPointNum(int n)
-    {
-        StartPosition = n;
-        Debug.Log("GameManager:SetSpawnPointNum: StartPosition:" + n);
     }
 
     public void setPlayerSpawnFlag(bool t)
@@ -71,25 +64,38 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
         Debug.Log("GameManager:setPlayerSpawnFlag:" + t+ "に設定します");
         setPlayerSpawn = t;
     }
-    public void PlayerSpawn()
-    {
+
+    //Let's New Method
+    public void PlayerSpawnPos(){
         if (setPlayerSpawn == false)
         {
-            //校舎だけでSpawnPointを設定する。それ以外は設定しない
-            //本番用に後で変更すること
-            if (SceneManager.GetActiveScene().name == "roka-1")
-            {
-                //メイン校舎なので
-                GameObject tmp = GameObject.Find("Player");
-                tmp.transform.SetPositionAndRotation(SpawnPoint[StartPosition].transform.position, Quaternion.identity);
-                Debug.Log("GameManager:PlayerSpawn: StartPosition:" + StartPosition);
-                setPlayerSpawn = true;
-            }
-            else
-            {
-                //校舎ではないのでスポーンポイントは設定しない
-            }
+            GameObject tmp = GameObject.Find("Player");
+            tmp.transform.SetPositionAndRotation(SpawnPointPos[NowSpawnNum], Quaternion.identity);
+            Debug.Log("GameManager:PlayerSpawn: StartPosition:" + NowSpawnNum);
+            setPlayerSpawn = true;
+            Debug.Log("Player Spawned");
+            Debug.Log(SceneManager.GetActiveScene().name.ToString());
+            Vector3 ggst = tmp.transform.position;
+            Debug.Log(ggst.x);
+        }else
+        {
+            //校舎ではないのでスポーンポイントは設定しない
         }
+    }
+
+    //Let's New Method
+    public void SetSpawnPointPos(int index, Vector3 pos){
+        SpawnPointPos[index] = pos;
+    }
+
+    //Let's New Method
+    public void SetNowSpawnNum(int n){
+        NowSpawnNum = n;
+    }
+    
+    //Let's New Method
+    public Vector3 GetSpawnPointPos(int index){
+        return SpawnPointPos[index];
     }
 
     public void SetLibrarySecond(bool t){

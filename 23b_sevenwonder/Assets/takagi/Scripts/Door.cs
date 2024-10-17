@@ -15,6 +15,7 @@ public class Door : MonoBehaviour
     [SerializeField]
     string SceneName;
 
+
     bool isSceneChange = false;
 
     GameManager gm;
@@ -22,24 +23,24 @@ public class Door : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //GameManager‚Ìæ“¾
+        //GameManagerï¿½Ìæ“¾
         GameObject tmp;
         tmp = GameObject.Find("GameManager");
         gm=tmp.GetComponent<GameManager>();
         if (!gm)
         {
-            Debug.Log("Door.cs: GameManager‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ");
+            Debug.Log("Door.cs: GameManagerãŒã‚ã‚Šã¾ã›ã‚“");
         }
 
-        //ƒV[ƒ“–¼‚ÅƒhƒA‘O‚©‚çƒXƒ^[ƒg‚·‚é‚©Œˆ‚ß‚é
-        //–{”Ô—p‚ÉŒã‚Å•ÏX‚·‚é‚±‚Æ
+        //ï¿½Vï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½Åƒhï¿½Aï¿½Oï¿½ï¿½ï¿½ï¿½Xï¿½^ï¿½[ï¿½gï¿½ï¿½ï¿½é‚©ï¿½ï¿½ï¿½ß‚ï¿½
+        //ï¿½{ï¿½Ô—pï¿½ÉŒï¿½Å•ÏXï¿½ï¿½ï¿½é‚±ï¿½ï¿½
         if (SceneManager.GetActiveScene().name == "roka-1")
         { 
-            //ZÉ‚È‚Ì‚ÅƒXƒ|[ƒ“ƒ|ƒCƒ“ƒg‚Íİ’è‚µ‚È‚¢
+            //ï¿½Zï¿½É‚È‚Ì‚ÅƒXï¿½|ï¿½[ï¿½ï¿½ï¿½|ï¿½Cï¿½ï¿½ï¿½gï¿½Íİ’è‚µï¿½È‚ï¿½
         }
         else
         {
-            PlayerSpawn();
+            //PlayerSpawn();
         }
         
     }
@@ -48,7 +49,7 @@ public class Door : MonoBehaviour
     void Update()
     {
 
-        }
+    }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -57,25 +58,12 @@ public class Door : MonoBehaviour
 
             if (collision.name == "Player")
             {
-                //Debug.Log("Door‚ÉPlayer‚ªG‚ê‚½");
-                Debug.Log("Door‚ÉÚG‚µ‚½‚Ì‚Å:Scene‘JˆÚ‚µ‚Ü‚·B");
-                gm.SetSpawnPointNum(DoorNum);
-                gm.setPlayerSpawnFlag(false);
+                //Debug.Log("Doorï¿½ï¿½Playerï¿½ï¿½ï¿½Gï¿½ê‚½");
+                Debug.Log("Doorï¿½ÉÚGï¿½ï¿½ï¿½ï¿½ï¿½Ì‚ï¿½:Sceneï¿½Jï¿½Ú‚ï¿½ï¿½Ü‚ï¿½ï¿½B");
+                gm.SetNowSpawnNum(DoorNum);
                 isSceneChange = true;
 
                 SceneChange();
-
-                /*
-                //ƒ{ƒ^ƒ“‚ğ‰Ÿ‚µ‚ÄƒhƒA‚ğŠJ‚­ƒpƒ^[ƒ“
-                if (Input.GetButtonDown("Fire1"))
-                {
-                    //Fire1ƒ{ƒ^ƒ“‚ª‰Ÿ‚³‚ê‚½
-                    Debug.Log("Door‚ÉÚG‚µ‚ÄFire1‚ª‰Ÿ‚³‚ê‚½:Scene‘JˆÚ‚µ‚Ü‚·B");
-                    gm.SetSpawnPointNum(DoorNum);
-                    gm.setPlayerSpawnFlag(false);
-                    SceneChange();
-                }
-                */
             }
         }
     }
@@ -100,7 +88,7 @@ public class Door : MonoBehaviour
         Debug.Log("LoadScene");
 
         AsyncOperation async = SceneManager.LoadSceneAsync(SceneName);
-        async.allowSceneActivation = false;    // ƒV[ƒ“‘JˆÚ‚ğ‚µ‚È‚¢
+        async.allowSceneActivation = false;    // ï¿½Vï¿½[ï¿½ï¿½ï¿½Jï¿½Ú‚ï¿½ï¿½ï¿½ï¿½È‚ï¿½
 
         while (async.progress < 0.9f)
         {
@@ -124,8 +112,8 @@ public class Door : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
 
-        async.allowSceneActivation = true;    // ƒV[ƒ“‘JˆÚ‹–‰Â
-
+        async.allowSceneActivation = true;    // ï¿½Vï¿½[ï¿½ï¿½ï¿½Jï¿½Ú‹ï¿½ï¿½ï¿½
+        gm.setPlayerSpawnFlag(false);
     }
 
 }
