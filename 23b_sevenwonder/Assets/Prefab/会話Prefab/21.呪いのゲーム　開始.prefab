@@ -64,7 +64,7 @@ MonoBehaviour:
   scrollPos: {x: 47.200012, y: 174.96365}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 200
+  blockViewHeight: 352.8
   zoom: 1
   scrollViewRect:
     serializedVersion: 2
@@ -74,7 +74,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1997688878293985636}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 4285210671756806809}
   variables: []
   description: 
   stepPause: 0
@@ -159,7 +160,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 65.565216
     y: 200
-    width: 96.4
+    width: 94.8
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -406,7 +407,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 56.799988
     y: 2.0363464
-    width: 115.6
+    width: 113.2
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -462,7 +463,7 @@ MonoBehaviour:
   storyText: "\u3068\u3001\u3068\u308A\u3042\u3048\u305A\u3001\u5468\u308A\u3092\u63A2\u7D22\u3057\u3066\u307F\u3088\u3046\u304B"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 21300000, guid: d49b72429e10e4b4c81776e61c5577d9, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1

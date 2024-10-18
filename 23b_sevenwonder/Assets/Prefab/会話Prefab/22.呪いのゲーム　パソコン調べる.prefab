@@ -27,6 +27,9 @@ GameObject:
   - component: {fileID: -4061748046608684943}
   - component: {fileID: 4285210671756806809}
   - component: {fileID: -2779018381649986627}
+  - component: {fileID: 1262089773}
+  - component: {fileID: 1262089774}
+  - component: {fileID: 1262089793}
   m_Layer: 0
   m_Name: "22.\u546A\u3044\u306E\u30B2\u30FC\u30E0\u3000\u30D1\u30BD\u30B3\u30F3\u8ABF\u3079\u308B"
   m_TagString: Untagged
@@ -65,7 +68,7 @@ MonoBehaviour:
   scrollPos: {x: 47.200012, y: 174.96365}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 200
+  blockViewHeight: 350.8
   zoom: 1
   scrollViewRect:
     serializedVersion: 2
@@ -75,8 +78,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1997688878293985636}
-  selectedCommands:
-  - {fileID: -2779018381649986627}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -160,9 +162,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 65.565216
-    y: 200
-    width: 96.4
+    x: 67.565216
+    y: 260
+    width: 94.8
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -241,7 +243,7 @@ MonoBehaviour:
   storyText: "\u308F\u3041\u3063\uFF01\uFF1F\uFF01\uFF1F"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 21300000, guid: d49b72429e10e4b4c81776e61c5577d9, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -287,7 +289,7 @@ MonoBehaviour:
   itemId: 14
   indentLevel: 0
   targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 1997688878293985644}
+  targetBlock: {fileID: 1262089774}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -409,7 +411,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 56.799988
     y: 2.0363464
-    width: 115.6
+    width: 113.2
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -438,7 +440,7 @@ MonoBehaviour:
   storyText: "\u3069\u3046\u3057\u305F\u3093\u3060\u3088\u3001\u6025\u306B\u58F0\u306A\u3093\u304B\u3060\u3057\u3066\u2026"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 21300000, guid: c8ef272c8a670f34a899aee9df90be80, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -465,7 +467,7 @@ MonoBehaviour:
   storyText: "\u3042\u308C\uFF1F\uFF1F\u4ECA\u3001\u30D1\u30BD\u30B3\u30F3\u306E\u753B\u9762\u304C\u8D64\u304F\u2026"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 21300000, guid: d49b72429e10e4b4c81776e61c5577d9, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -492,7 +494,7 @@ MonoBehaviour:
   storyText: "\u8D64\u304F\u306A\u3093\u3066\u306A\u3063\u3066\u306A\u3044\u305E\u3001\r\u305D\u308C\u3088\u308A\u306A\u3093\u304B\u753B\u9762\u304C\u52D5\u304D\u59CB\u3081\u305F\u307F\u305F\u3044\u3060\u2026"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 21300000, guid: c8ef272c8a670f34a899aee9df90be80, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -502,3 +504,69 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &1262089773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997688878293985638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 19
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 1997688878293985644}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &1262089774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997688878293985638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 71.79999
+    y: 205.03635
+    width: 81.2
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 18
+  blockName: PcOn
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1262089793}
+  - {fileID: 1262089773}
+  suppressAllAutoSelections: 0
+--- !u!114 &1262089793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997688878293985638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 20
+  indentLevel: 0
+  targetObject: {fileID: 0}
+  methodName: RightingPc
+  delay: 0

@@ -47,6 +47,8 @@ public class ItemManager : SingletonMonoBehaviour<ItemManager>
     private Sprite KokkuriSheetSprite;
     [SerializeField]
     private Sprite SyukudaiSprite;
+    [SerializeField]
+    private Sprite PcKeySprite;
 
     //コンストラクタ
     public ItemManager(){
@@ -73,6 +75,7 @@ public class ItemManager : SingletonMonoBehaviour<ItemManager>
         Items.Add(new ItemData(3, "10円玉", "こっくりさんを行うために必要なコイン(～～で行う)[2]", CoinSprite));
         Items.Add(new ItemData(4, "こっくりさんの紙", "こっくりさんを呼び出すのに必要な用紙", KokkuriSheetSprite));
         Items.Add(new ItemData(5, "宿題", "提出しないと先生に怒られちゃう！[3]", SyukudaiSprite));
+        Items.Add(new ItemData(6, "PC教室の鍵","PC教室の鍵。扉から逃げろ！！", PcKeySprite));
 
 
         GameObject tmp;
@@ -278,6 +281,15 @@ public class ItemManager : SingletonMonoBehaviour<ItemManager>
     }
      public void LostSyukudai(){
         Items[4].SetFlag(0);
+    }
+
+    //PC室の鍵用
+    public void GetPcKey(){
+        Items[5].SetFlag(1);
+    }
+
+    public void LostPcKey(){
+        Items[5].SetFlag(0);
     }
 
 

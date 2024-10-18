@@ -25,9 +25,13 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     //各部屋のフラグをここに列挙。GetSetを作ること
     [SerializeField] bool isKaiwaFirst; //校舎に入ったところの会話を見たフラグ
     [SerializeField] bool LibrarySecond = false; //図書館の2回目以降の入室だよフラグ
+
     [SerializeField] bool HealthRoomSecond = false; //保健室の2回目以降の入室だよフラグ
     [SerializeField] bool isHokenKey = false; //保健室のカギを入手したかどうか
     [SerializeField] bool isHokenOpen = false; //保健室が開いているかどうか
+
+    [SerializeField] bool isPcKey = false;      //Pc教室の鍵を持っているかどうか
+    [SerializeField] bool PcRoomSecond = false; //Pc教室が2回目の入室かどうか
 
 
     public void Awake()

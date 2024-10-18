@@ -6,13 +6,12 @@ public class PcRoomManager : MonoBehaviour
 {
     //会話のオブジェクトたち
     [SerializeField] GameObject PcRoomFirstKaiwa;
-    [SerializeField] GameObject PcRoomDoorKaiwa;
+    [SerializeField] GameObject PcRoomPCKaiwa;
 
     //会話のフラグ
     private bool isPcRoomSecond;
 
     //オブジェクト
-    [SerializeField] private GameObject Pc;
     [SerializeField] private GameObject LockerKira;
     [SerializeField] private GameObject DeskKira;
     [SerializeField] private GameObject ShelfKira;
@@ -61,7 +60,6 @@ public class PcRoomManager : MonoBehaviour
     }
 
     public void RightingPc(){
-        Pc.SetActive(true);
         //化け物出現
         //鍵探しポイント作成
         LockerKira.SetActive(true);
@@ -72,6 +70,7 @@ public class PcRoomManager : MonoBehaviour
 
     public void GetKey(){
         //ItemManagerに画像追加
+        Im.GetPcKey();
         //GameManagerにフラグ渡す
     }
 }
