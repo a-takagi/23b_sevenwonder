@@ -87,7 +87,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
             Debug.Log(ggst.x);
 
             //下半身少女のフラグがONの時1秒後に下半身少女出現
-
+            StartCoroutine("SpawnKahanSinsyouzyo");
         }else
         {
             //校舎ではないのでスポーンポイントは設定しない

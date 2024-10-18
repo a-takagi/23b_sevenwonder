@@ -67,6 +67,7 @@ public class KahaRoomManager : MonoBehaviour
         gm.SetisHomeWork(true);
         //化け物出現
         Enemy.SetActive(true);
+        gm.SetSpawnedKahanSin(true);
         //会話26出現
         KahansinKaiwa.SetActive(true);
     }
