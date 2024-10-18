@@ -3457,8 +3457,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPoint: {fileID: 0}
-  DoorNum: 1
-  SceneName: title
+  DoorNum: 19
+  SceneName: roka-3
 --- !u!1 &1004660263
 GameObject:
   m_ObjectHideFlags: 0
