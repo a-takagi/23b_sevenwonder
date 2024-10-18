@@ -1593,7 +1593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 909704333}
+  selectedFlowchart: {fileID: 8080710073688481262}
 --- !u!4 &739361257
 Transform:
   m_ObjectHideFlags: 1
@@ -2190,17 +2190,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &909704333 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5603593554639151073, guid: 5f3970853f6fe5f44beae9cb6fcf5458, type: 3}
-  m_PrefabInstance: {fileID: 8080710073688481176}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &915595955
 GameObject:
   m_ObjectHideFlags: 0
@@ -5608,6 +5597,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d81be3d7e84da460788dccea95a3313a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8080710073688481262 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5372927363630404432, guid: 5f3970853f6fe5f44beae9cb6fcf5458, type: 3}
+  m_PrefabInstance: {fileID: 8080710073688481176}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358208268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8080710073688481264
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5670,7 +5670,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 109
   indentLevel: 0
-  storyText: "\u6CE8\uFF1A\u9078\u629E\u80A2\u3092\u9593\u9055\u3048\u308B\u3068\u3001\n\u3000\u3000\u3000\u6700\u521D\u304B\u3089\u3084\u308A\u76F4\u3057\u306B\u306A\u308A\u307E\u3059\u3002"
+  storyText: "\u6CE8\uFF1A\u9078\u629E\u80A2\u3092\u9593\u9055\u3048\u308B\u3068\u3001\u30B2\u30FC\u30E0\u30AA\u30FC\u30D0\u30FC\u3068\u306A\u308A\n\u3000\u3000\u3000\u30B2\u30FC\u30E0\u306E\u6700\u521D\u304B\u3089\u3084\u308A\u76F4\u3057\u306B\u306A\u308A\u307E\u3059\u3002"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -5685,7 +5685,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &8080710073688481315
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
