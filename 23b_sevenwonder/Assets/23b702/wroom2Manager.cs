@@ -2,144 +2,95 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class wroom2Manager : MonoBehaviour
 {
-
     GameManager gm;
-
     ItemManager im;
 
-    [SerializeField] GameObject kirakira;
-    [SerializeField] GameObject kirakira2;
-    [SerializeField] GameObject kirakira3;
     [SerializeField] GameObject kokkurisan;
     [SerializeField] GameObject kaiwa12;
     [SerializeField] GameObject kaiwa13;
     [SerializeField] GameObject kaiwa14;
     [SerializeField] GameObject kaiwa15;
     [SerializeField] GameObject kaiwa16;
-    [SerializeField] GameObject kaiwa17;
-
-    int kiranum;
-
-    //各種フラグ
-    bool isKaiwa12; //始め会話の表示をしたかどうか
-    bool isYen10; //10円玉を入手したかどうか
-    bool isKami;  //こっくりさんの紙を入手したかどうか
-    bool isKaiwa15; //10円玉とこっくりさんの紙を取得したかどうか
-    bool isKaiwa17; //会話 
+ 
+    // 各種フラグ
+    bool isKaiwa12; // 始め会話の表示をしたかどうか
+    bool isYen10;   // 10円玉を入手したかどうか
+    bool isKami;    // こっくりさんの紙を入手したかどうか
+    bool isKaiwa15; // 10円玉とこっくりさんの紙を取得したかどうか
+    bool isKaiwa16; // 会話
 
     // Start is called before the first frame update
     void Start()
     {
-        kokkurisan.SetActive(false);
-        kaiwa16.SetActive(false);
-        kaiwa17.SetActive(false);
-        //GameManagerの取得
-        GameObject tmp;
-        tmp = GameObject.Find("GameManager");
+        kokkurisan.SetActive(false);  //こっくりさんは最初は非アクティブ
+        kaiwa16.SetActive(false);    
+
+        // GameManagerの取得
+        GameObject tmp = GameObject.Find("GameManager");
         gm = tmp.GetComponent<GameManager>();
-        if (!gm) 
+        if (!gm)
         {
-            Debug.Log("wroom2Manager.cs; GameManagerが見つかりません");
+            Debug.Log("wroom2Manager.cs: GameManagerが見つかりません");
         }
 
-        //ItemManagerの取得
-        GameObject imp;
-        imp = GameObject.Find("ItemManger");
-        im=imp.GetComponent<ItemManager>();
+        // ItemManagerの取得
+        GameObject imp = GameObject.Find("ItemManger");
+        im = imp.GetComponent<ItemManager>();
         if (!im)
         {
-            Debug.Log("wroom2Manager.cs: ItemMangerが見つかりません");
+            Debug.Log("wroom2Manager.cs: ItemManagerが見つかりません");
         }
-
-
-        //10円玉を入手している
-        isYen10 = gm.GetisFlag(2);
-        if (isYen10 == true)
-        {
-            kaiwa13.SetActive(false);
-        }
-        else
-        {
-            kaiwa13.SetActive(true);
-        }
-
-        //こっくりさんの儀式の紙を入手している
-        isKami = gm.GetisFlag(3);
-        if (isKami == true)
-        {
-            kaiwa14.SetActive(false);
-        }
-        else
-        {
-            kaiwa14.SetActive(true);
-        }
-
-        //こっくりさんのキラキラ
-        if (gm.GetisFlag(8) == true)
-        {
-            isKaiwa15 = isYen10 && isKami;
-
-            kokkurisan.SetActive(true);
-            kaiwa13.SetActive(false);
-            kaiwa14.SetActive(false);
-            
-        }
-
+      
     }
 
     // Update is called once per frame
     void Update()
-    {
-        
+    {   // kaiwa13 と kaiwa14 がnull（Destroyされた状態）ならば、kokkurisanをアクティブ化する
+        if (kaiwa13 == null && kaiwa14 == null)
+        {
+            kokkurisan.SetActive(true);
+            Debug.Log("kokkurisan activated after kaiwa13 and kaiwa14 were destroyed.");
+        }
     }
 
-    
-    public void Coin(){
+
+    // 10円玉を取得
+    public void Coin()
+    {
         im.GetCoin();
     }
-        
-    public void KokkuriSheet(){
+
+    // こっくりさんの紙を取得
+    public void KokkuriSheet()
+    {
         im.GetKokkuriSheet();
     }
 
-    public void KaiwaNau() 
+    // お守り消滅
+    public void OmamoriNakunaru()
+    {
+        im.LostOmamori();
+    }
+
+    // 会話開始時の処理
+    public void KaiwaNau()
     {
         gm.KaiwaNau();
     }
 
+    // 会話終了時の処理
     public void KaiwaOwatade()
     {
         gm.KaiwaOwatade();
     }
 
-    public void Get10yen()
+    public void GameOver()
     {
-        gm.SetisFlag(2, true);
-        isYen10 = true;
-
-        // 10円玉と紙を両方取得したらkaiwa15を表示
-        isKaiwa15 = isYen10 && isKami;
-        kokkurisan.SetActive(isKaiwa15);
-
+			Debug.Log ("GameOver"); //デバッグ用に文字を表示
+            SceneManager.LoadScene("Title");
     }
-
-    // 紙を取得した際の処理
-    public void GetKami()
-    {
-        gm.SetisFlag(3, true);
-        isKami = true;
-
-        // 10円玉と紙を両方取得したらkaiwa15を表示
-        isKaiwa15 = isYen10 && isKami;
-        kokkurisan.SetActive(isKaiwa15);
-
-        if(isKami)
-        {
-            kaiwa14.SetActive(false);
-        }
-    }        
-
 }

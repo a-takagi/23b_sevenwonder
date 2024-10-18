@@ -101,7 +101,7 @@ public class Library : MonoBehaviour
         yield return new WaitForSeconds(1); // 1秒待機（会話が終わるまでの時間）
         tarohanakaiwa1obj.SetActive(false); // 最初の会話を非表示に
         tarohanakaiwa2obj.SetActive(true);  // 次の会話を表示
-        tarohanakaiwa2obj.SetActive(false);  // 次の会話を表示
+        tarohanakaiwa2obj.SetActive(false);
     }
 
     public void IncreaseKira(){
