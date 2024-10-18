@@ -889,7 +889,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!114 &610202202
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3112,7 +3112,7 @@ PrefabInstance:
     - target: {fileID: 66255299716726611, guid: ac9512882a32b5245a5ac0d6560b2ebb, type: 3}
       propertyPath: SpawnPoint
       value: 
-      objectReference: {fileID: 1480551233}
+      objectReference: {fileID: 0}
     - target: {fileID: 66255299716726621, guid: ac9512882a32b5245a5ac0d6560b2ebb, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -3167,11 +3167,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac9512882a32b5245a5ac0d6560b2ebb, type: 3}
---- !u!1 &1480551233 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 66255300529881779, guid: ac9512882a32b5245a5ac0d6560b2ebb, type: 3}
-  m_PrefabInstance: {fileID: 1480551232}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1521833328
 GameObject:
   m_ObjectHideFlags: 0

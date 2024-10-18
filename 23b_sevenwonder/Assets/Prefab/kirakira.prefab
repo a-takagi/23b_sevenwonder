@@ -152,6 +152,7 @@ GameObject:
   - component: {fileID: 7349498098375789383}
   - component: {fileID: -4930825027089908285}
   - component: {fileID: 8477545930713714265}
+  - component: {fileID: 1006951819954493050}
   - component: {fileID: 4460679476285858430}
   m_Layer: 0
   m_Name: kirakira
@@ -210,13 +211,27 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1851905370682753551}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a4b57df04f97d946a819cc89f3ba3ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   message: test
   kaiwa: {fileID: 755665052}
+--- !u!114 &1006951819954493050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851905370682753551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c80ace9d92c445c4280bd1d27521a67c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: 
+  kaiwa: {fileID: 0}
 --- !u!114 &4460679476285858430
 MonoBehaviour:
   m_ObjectHideFlags: 0

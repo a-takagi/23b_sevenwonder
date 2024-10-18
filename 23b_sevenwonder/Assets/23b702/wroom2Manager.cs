@@ -8,15 +8,18 @@ public class wroom2Manager : MonoBehaviour
 
     GameManager gm;
 
-    [SerializeField] GameObject kaiwa12;
-    [SerializeField] GameObject kaiwa13;
-    [SerializeField] GameObject kaiwa14;
-    [SerializeField] GameObject kaiwa16;
-    [SerializeField] GameObject kaiwa17;
-    [SerializeField] GameObject kokkursan;
+    ItemManager im;
+
     [SerializeField] GameObject kirakira;
     [SerializeField] GameObject kirakira2;
     [SerializeField] GameObject kirakira3;
+    [SerializeField] GameObject kokkurisan;
+    [SerializeField] GameObject kaiwa12;
+    [SerializeField] GameObject kaiwa13;
+    [SerializeField] GameObject kaiwa14;
+    [SerializeField] GameObject kaiwa15;
+    [SerializeField] GameObject kaiwa16;
+    [SerializeField] GameObject kaiwa17;
 
     int kiranum;
 
@@ -30,26 +33,27 @@ public class wroom2Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        kokkursan.SetActive(false);
+        kokkurisan.SetActive(false);
+        kaiwa16.SetActive(false);
+        kaiwa17.SetActive(false);
         //GameManager‚Ìæ“¾
         GameObject tmp;
         tmp = GameObject.Find("GameManager");
         gm = tmp.GetComponent<GameManager>();
         if (!gm) 
         {
-            Debug.Log("w-room-2Manager.cs; GameManager‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ");
+            Debug.Log("wroom2Manager.cs; GameManager‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ");
         }
 
-        //‰ï˜b12‚Ì•\¦‚³‚ê‚Ä‚¢‚é‚©‚Ç‚¤‚©‚Ìˆ—
-        isKaiwa12 = gm.GetisFlag(7);
-        if (isKaiwa12 == true)
+        //ItemManager‚Ìæ“¾
+        GameObject imp;
+        imp = GameObject.Find("ItemManger");
+        im=imp.GetComponent<ItemManager>();
+        if (!im)
         {
-            kaiwa12.SetActive(false);
+            Debug.Log("wroom2Manager.cs: ItemManger‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ");
         }
-        else
-        {
-            kaiwa12.SetActive(true);
-        }
+
 
         //10‰~‹Ê‚ğ“üè‚µ‚Ä‚¢‚é
         isYen10 = gm.GetisFlag(2);
@@ -78,11 +82,10 @@ public class wroom2Manager : MonoBehaviour
         {
             isKaiwa15 = isYen10 && isKami;
 
-            kokkursan.SetActive(true);
+            kokkurisan.SetActive(true);
             kaiwa13.SetActive(false);
             kaiwa14.SetActive(false);
             
-
         }
 
     }
@@ -93,12 +96,21 @@ public class wroom2Manager : MonoBehaviour
         
     }
 
-    public void KaiwaStart() 
+    
+    public void Coin(){
+        im.GetCoin();
+    }
+        
+    public void KokkuriSheet(){
+        im.GetKokkuriSheet();
+    }
+
+    public void KaiwaNau() 
     {
         gm.KaiwaNau();
     }
 
-    public void KaiwaStop()
+    public void KaiwaOwatade()
     {
         gm.KaiwaOwatade();
     }
@@ -110,7 +122,7 @@ public class wroom2Manager : MonoBehaviour
 
         // 10‰~‹Ê‚Æ†‚ğ—¼•ûæ“¾‚µ‚½‚çkaiwa15‚ğ•\¦
         isKaiwa15 = isYen10 && isKami;
-        kokkursan.SetActive(isKaiwa15);
+        kokkurisan.SetActive(isKaiwa15);
 
     }
 
@@ -122,12 +134,12 @@ public class wroom2Manager : MonoBehaviour
 
         // 10‰~‹Ê‚Æ†‚ğ—¼•ûæ“¾‚µ‚½‚çkaiwa15‚ğ•\¦
         isKaiwa15 = isYen10 && isKami;
-        kokkursan.SetActive(isKaiwa15);
+        kokkurisan.SetActive(isKaiwa15);
 
         if(isKami)
         {
             kaiwa14.SetActive(false);
         }
-    }
+    }        
 
 }

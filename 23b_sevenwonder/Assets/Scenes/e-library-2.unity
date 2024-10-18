@@ -1358,7 +1358,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8210267795473092084, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8210267795473092084, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: selectedCommands.Array.size
@@ -1383,11 +1383,11 @@ PrefabInstance:
     - target: {fileID: 8210267795473092087, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: commandList.Array.data[9]
       value: 
-      objectReference: {fileID: 1579406328}
+      objectReference: {fileID: 1579406264}
     - target: {fileID: 8210267795473092087, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: commandList.Array.data[10]
       value: 
-      objectReference: {fileID: 1579406264}
+      objectReference: {fileID: 1579406328}
     - target: {fileID: 8210267795473092087, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: commandList.Array.data[11]
       value: 
@@ -1533,7 +1533,7 @@ PrefabInstance:
     - target: {fileID: 66255299716726611, guid: ac9512882a32b5245a5ac0d6560b2ebb, type: 3}
       propertyPath: SpawnPoint
       value: 
-      objectReference: {fileID: 1480551233}
+      objectReference: {fileID: 0}
     - target: {fileID: 66255299716726621, guid: ac9512882a32b5245a5ac0d6560b2ebb, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1596,11 +1596,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac9512882a32b5245a5ac0d6560b2ebb, type: 3}
---- !u!1 &1480551233 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 66255300529881779, guid: ac9512882a32b5245a5ac0d6560b2ebb, type: 3}
-  m_PrefabInstance: {fileID: 1480551232}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1579406166
 MonoBehaviour:
   m_ObjectHideFlags: 2
