@@ -152,7 +152,7 @@ GameObject:
   - component: {fileID: 7349498098375789383}
   - component: {fileID: -4930825027089908285}
   - component: {fileID: 8477545930713714265}
-  - component: {fileID: 1006951819954493050}
+  - component: {fileID: 5058643850085653345}
   - component: {fileID: 4460679476285858430}
   m_Layer: 0
   m_Name: kirakira
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   message: test
   kaiwa: {fileID: 755665052}
---- !u!114 &1006951819954493050
+--- !u!114 &5058643850085653345
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

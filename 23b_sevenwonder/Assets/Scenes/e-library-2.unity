@@ -664,6 +664,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2996638808783965285, guid: fd461f191375d0a4eb2c41d6c4dbacbc, type: 3}
+      propertyPath: SpawnPointPos.Array.data[0].x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2996638808783965286, guid: fd461f191375d0a4eb2c41d6c4dbacbc, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -791,7 +795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1579406246}
+  selectedFlowchart: {fileID: 824515751}
 --- !u!4 &716064832
 Transform:
   m_ObjectHideFlags: 1
@@ -952,6 +956,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &824515751 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4460679476117036552, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
+  m_PrefabInstance: {fileID: 1473455014}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1445057528 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5851242746990354912, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
@@ -964,6 +979,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 993703144, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
+      propertyPath: nodeRect.y
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 993703144, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: commandList.Array.size
       value: 3
@@ -982,7 +1001,7 @@ PrefabInstance:
       objectReference: {fileID: 1653217503}
     - target: {fileID: 993703145, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1105291421, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: nodeRect.width
@@ -1304,6 +1323,10 @@ PrefabInstance:
       propertyPath: nodeRect.width
       value: 118.86446
       objectReference: {fileID: 0}
+    - target: {fileID: 6459259899022435835, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6604568404712928454, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: tarohanakaiwa2obj
       value: 
@@ -1432,6 +1455,14 @@ PrefabInstance:
       propertyPath: commandList.Array.data[2]
       value: 
       objectReference: {fileID: 1579406240}
+    - target: {fileID: 8477545930878349871, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477545932132821360, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9083181205258068495, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: nodeRect.width
       value: 112.54295
@@ -1622,17 +1653,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d81be3d7e84da460788dccea95a3313a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1579406246 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8210267795473092084, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
-  m_PrefabInstance: {fileID: 1473455014}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1473455017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1579406247
@@ -1915,7 +1935,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!114 &1653217503
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1932,7 +1952,7 @@ MonoBehaviour:
   delay: 0
 --- !u!114 &1653217504
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

@@ -14,20 +14,17 @@ public class wroom2Manager : MonoBehaviour
     [SerializeField] GameObject kaiwa13;
     [SerializeField] GameObject kaiwa14;
     [SerializeField] GameObject kaiwa15;
-    [SerializeField] GameObject kaiwa16;
  
     // 各種フラグ
     bool isKaiwa12; // 始め会話の表示をしたかどうか
     bool isYen10;   // 10円玉を入手したかどうか
     bool isKami;    // こっくりさんの紙を入手したかどうか
     bool isKaiwa15; // 10円玉とこっくりさんの紙を取得したかどうか
-    bool isKaiwa16; // 会話
-
+ 
     // Start is called before the first frame update
     void Start()
     {
-        kokkurisan.SetActive(false);  //こっくりさんは最初は非アクティブ
-        kaiwa16.SetActive(false);    
+        kokkurisan.SetActive(false);  //こっくりさんは最初は非アクティブ   
 
         // GameManagerの取得
         GameObject tmp = GameObject.Find("GameManager");
@@ -55,6 +52,7 @@ public class wroom2Manager : MonoBehaviour
             kokkurisan.SetActive(true);
             Debug.Log("kokkurisan activated after kaiwa13 and kaiwa14 were destroyed.");
         }
+
     }
 
 
