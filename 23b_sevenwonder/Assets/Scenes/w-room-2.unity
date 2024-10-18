@@ -1593,7 +1593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 8080710073688481262}
+  selectedFlowchart: {fileID: 909704333}
 --- !u!4 &739361257
 Transform:
   m_ObjectHideFlags: 1
@@ -2190,6 +2190,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &909704333 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5603593554639151073, guid: 5f3970853f6fe5f44beae9cb6fcf5458, type: 3}
+  m_PrefabInstance: {fileID: 8080710073688481176}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &915595955
 GameObject:
   m_ObjectHideFlags: 0
@@ -2750,8 +2761,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 56.697845
-    y: -160.76619
+    x: 54.697845
+    y: -186.76619
     width: 113.33333
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2759,7 +2770,7 @@ MonoBehaviour:
   itemId: 107
   blockName: KaiwaStart
   description: 
-  eventHandler: {fileID: 1358208465}
+  eventHandler: {fileID: 8080710073688481315}
   commandList:
   - {fileID: 1358208326}
   - {fileID: 1358208325}
@@ -3129,7 +3140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 53.3164
+    x: 52.3164
     y: -93.86809
     width: 117.333336
     height: 40
@@ -3254,21 +3265,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1358208465
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1358208268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 1358208327}
-  suppressBlockAutoSelect: 0
-  message: kokkuri
 --- !u!1 &1421298683
 GameObject:
   m_ObjectHideFlags: 0
@@ -5175,6 +5171,22 @@ PrefabInstance:
       propertyPath: nodeRect.y
       value: -16.818188
       objectReference: {fileID: 0}
+    - target: {fileID: 5372927363630404435, guid: 5f3970853f6fe5f44beae9cb6fcf5458, type: 3}
+      propertyPath: commandList.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372927363630404435, guid: 5f3970853f6fe5f44beae9cb6fcf5458, type: 3}
+      propertyPath: commandList.Array.data[9]
+      value: 
+      objectReference: {fileID: 8080710073688481314}
+    - target: {fileID: 5372927363630404435, guid: 5f3970853f6fe5f44beae9cb6fcf5458, type: 3}
+      propertyPath: commandList.Array.data[10]
+      value: 
+      objectReference: {fileID: 8080710073688481308}
+    - target: {fileID: 5372927363630404435, guid: 5f3970853f6fe5f44beae9cb6fcf5458, type: 3}
+      propertyPath: commandList.Array.data[11]
+      value: 
+      objectReference: {fileID: 8080710073688481309}
     - target: {fileID: 5372927363630404442, guid: 5f3970853f6fe5f44beae9cb6fcf5458, type: 3}
       propertyPath: targetFlowchart
       value: 
@@ -5219,9 +5231,13 @@ PrefabInstance:
       propertyPath: _targetGameObject.gameObjectVal
       value: 
       objectReference: {fileID: 1358208268}
+    - target: {fileID: 5455620826641314855, guid: 5f3970853f6fe5f44beae9cb6fcf5458, type: 3}
+      propertyPath: m_Size.x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5455620827086618716, guid: 5f3970853f6fe5f44beae9cb6fcf5458, type: 3}
       propertyPath: m_Size.x
-      value: 1
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: 5455620827086618716, guid: 5f3970853f6fe5f44beae9cb6fcf5458, type: 3}
       propertyPath: m_Size.y
@@ -5592,17 +5608,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d81be3d7e84da460788dccea95a3313a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8080710073688481262 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5372927363630404432, guid: 5f3970853f6fe5f44beae9cb6fcf5458, type: 3}
-  m_PrefabInstance: {fileID: 8080710073688481176}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1358208268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8080710073688481264
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5624,11 +5629,75 @@ MonoBehaviour:
     floatRef: {fileID: 0}
     floatVal: 0
   targetGameObjectOLD: {fileID: 0}
+--- !u!114 &8080710073688481308 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5372927363630404516, guid: 5f3970853f6fe5f44beae9cb6fcf5458, type: 3}
+  m_PrefabInstance: {fileID: 8080710073688481176}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358208268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8080710073688481309 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5372927363630404442, guid: 5f3970853f6fe5f44beae9cb6fcf5458, type: 3}
+  m_PrefabInstance: {fileID: 8080710073688481176}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358208268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8080710073688481313 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5372927363630404444, guid: 5f3970853f6fe5f44beae9cb6fcf5458, type: 3}
   m_PrefabInstance: {fileID: 8080710073688481176}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8080710073688481314
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358208268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 109
+  indentLevel: 0
+  storyText: "\u6CE8\uFF1A\u9078\u629E\u80A2\u3092\u9593\u9055\u3048\u308B\u3068\u3001\n\u3000\u3000\u3000\u6700\u521D\u304B\u3089\u3084\u308A\u76F4\u3057\u306B\u306A\u308A\u307E\u3059\u3002"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &8080710073688481315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358208268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 1358208327}
+  suppressBlockAutoSelect: 0
+  message: kokkuri
 --- !u!1839735485 &9035283503901849139
 Tilemap:
   m_ObjectHideFlags: 0
