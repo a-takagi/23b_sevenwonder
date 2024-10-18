@@ -795,7 +795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 824515751}
+  selectedFlowchart: {fileID: 0}
 --- !u!4 &716064832
 Transform:
   m_ObjectHideFlags: 1
@@ -956,17 +956,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &824515751 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4460679476117036552, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
-  m_PrefabInstance: {fileID: 1473455014}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1445057528 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5851242746990354912, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
@@ -1001,7 +990,7 @@ PrefabInstance:
       objectReference: {fileID: 1653217503}
     - target: {fileID: 993703145, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1105291421, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: nodeRect.width
@@ -1381,7 +1370,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8210267795473092084, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8210267795473092084, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
       propertyPath: selectedCommands.Array.size
@@ -1476,9 +1465,6 @@ PrefabInstance:
     - {fileID: 1910566795, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
     - {fileID: 1910566839, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
     - {fileID: 5851242746990354708, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
-    - {fileID: 7653379915450314947, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
-    - {fileID: 5058643851627707464, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
-    - {fileID: 5058643850455803671, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 273fcbf9b85aab44398a86d152324df9, type: 3}
 --- !u!1 &1473455016 stripped
 GameObject:

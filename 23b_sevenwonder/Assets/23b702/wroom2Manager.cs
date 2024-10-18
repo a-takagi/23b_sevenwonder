@@ -88,7 +88,8 @@ public class wroom2Manager : MonoBehaviour
 
     public void GameOver()
     {
-			Debug.Log ("GameOver"); //デバッグ用に文字を表示
-            SceneManager.LoadScene("Title");
+			Debug.Log ("GameOverシーン移動"); //デバッグ用に文字を表示
+            SceneManager.LoadScene("GameOver");
     }
+
 }

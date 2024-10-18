@@ -59,7 +59,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 755665054}
   selectedCommands: []
   variables: []
   description: 
@@ -151,7 +152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7349498098375789383}
   - component: {fileID: -4930825027089908285}
-  - component: {fileID: 8477545930713714265}
+  - component: {fileID: -5608874801811515839}
   - component: {fileID: 5058643850085653345}
   - component: {fileID: 4460679476285858430}
   m_Layer: 0
@@ -204,14 +205,14 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8477545930713714265
+--- !u!114 &-5608874801811515839
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1851905370682753551}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a4b57df04f97d946a819cc89f3ba3ee, type: 3}
   m_Name: 

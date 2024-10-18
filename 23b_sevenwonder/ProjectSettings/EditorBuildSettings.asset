@@ -36,6 +36,9 @@ EditorBuildSettings:
     path: Assets/Scenes/roka-2.unity
     guid: 333cbaeec88222d4baacbaa4a504495f
   - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 59027eb99e6000d4282a5d3fb163285f
+  - enabled: 1
     path: Assets/Scenes/TGSEnd.unity
     guid: 335d5768afdce2b469d2a7b0f07f493a
   - enabled: 1

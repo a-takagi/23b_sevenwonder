@@ -25,6 +25,7 @@ public class KirakiraS : MonoBehaviour
         flowchart.SendFungusMessage(message);
         yield return new WaitUntil(() => flowchart.GetExecutingBlocks().Count == 0);
         this.gameObject.SetActive(false);
+
     }
 
     // Start is called before the first frame update
