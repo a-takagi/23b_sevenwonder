@@ -19,6 +19,8 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     //会話中：true 会話してない：false
     private bool KaiwaFlag = false;
 
+    [SerializeField] GameObject KahanSinSyouzyo;
+
     //いろいろなフラグを配列で管理する。番号はGoogleSpreadsheet参照
     [SerializeField] bool[] isFlag = new bool[100];
 
@@ -86,12 +88,20 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
             Vector3 ggst = tmp.transform.position;
             Debug.Log(ggst.x);
 
+            if(SpawnedKahanSin == true){
             //下半身少女のフラグがONの時1秒後に下半身少女出現
-            StartCoroutine("SpawnKahanSinsyouzyo");
+            StartCoroutine("SpawnKahanSin");
+            }
         }else
         {
             //校舎ではないのでスポーンポイントは設定しない
         }
+    }
+
+    private IEnumerator SpawnKahanSin(){
+        yield return new WaitForSeconds(1.0f);
+        Instantiate(KahanSinSyouzyo, SpawnPointPos[NowSpawnNum], Quaternion.identity);
+        Debug.Log("GameManager:KahanSinSyouzyo: StartPosition:" + NowSpawnNum);
     }
 
     //Let's New Method
