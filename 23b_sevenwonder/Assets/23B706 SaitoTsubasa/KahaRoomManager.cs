@@ -2,26 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PcRoomManager : MonoBehaviour
+public class KahaRoomManager : MonoBehaviour
 {
     //会話のオブジェクトたち
-    [SerializeField] GameObject PcRoomFirstKaiwa;
-    [SerializeField] GameObject PcRoomPcKaiwa;
-
-    //会話のフラグ
-    private bool isPcRoomSecond;
+    [SerializeField] GameObject HomeworkGetKaiwa;
+    [SerializeField] GameObject KahansinKaiwa;
 
     //オブジェクト
-    [SerializeField] private GameObject LockerKira;
-    [SerializeField] private GameObject DeskKira;
-    [SerializeField] private GameObject ShelfKira;
     [SerializeField] private GameObject Enemy;
 
-    //PcObject
-    [SerializeField] private GameObject PcLighting;
-    [SerializeField] private GameObject PcRed;
-
-    //参照系
+     //参照系
     private GameManager gm;
     private ItemManager Im;
     private PlayerController Pm;
@@ -29,7 +19,7 @@ public class PcRoomManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-         if(GameObject.Find("GameManager") != null){
+        if(GameObject.Find("GameManager") != null){
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
         Debug.Log("Get GameManager");
         }else{Debug.Log("Not Found GameManager");}
@@ -44,12 +34,13 @@ public class PcRoomManager : MonoBehaviour
         PlayerController Pm = GameObject.Find("Player").GetComponent<PlayerController>();
         }else{Debug.Log("Not Found Player");}
 
-        //PC教室の二回目は会話達をなくす
+        //二回目は会話達をなくす
         if(gm.GetPcRoomSecond() == true){
-            PcRoomFirstKaiwa.SetActive(false);
-            PcRoomPcKaiwa.SetActive(false);
+            //会話をなくす
+            HomeworkGetKaiwa.SetActive(false);
         }else{
-            gm.SetPcRoomSecond(true);
+            //二回目の入室フラグON
+            gm.SetKahanSinRoomSecond(true);
         }
     }
 
@@ -69,21 +60,14 @@ public class PcRoomManager : MonoBehaviour
         gm.KaiwaOwatade();
     }
 
-    public void RightingPc(){
+    public void GetHomeWork(){
+        //ItemManagerの宿題をON
+        Im.GetSyukudai();
+        //GameManagerのフラグをON
+        gm.SetisHomeWork(true);
         //化け物出現
-        //鍵探しポイント作成
-        //Pcを赤に切り替える
-        LockerKira.SetActive(true);
-        DeskKira.SetActive(true);
-        ShelfKira.SetActive(true);
         Enemy.SetActive(true);
-        PcLighting.SetActive(false);
-    }
-
-    public void GetKey(){
-        //ItemManagerに画像追加
-        Im.GetPcKey();
-        //GameManagerにフラグ渡す
-        gm.SetisPcKey(true);
+        //会話26出現
+        KahansinKaiwa.SetActive(true);
     }
 }

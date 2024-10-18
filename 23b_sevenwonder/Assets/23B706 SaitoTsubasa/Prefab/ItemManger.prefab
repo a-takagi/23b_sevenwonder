@@ -136,6 +136,7 @@ MonoBehaviour:
   CoinSprite: {fileID: 21300000, guid: 7d7c3d6da1d01e14b80f7f1270b7daa1, type: 3}
   KokkuriSheetSprite: {fileID: 21300000, guid: f5db92569259f0e40b165efb0dbd7ed4, type: 3}
   SyukudaiSprite: {fileID: 21300000, guid: 9d7c29afa18d5f44191da8fbd36d75ea, type: 3}
+  PcKeySprite: {fileID: 21300000, guid: 2d58d03a71049d04da1581a6cefa62ce, type: 3}
 --- !u!1001 &3038769213117572183
 PrefabInstance:
   m_ObjectHideFlags: 0

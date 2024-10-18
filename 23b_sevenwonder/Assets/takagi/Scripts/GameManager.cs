@@ -33,6 +33,10 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     [SerializeField] bool isPcKey = false;      //Pc教室の鍵を持っているかどうか
     [SerializeField] bool PcRoomSecond = false; //Pc教室が2回目の入室かどうか
 
+    [SerializeField] bool isHomeWork = false;           //宿題を手に入れたか
+    [SerializeField] bool SpawnedKahanSin = false;//下半身少女が出現したか
+    [SerializeField] bool KahanSinRoomSecond =false;//下半身少女教室に二回目の入室かどうか
+
 
     public void Awake()
     {
@@ -81,6 +85,9 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
             Debug.Log(SceneManager.GetActiveScene().name.ToString());
             Vector3 ggst = tmp.transform.position;
             Debug.Log(ggst.x);
+
+            //下半身少女のフラグがONの時1秒後に下半身少女出現
+
         }else
         {
             //校舎ではないのでスポーンポイントは設定しない
@@ -175,5 +182,45 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     public void SetisFlag(int n, bool t)
     {
         isFlag[n] = t;
+    }
+
+    public void SetisPcKey(bool t){
+        isPcKey = t;
+    }
+
+    public bool GetisPcKey(){
+        return isPcKey;
+    }
+
+    public void SetPcRoomSecond(bool t){
+        PcRoomSecond = t;
+    }
+
+    public bool GetPcRoomSecond(){
+        return PcRoomSecond;
+    }
+
+    public void SetisHomeWork(bool t){
+        isHomeWork = t;
+    }
+
+    public bool GetisHomeWork(){
+        return isHomeWork;
+    }
+
+    public void SetSpawnedKahanSin(bool t){
+        SpawnedKahanSin = t;
+    }
+
+    public bool GetSpanwedKahanSin(){
+        return  SpawnedKahanSin;
+    }
+
+    public void SetKahanSinRoomSecond(bool t){
+        KahanSinRoomSecond = t;
+    }
+
+    public bool GetKahanSinRoomSecond(){
+        return KahanSinRoomSecond;
     }
 }

@@ -28,7 +28,7 @@ public class ItemManager : SingletonMonoBehaviour<ItemManager>
     //入力関連
     private GameManager gm;
     public bool KaiwaFlag = false;
-    private bool PreviewedCanvas = false;
+    [SerializeField]private bool PreviewedCanvas = false;
     private float InputVertical;
     private float InputHorizontal;
     private float BeforeVertical = 0.0f;
@@ -72,7 +72,7 @@ public class ItemManager : SingletonMonoBehaviour<ItemManager>
     void Start(){
         Items.Add(new ItemData(1,"保健室の鍵","東棟1階にある保健室の鍵[0]",KeySprite));
         Items.Add(new ItemData(2,"お守り","いざという危機から身を守ってくれるかも[1]",OmamoriSprite));
-        Items.Add(new ItemData(3, "10円玉", "こっくりさんを行うために必要なコイン(～～で行う)[2]", CoinSprite));
+        Items.Add(new ItemData(3, "10円玉", "こっくりさんを行うために必要なコイン(昭和56年)", CoinSprite));
         Items.Add(new ItemData(4, "こっくりさんの紙", "こっくりさんを呼び出すのに必要な用紙", KokkuriSheetSprite));
         Items.Add(new ItemData(5, "宿題", "提出しないと先生に怒られちゃう！[3]", SyukudaiSprite));
         Items.Add(new ItemData(6, "PC教室の鍵","PC教室の鍵。扉から逃げろ！！", PcKeySprite));
