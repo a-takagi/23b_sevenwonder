@@ -48,7 +48,7 @@ public class Roka1Manager : MonoBehaviour
             KaiwaFirst.SetActive(true);
         }
 
-        //図書館に行ったあと。渡り廊下に行けるようになる
+        //図書館に行ったあと。職員室に行けるようになる
         isLibrary = gm.GetLibrarySecond();
         if (isLibrary)
         {

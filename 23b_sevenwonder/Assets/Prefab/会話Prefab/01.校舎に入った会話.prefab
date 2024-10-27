@@ -29,11 +29,13 @@ GameObject:
   - component: {fileID: 2011950265}
   - component: {fileID: 1505467599}
   - component: {fileID: 1505467600}
-  - component: {fileID: 1505467601}
   - component: {fileID: 1505467602}
-  - component: {fileID: 1505467603}
   - component: {fileID: 1505467604}
   - component: {fileID: 1505467605}
+  - component: {fileID: 1670142478}
+  - component: {fileID: 1670142479}
+  - component: {fileID: 1670142501}
+  - component: {fileID: 1670142502}
   m_Layer: 0
   m_Name: "01.\u6821\u820E\u306B\u5165\u3063\u305F\u4F1A\u8A71"
   m_TagString: Untagged
@@ -50,7 +52,7 @@ Transform:
   m_GameObject: {fileID: 5851242745552914174}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.5, y: -1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -72,7 +74,7 @@ MonoBehaviour:
   scrollPos: {x: 47.200012, y: 174.96365}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 302.8
+  blockViewHeight: 418
   zoom: 1
   scrollViewRect:
     serializedVersion: 2
@@ -80,8 +82,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 5851242745552914172}
+  selectedCommands:
+  - {fileID: 2011950263}
   variables: []
   description: 
   stepPause: 0
@@ -109,7 +113,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 61
     y: 56.13636
-    width: 96.4
+    width: 96
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -174,7 +178,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 55.565216
     y: 252
-    width: 96.4
+    width: 94
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -469,7 +473,7 @@ MonoBehaviour:
   storyText: "\u78BA\u304B\u3001\u56F3\u66F8\u5BA4\u306F\u968E\u6BB5\u3092\u4E0A\u3063\u305F\u5DE6\u5965\u306E\u6559\u5BA4\u3060\u3088\u306A\u3002"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 21300000, guid: c8ef272c8a670f34a899aee9df90be80, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -496,7 +500,7 @@ MonoBehaviour:
   storyText: "\u3055\u3063\u3055\u3068\u5BBF\u984C\u56DE\u53CE\u3057\u3066\u5E30\u308B\u305E\u3002\n\u660E\u65E5\u306F\u5BBF\u984C\u7D42\u308F\u308B\u307E\u3067\u304A\u83D3\u5B50\u629C\u304D\u3060\u304B\u3089\u306A\u3002"
   description: 
   character: {fileID: 0}
-  portrait: {fileID: 21300000, guid: c8ef272c8a670f34a899aee9df90be80, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -589,9 +593,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 48.799988
+    x: 49.799988
     y: 139.03635
-    width: 107.6
+    width: 106
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -600,26 +604,11 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 1505467601}
+  - {fileID: 1670142478}
+  - {fileID: 1670142502}
+  - {fileID: 1670142501}
   - {fileID: 1505467599}
   suppressAllAutoSelections: 0
---- !u!114 &1505467601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5851242745552914174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 27
-  indentLevel: 0
-  targetObject: {fileID: 0}
-  methodName: KaiwaOwatade
-  delay: 0
 --- !u!114 &1505467602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -637,23 +626,6 @@ MonoBehaviour:
   tagFilter: []
   FireOn: 1
   colliderVar: {fileID: 0}
---- !u!114 &1505467603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5851242745552914174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 25
-  indentLevel: 0
-  targetObject: {fileID: 0}
-  methodName: KaiwaNau
-  delay: 0
 --- !u!114 &1505467604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -691,7 +663,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 49.799988
     y: -10.963654
-    width: 115.6
+    width: 112
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -700,6 +672,135 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1505467602}
   commandList:
-  - {fileID: 1505467603}
+  - {fileID: 1670142479}
   - {fileID: 1505467604}
   suppressAllAutoSelections: 0
+--- !u!114 &1670142478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5851242745552914174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 29
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 0}
+  targetComponentAssemblyName: Roka1Manager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: Roka1Manager
+  targetMethod: KaiwaStop
+  targetMethodText: 'KaiwaStop (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1670142479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5851242745552914174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 28
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 0}
+  targetComponentAssemblyName: Roka1Manager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: Roka1Manager
+  targetMethod: KaiwaStart
+  targetMethodText: 'KaiwaStart (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1670142501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5851242745552914174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 31
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 0}
+  targetComponentAssemblyName: Roka1Manager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: Roka1Manager
+  targetMethod: HideKaiwaFirst
+  targetMethodText: 'HideKaiwaFirst (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1670142502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5851242745552914174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 30
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 0}
+  targetComponentAssemblyName: Roka1Manager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: Roka1Manager
+  targetMethod: SetisKaiwaFirst
+  targetMethodText: 'SetisKaiwaFirst (Boolean): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Boolean
+      intValue: 0
+      boolValue: 1
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
