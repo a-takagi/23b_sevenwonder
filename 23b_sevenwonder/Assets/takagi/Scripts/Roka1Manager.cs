@@ -14,6 +14,7 @@ public class Roka1Manager : MonoBehaviour
     [SerializeField] GameObject HokenshitsuKeyOpenMessage;
     [SerializeField] GameObject Ghost1;
     [SerializeField] GameObject Ghost2;
+    [SerializeField] GameObject ShokuinshitsuDoor;
 
 
     //各種フラグ
@@ -35,9 +36,11 @@ public class Roka1Manager : MonoBehaviour
             Debug.Log("Roka1Manager.cs: GameManagerが見つかりません");
         }
 
+        //フラグチェック gmからゲットする
 
         //最初の会話文が表示されているかどうかの処理
         isKaiwaFirst = gm.GetisKaiwaFirst();
+        //isKaiwaFirst = gm.GetisFlag(10); //最初の会話
 
         if (isKaiwaFirst)
         {
@@ -50,19 +53,25 @@ public class Roka1Manager : MonoBehaviour
 
         //図書館に行ったあと。職員室に行けるようになる
         isLibrary = gm.GetLibrarySecond();
+        //isLibrary=gm.GetisFlag(11); //図書館
+        
         if (isLibrary)
         {
-            //渡り廊下が開く
+            //職員室が開く
             StopRouka.SetActive(false);
+            ShokuinshitsuDoor.SetActive(true);
         }
         else
         {
             //通れない
             StopRouka.SetActive(true);
+            ShokuinshitsuDoor.SetActive(false);
         }
 
         //保健室の鍵を入手している
         isHokenKey = gm.GetisHokenKey();
+        //isHokenKey= gm.GetisFlag(12); //保健室のカギ
+
         if (isHokenKey)
         {
             HokenshitsuKeyOpenMessage.SetActive(true);
@@ -79,6 +88,7 @@ public class Roka1Manager : MonoBehaviour
 
         //保健室が開いている
         isHokenOpen= gm.GetisHokenOpen();
+        //isHokenOpen=gm.GetisFlag(13); //保健室が開いている
         if (isHokenOpen)
         {
             HokenshitsuDoor.SetActive(true);
@@ -116,6 +126,7 @@ public class Roka1Manager : MonoBehaviour
     {
         isKaiwaFirst = t;
         gm.SetisKaiwaFirst(t);
+        gm.SetisFlag(10, true);
     }
 
     public bool GetisKaiwaFirst()

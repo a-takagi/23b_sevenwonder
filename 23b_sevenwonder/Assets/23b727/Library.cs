@@ -110,6 +110,7 @@ public class Library : MonoBehaviour
         tarohanaobj.SetActive(true);
         }
         gm.SetLibrarySecond(true);
+        gm.SetisFlag(11, true);
     }
    
     public void TaroHana3Show(){
