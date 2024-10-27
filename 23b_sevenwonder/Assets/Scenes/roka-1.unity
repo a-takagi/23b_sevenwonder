@@ -1252,7 +1252,7 @@ Transform:
   m_GameObject: {fileID: 680857131}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 17.5, y: 3, z: 0}
-  m_LocalScale: {x: 1.57, y: 1.57, z: 1.57}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1778,7 +1778,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 970148562}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 970148561}
   variables: []
   description: 
   stepPause: 0
@@ -2029,7 +2030,7 @@ Transform:
   m_GameObject: {fileID: 1041960559}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.5, y: 3, z: 0}
-  m_LocalScale: {x: 1.57, y: 1.57, z: 1.57}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2186,7 +2187,7 @@ Transform:
   m_GameObject: {fileID: 1117441875}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 16.5, y: 3, z: 0}
-  m_LocalScale: {x: 1.57, y: 1.57, z: 1.57}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2452,7 +2453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1693838696}
+  selectedFlowchart: {fileID: 0}
 --- !u!4 &1335143786
 Transform:
   m_ObjectHideFlags: 1
@@ -5592,17 +5593,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 66255299716726610, guid: ac9512882a32b5245a5ac0d6560b2ebb, type: 3}
   m_PrefabInstance: {fileID: 2104274714}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1693838696 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 904883931422883131, guid: d0c1efefea3f0cc4bb2fed4a13dacbcf, type: 3}
-  m_PrefabInstance: {fileID: 904883931895992403}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1698480202
 GameObject:
   m_ObjectHideFlags: 0
@@ -5714,7 +5704,7 @@ Transform:
   m_GameObject: {fileID: 1888310413}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.5, y: 3, z: 0}
-  m_LocalScale: {x: 1.57, y: 1.57, z: 1.57}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

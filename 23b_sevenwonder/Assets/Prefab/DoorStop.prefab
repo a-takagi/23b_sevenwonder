@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 85167744426462185}
   m_Layer: 0
-  m_Name: RoukaStop
+  m_Name: DoorStop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61,7 +61,7 @@ Transform:
   m_GameObject: {fileID: 85167745091501047}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 85167744426462185}
@@ -133,8 +133,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 85167745462311972}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 85167744426462185}
@@ -234,7 +234,7 @@ GameObject:
   - component: {fileID: 2303983424050787088}
   - component: {fileID: 6807921712441075521}
   m_Layer: 0
-  m_Name: "\u901A\u308C\u306A\u3044"
+  m_Name: "\u3042\u304B\u306A\u3044"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -281,8 +281,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 317113469593250000}
-  selectedCommands:
-  - {fileID: 6807921712441075521}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -310,12 +309,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 77
     y: 181
-    width: 93
+    width: 90
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 0
-  blockName: "\u901A\u308C\u306A\u3044"
+  blockName: "\u3042\u304B\u306A\u3044"
   description: 
   eventHandler: {fileID: 2303983424050787088}
   commandList:
@@ -365,7 +364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 4
   indentLevel: 0
-  storyText: "\u3053\u3053\u306F\u901A\u308C\u306A\u3044"
+  storyText: "\u958B\u304B\u306A\u3044"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
