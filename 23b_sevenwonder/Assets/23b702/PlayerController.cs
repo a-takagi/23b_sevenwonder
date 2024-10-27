@@ -143,7 +143,7 @@ public class PlayerController : MonoBehaviour
 
     
     void OnTriggerEnter2D(Collider2D col){
-        if(col.gameObject.name == "Enemy" ){
+        if(col.gameObject.name == "Enemy" || col.gameObject.name == "Enemy(Clone)"){
             Debug.Log("hit Enemy");
             //シーンを変える処理
             SceneManager.LoadScene("Title");

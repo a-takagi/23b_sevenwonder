@@ -88,8 +88,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
             Vector3 ggst = tmp.transform.position;
             Debug.Log(ggst.x);
 
-            if(SpawnedKahanSin == true){
-            //下半身少女のフラグがONの時1秒後に下半身少女出現
+            if(SpawnedKahanSin == true){        
             StartCoroutine("SpawnKahanSin");
             }
         }else
@@ -100,8 +99,12 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 
     private IEnumerator SpawnKahanSin(){
         yield return new WaitForSeconds(1.0f);
+        string SceneName = SceneManager.GetActiveScene().name.ToString();
+        if(SceneName == "roka-1"  || SceneName == "raka-2" || SceneName == "roka-3" || SceneName == "e-kahanshin"){
+        //下半身少女のフラグがONの時1秒後に下半身少女出現
         Instantiate(KahanSinSyouzyo, SpawnPointPos[NowSpawnNum], Quaternion.identity);
         Debug.Log("GameManager:KahanSinSyouzyo: StartPosition:" + NowSpawnNum);
+        }
     }
 
     //Let's New Method
