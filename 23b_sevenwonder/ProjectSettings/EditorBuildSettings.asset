@@ -20,9 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/takagi/Scene/takagitest.unity
     guid: cfac8e59a4c764d4bb0fd710fafa0167
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/roka-3.unity
     guid: c6e9f1bd193c1f54e9d9ef6ade82d000
@@ -47,4 +44,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/23B706 SaitoTsubasa/TalkTest.unity
     guid: 5455180d0b79f8a4182ae7224281fdbf
+  - enabled: 1
+    path: Assets/Scenes/e-pcroom-3.unity
+    guid: b10863a315d7183479f45393cae6f415
+  - enabled: 1
+    path: Assets/Scenes/e-kahanshin.unity
+    guid: 3a7513eacb2be7249a5485b66ebdc09a
   m_configObjects: {}
