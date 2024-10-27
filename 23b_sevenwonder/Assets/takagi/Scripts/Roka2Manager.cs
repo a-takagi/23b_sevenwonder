@@ -15,6 +15,7 @@ public class Roka2Manager : MonoBehaviour
     //会話Prefab
     [SerializeField] GameObject KagamiKaiwaFirst; //鏡の母最初の会話
     [SerializeField] GameObject KagamiKaiwawithBaby; //鏡の母赤ちゃんと再会の会話
+    [SerializeField] GameObject KagamiRoukaStop; //鏡の母の廊下ストップ
     [SerializeField] GameObject MayonakaKaiwaFirst; //真夜中の授業最初の会話
 
     // Start is called before the first frame update
@@ -38,11 +39,13 @@ public class Roka2Manager : MonoBehaviour
         if (isBaby)
         {
             KagamiKaiwaFirst.SetActive(false);
+            KagamiRoukaStop.SetActive(false);
             KagamiKaiwawithBaby.SetActive(true);
         }
         else
         {
             KagamiKaiwaFirst.SetActive(true);
+            KagamiRoukaStop.SetActive(true);
             KagamiKaiwawithBaby.SetActive(false);
         }
 
