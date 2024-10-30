@@ -1023,9 +1023,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1221425223, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+      propertyPath: methodName
+      value: KaiwaStop
+      objectReference: {fileID: 0}
+    - target: {fileID: 1221425223, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
       propertyPath: targetObject
       value: 
       objectReference: {fileID: 2080010947}
+    - target: {fileID: 1221425227, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
+      propertyPath: methodName
+      value: KaiwaStart
+      objectReference: {fileID: 0}
     - target: {fileID: 1221425227, guid: 0d3e5ceeca2e87a47a766b60168990c5, type: 3}
       propertyPath: targetObject
       value: 
