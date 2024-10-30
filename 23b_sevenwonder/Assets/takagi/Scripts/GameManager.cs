@@ -133,6 +133,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     public void SetHealthRoomSecond(bool t)
     {
         HealthRoomSecond = t;
+        isFlag[20] = t;
 
     }
     public bool GetHealthRoomSecond()
