@@ -70,6 +70,8 @@ MonoBehaviour:
   - {x: 1.5, y: -1.5, z: 0}
   - {x: 6.5, y: 1.5, z: 0}
   - {x: 14, y: -1.5, z: 0}
+  - {x: 21, y: 20.5, z: 0}
+  - {x: -20, y: 20.5, z: 0}
   NowSpawnNum: 0
   setPlayerSpawn: 0
   KahanSinSyouzyo: {fileID: 0}

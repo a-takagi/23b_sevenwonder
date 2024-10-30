@@ -51,5 +51,7 @@ public class Stafferoom : MonoBehaviour
     public void healkey(){
         Debug.Log("GetKey");
         im.GetKey();
+        gm.SetisHokenOpen(true);
+        gm.SetisHokenKey(true);
     }
 }
