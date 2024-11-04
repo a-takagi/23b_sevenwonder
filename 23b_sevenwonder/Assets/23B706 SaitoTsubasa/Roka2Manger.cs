@@ -50,3 +50,13 @@ public class Roka2Manger : MonoBehaviour
         
     }
 
+    //会話を始めた時用メソッド
+    public void KaiwaNau(){
+        gm.KaiwaNau();
+    }
+
+    //会話終わった時用メソッド
+    public void KaiwaOwatade(){
+        gm.KaiwaOwatade();
+    }
+}
