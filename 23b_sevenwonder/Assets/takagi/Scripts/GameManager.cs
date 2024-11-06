@@ -124,6 +124,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 
     public void SetLibrarySecond(bool t){
         LibrarySecond=t;
+        SetisFlag(14, t);
 
     }
     public bool GetLibrarySecond(){
@@ -133,8 +134,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     public void SetHealthRoomSecond(bool t)
     {
         HealthRoomSecond = t;
-        isFlag[20] = t;
-
+        SetisFlag(20, t);
     }
     public bool GetHealthRoomSecond()
     {
@@ -162,6 +162,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     public void SetisKaiwaFirst(bool t)
     {
         isKaiwaFirst = t;
+        SetisFlag(18, t);
     }
 
     public bool GetisKaiwaFirst()
@@ -172,6 +173,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     public void SetisHokenKey(bool t)
     {
         isHokenKey = t;
+        SetisFlag(12, t);
     }
 
     public bool GetisHokenKey()
@@ -182,6 +184,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     public void SetisHokenOpen(bool t)
     {
         isHokenOpen = t;
+        SetisFlag(13, t);
     }
 
     public bool GetisHokenOpen()
@@ -200,6 +203,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 
     public void SetisPcKey(bool t){
         isPcKey = t;
+        SetisFlag(15, t);
     }
 
     public bool GetisPcKey(){
@@ -208,6 +212,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 
     public void SetPcRoomSecond(bool t){
         PcRoomSecond = t;
+        SetisFlag(16, t);
     }
 
     public bool GetPcRoomSecond(){
@@ -216,6 +221,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 
     public void SetisHomeWork(bool t){
         isHomeWork = t;
+        SetisFlag(17, t);
     }
 
     public bool GetisHomeWork(){
@@ -224,6 +230,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 
     public void SetSpawnedKahanSin(bool t){
         SpawnedKahanSin = t;
+        SetisFlag(19, t);
     }
 
     public bool GetSpanwedKahanSin(){
@@ -232,9 +239,50 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 
     public void SetKahanSinRoomSecond(bool t){
         KahanSinRoomSecond = t;
+        SetisFlag(9, t);
+
     }
 
     public bool GetKahanSinRoomSecond(){
         return KahanSinRoomSecond;
     }
+
+    //PlayerPrefsでFlagをセーブする
+    void SaveFlagData()
+    {
+        int tmp;
+
+        for (int i = 0; i < 100; i++)
+        {
+            if (isFlag[i])
+            {
+                tmp = 1;
+            }
+            else
+            {
+                tmp = 0;
+            }
+            PlayerPrefs.SetInt("Flag" + i, tmp);
+        }
+        PlayerPrefs.Save();
+    }
+
+    void LoadFlagData()
+    {
+        int tmp;
+
+        for(int i = 0; i < 100; i++)
+        {
+            tmp=PlayerPrefs.GetInt("Flag" + i);
+            if (tmp == 1)
+            {
+                isFlag[i] = true;
+            }
+            else
+            {
+                isFlag[i] = false;
+            }
+        }
+    }
+
 }
