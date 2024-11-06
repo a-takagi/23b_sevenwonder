@@ -56,4 +56,9 @@ public class wroom4 : MonoBehaviour
 			Debug.Log ("GameOverシーン移動"); //デバッグ用に文字を表示
             SceneManager.LoadScene("GameOver");
     }
+    public void PCroom()
+    {
+			Debug.Log ("PCroomシーン移動"); //デバッグ用に文字を表示
+            SceneManager.LoadScene("e-pcroom-3");
+    }
 }
