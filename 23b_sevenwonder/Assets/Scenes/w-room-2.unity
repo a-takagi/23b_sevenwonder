@@ -716,6 +716,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -5608874801811515839, guid: 97ae5c9c92a68ca4d826cdb7da28cf5c, type: 3}
+    - {fileID: 5058643850085653345, guid: 97ae5c9c92a68ca4d826cdb7da28cf5c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 97ae5c9c92a68ca4d826cdb7da28cf5c, type: 3}
 --- !u!1 &254132356 stripped
 GameObject:
@@ -1396,6 +1397,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &608597310 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4032899603235661435, guid: 5f3970853f6fe5f44beae9cb6fcf5458, type: 3}
+  m_PrefabInstance: {fileID: 8080710073688481176}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &608597315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608597310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393038fbf08aad9418fb298615d9bd4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: kokkuri
+  kaiwa: {fileID: 1358208268}
+  SentMassage: 0
 --- !u!1 &660414311
 GameObject:
   m_ObjectHideFlags: 0
@@ -2752,7 +2773,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 54.697845
     y: -186.76619
-    width: 113.33333
+    width: 113.2
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2762,6 +2783,7 @@ MonoBehaviour:
   eventHandler: {fileID: 8080710073688481315}
   commandList:
   - {fileID: 1358208326}
+  - {fileID: 8080710073688481316}
   - {fileID: 1358208325}
   suppressAllAutoSelections: 0
 --- !u!114 &1358208328
@@ -3131,7 +3153,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 52.3164
     y: -93.86809
-    width: 117.333336
+    width: 117.2
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5141,8 +5163,16 @@ PrefabInstance:
       value: -1.8945676
       objectReference: {fileID: 0}
     - target: {fileID: 5372927363630404432, guid: 5f3970853f6fe5f44beae9cb6fcf5458, type: 3}
+      propertyPath: scrollPos.x
+      value: 107.1198
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372927363630404432, guid: 5f3970853f6fe5f44beae9cb6fcf5458, type: 3}
+      propertyPath: scrollPos.y
+      value: 191.36594
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372927363630404432, guid: 5f3970853f6fe5f44beae9cb6fcf5458, type: 3}
       propertyPath: blockViewHeight
-      value: 291.66666
+      value: 471.8
       objectReference: {fileID: 0}
     - target: {fileID: 5372927363630404432, guid: 5f3970853f6fe5f44beae9cb6fcf5458, type: 3}
       propertyPath: selectedBlocks.Array.size
@@ -5545,6 +5575,7 @@ PrefabInstance:
     - {fileID: 4759518561162764197, guid: 5f3970853f6fe5f44beae9cb6fcf5458, type: 3}
     - {fileID: 4759518561790667742, guid: 5f3970853f6fe5f44beae9cb6fcf5458, type: 3}
     - {fileID: 2048487849981997621, guid: 5f3970853f6fe5f44beae9cb6fcf5458, type: 3}
+    - {fileID: 7527519433088188181, guid: 5f3970853f6fe5f44beae9cb6fcf5458, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5f3970853f6fe5f44beae9cb6fcf5458, type: 3}
 --- !u!114 &8080710073688481209 stripped
 MonoBehaviour:
@@ -5702,6 +5733,23 @@ MonoBehaviour:
   parentBlock: {fileID: 1358208327}
   suppressBlockAutoSelect: 0
   message: kokkuri
+--- !u!114 &8080710073688481316
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358208268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 110
+  indentLevel: 0
+  targetObject: {fileID: 499497815}
+  methodName: StartKokkuri
+  delay: 0
 --- !u!1839735485 &9035283503901849139
 Tilemap:
   m_ObjectHideFlags: 0

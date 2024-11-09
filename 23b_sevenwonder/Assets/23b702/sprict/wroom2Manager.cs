@@ -15,38 +15,38 @@ public class wroom2Manager : MonoBehaviour
     [SerializeField] GameObject kaiwa14;
     [SerializeField] GameObject kaiwa15;
  
-    // Šeíƒtƒ‰ƒO
-    bool isKaiwa12; // n‚ß‰ï˜b‚Ì•\¦‚ğ‚µ‚½‚©‚Ç‚¤‚©
-    bool isYen10;   // 10‰~‹Ê‚ğ“üè‚µ‚½‚©‚Ç‚¤‚©
-    bool isKami;    // ‚±‚Á‚­‚è‚³‚ñ‚Ì†‚ğ“üè‚µ‚½‚©‚Ç‚¤‚©
-    bool isKaiwa15; // 10‰~‹Ê‚Æ‚±‚Á‚­‚è‚³‚ñ‚Ì†‚ğæ“¾‚µ‚½‚©‚Ç‚¤‚©
+    // ï¿½eï¿½ï¿½tï¿½ï¿½ï¿½O
+    bool isKaiwa12; // ï¿½nï¿½ß‰ï¿½bï¿½Ì•\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç‚ï¿½ï¿½ï¿½
+    bool isYen10;   // 10ï¿½~ï¿½Ê‚ï¿½ï¿½ï¿½è‚µï¿½ï¿½ï¿½ï¿½ï¿½Ç‚ï¿½ï¿½ï¿½
+    bool isKami;    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½è‚³ï¿½ï¿½Ìï¿½ï¿½ï¿½ï¿½ï¿½è‚µï¿½ï¿½ï¿½ï¿½ï¿½Ç‚ï¿½ï¿½ï¿½
+    bool isKaiwa15; // 10ï¿½~ï¿½Ê‚Æ‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½è‚³ï¿½ï¿½Ìï¿½ï¿½ï¿½ï¿½æ“¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç‚ï¿½ï¿½ï¿½
  
     // Start is called before the first frame update
     void Start()
     {
-        kokkurisan.SetActive(false);  //‚±‚Á‚­‚è‚³‚ñ‚ÍÅ‰‚Í”ñƒAƒNƒeƒBƒu   
+        kokkurisan.SetActive(false);  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½è‚³ï¿½ï¿½ÍÅï¿½ï¿½Í”ï¿½Aï¿½Nï¿½eï¿½Bï¿½u   
 
-        // GameManager‚Ìæ“¾
+        // GameManagerï¿½Ìæ“¾
         GameObject tmp = GameObject.Find("GameManager");
         gm = tmp.GetComponent<GameManager>();
         if (!gm)
         {
-            Debug.Log("wroom2Manager.cs: GameManager‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ");
+            Debug.Log("wroom2Manager.cs: GameManagerï¿½ï¿½ï¿½ï¿½ï¿½Â‚ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½");
         }
 
-        // ItemManager‚Ìæ“¾
+        // ItemManagerï¿½Ìæ“¾
         GameObject imp = GameObject.Find("ItemManger");
         im = imp.GetComponent<ItemManager>();
         if (!im)
         {
-            Debug.Log("wroom2Manager.cs: ItemManager‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ");
+            Debug.Log("wroom2Manager.cs: ItemManagerï¿½ï¿½ï¿½ï¿½ï¿½Â‚ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½");
         }
       
     }
 
     // Update is called once per frame
     void Update()
-    {   // kaiwa13 ‚Æ kaiwa14 ‚ªnulliDestroy‚³‚ê‚½ó‘Ôj‚È‚ç‚ÎAkokkurisan‚ğƒAƒNƒeƒBƒu‰»‚·‚é
+    {   // kaiwa13 ï¿½ï¿½ kaiwa14 ï¿½ï¿½nullï¿½iDestroyï¿½ï¿½ï¿½ê‚½ï¿½ï¿½Ôjï¿½È‚ï¿½ÎAkokkurisanï¿½ï¿½ï¿½Aï¿½Nï¿½eï¿½Bï¿½uï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         if (kaiwa13 == null && kaiwa14 == null)
         {
             kokkurisan.SetActive(true);
@@ -56,31 +56,31 @@ public class wroom2Manager : MonoBehaviour
     }
 
 
-    // 10‰~‹Ê‚ğæ“¾
+    // 10ï¿½~ï¿½Ê‚ï¿½ï¿½æ“¾
     public void Coin()
     {
         im.GetCoin();
     }
 
-    // ‚±‚Á‚­‚è‚³‚ñ‚Ì†‚ğæ“¾
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½è‚³ï¿½ï¿½Ìï¿½ï¿½ï¿½ï¿½æ“¾
     public void KokkuriSheet()
     {
         im.GetKokkuriSheet();
     }
 
-    // ‚¨ç‚èÁ–Å
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     public void OmamoriNakunaru()
     {
         im.LostOmamori();
     }
 
-    // ‰ï˜bŠJn‚Ìˆ—
+    // ï¿½ï¿½bï¿½Jï¿½nï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½
     public void KaiwaNau()
     {
         gm.KaiwaNau();
     }
 
-    // ‰ï˜bI—¹‚Ìˆ—
+    // ï¿½ï¿½bï¿½Iï¿½ï¿½ï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½
     public void KaiwaOwatade()
     {
         gm.KaiwaOwatade();
@@ -88,8 +88,21 @@ public class wroom2Manager : MonoBehaviour
 
     public void GameOver()
     {
-			Debug.Log ("GameOverƒV[ƒ“ˆÚ“®"); //ƒfƒoƒbƒO—p‚É•¶š‚ğ•\¦
+			Debug.Log ("GameOverï¿½Vï¿½[ï¿½ï¿½ï¿½Ú“ï¿½"); //ï¿½fï¿½oï¿½bï¿½Oï¿½pï¿½É•ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½ï¿½
             SceneManager.LoadScene("GameOver");
+    }
+
+    //This Flag for GameOver
+    //FlagNo.23 is GameOver Flag
+    public void StartKokkuri(){
+        gm.SetisFlag(23,true);
+    }
+
+    //Kokkuri is Clear
+    //FlagNo.22 is KokkuriClearFlag
+    public void EndKokkuri(){
+        gm.SetisFlag(23,false);
+        gm.SetisFlag(22,true);
     }
 
 }
