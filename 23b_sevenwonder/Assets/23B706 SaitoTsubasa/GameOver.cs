@@ -38,6 +38,7 @@ public class GameOver : MonoBehaviour
                 //Item＆FlagReset
                 gm.SetisFlag(2,false);
                 gm.SetisFlag(3,false);
+                gm.SetisFlag(23,false);
                 Im.LostCoin();
                 Im.LostKokkuriSheet();
 
@@ -48,7 +49,17 @@ public class GameOver : MonoBehaviour
                 gm.setPlayerSpawn = false;
 
             //真夜中授業のコンテニュー
-            
+            //MidNightLesson [FlagNo.25]
+            }else if(gm.GetisFlag(25)){
+                Debug.Log("GameOver.cs : ChangeMayonakaScene");
+                //Item&FlagReset
+                gm.SetisFlag(25,false);
+                
+                //SceneChange
+                //NightLesson is DoorNo.16
+                gm.SetNowSpawnNum(22);
+                SceneManager.LoadScene("w-room4-4-2");
+                gm.setPlayerSpawn = false;
 
 
             //PC教室のコンテニュー
@@ -56,6 +67,7 @@ public class GameOver : MonoBehaviour
             }else if(gm.GetisFlag(24)){
                 Debug.Log("GameOver.cs : ChangePcRoomScene");
                 //Item&FlagReset
+                gm.SetisFlag(24,false);
                 gm.SetisPcKey(false);
                 gm.SetPcRoomSecond(false);
                 Im.LostPcKey();

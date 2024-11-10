@@ -16,20 +16,20 @@ public class wroom4 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // GameManager‚Ìæ“¾
+        // GameManagerï¿½Ìæ“¾
         GameObject tmp = GameObject.Find("GameManager");
         gm = tmp.GetComponent<GameManager>();
         if (!gm)
         {
-            Debug.Log("wroom2Manager.cs: GameManager‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ");
+            Debug.Log("wroom2Manager.cs: GameManagerï¿½ï¿½ï¿½ï¿½ï¿½Â‚ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½");
         }
 
-        // ItemManager‚Ìæ“¾
+        // ItemManagerï¿½Ìæ“¾
         GameObject imp = GameObject.Find("ItemManger");
         im = imp.GetComponent<ItemManager>();
         if (!im)
         {
-            Debug.Log("wroom2Manager.cs: ItemManager‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ");
+            Debug.Log("wroom2Manager.cs: ItemManagerï¿½ï¿½ï¿½ï¿½ï¿½Â‚ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½");
         }
     }
 
@@ -39,13 +39,13 @@ public class wroom4 : MonoBehaviour
         
     }
 
-    // ‰ï˜bŠJn‚Ìˆ—
+    // ï¿½ï¿½bï¿½Jï¿½nï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½
     public void KaiwaNau()
     {
         gm.KaiwaNau();
     }
 
-    // ‰ï˜bI—¹‚Ìˆ—
+    // ï¿½ï¿½bï¿½Iï¿½ï¿½ï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½
     public void KaiwaOwatade()
     {
         gm.KaiwaOwatade();
@@ -53,12 +53,24 @@ public class wroom4 : MonoBehaviour
     
     public void GameOver()
     {
-			Debug.Log ("GameOverƒV[ƒ“ˆÚ“®"); //ƒfƒoƒbƒO—p‚É•¶š‚ğ•\¦
+			Debug.Log ("GameOverï¿½Vï¿½[ï¿½ï¿½ï¿½Ú“ï¿½"); //ï¿½fï¿½oï¿½bï¿½Oï¿½pï¿½É•ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½ï¿½
             SceneManager.LoadScene("GameOver");
     }
     public void PCroom()
     {
-			Debug.Log ("PCroomƒV[ƒ“ˆÚ“®"); //ƒfƒoƒbƒO—p‚É•¶š‚ğ•\¦
+			Debug.Log ("PCroomï¿½Vï¿½[ï¿½ï¿½ï¿½Ú“ï¿½"); //ï¿½fï¿½oï¿½bï¿½Oï¿½pï¿½É•ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½ï¿½
             SceneManager.LoadScene("e-pcroom-3");
+    }
+
+    public void StartLesson()
+    {
+        Debug.Log("wroom4.cs : LessonStart");
+        gm.SetisFlag(25,true);
+    }
+    public void ClearLesson()
+    {
+        Debug.Log("wroom4.cs : LessonClear");
+        gm.SetisFlag(25,false);
+        gm.SetisFlag(26,true);
     }
 }
