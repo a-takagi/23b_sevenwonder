@@ -112,7 +112,7 @@ public class PcRoomDoor : MonoBehaviour
         //loadingText.text = "Now Loading... "+"100%";
         //loadingBar.fillAmount = 1;
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.02f);
 
         async.allowSceneActivation = true;    // �V�[���J�ڋ���
         gm.setPlayerSpawnFlag(false);

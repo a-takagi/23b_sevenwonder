@@ -45,12 +45,46 @@ public class GameOver : MonoBehaviour
                 //Kokkuri is DoorNo.14
                 gm.SetNowSpawnNum(14);
                 SceneManager.LoadScene("w-room-2");
-
-            }
+                gm.setPlayerSpawn = false;
 
             //真夜中授業のコンテニュー
+            
+
 
             //PC教室のコンテニュー
+            //PcRoomGameOverFlag No.24
+            }else if(gm.GetisFlag(24)){
+                Debug.Log("GameOver.cs : ChangePcRoomScene");
+                //Item&FlagReset
+                gm.SetisPcKey(false);
+                gm.SetPcRoomSecond(false);
+                Im.LostPcKey();
+
+                //SceneChange
+                //PcRoom is DoorNo.20
+                gm.SetNowSpawnNum(20);
+                SceneManager.LoadScene("e-pcroom-3");
+                gm.setPlayerSpawn = false;
+            
+            
+            }else if(gm.GetSpanwedKahanSin()){
+                Debug.Log("GameOver.cs : ChangeKahansinRoomScene");
+                //Item&FlagReset
+                gm.SetisHomeWork(false);
+                gm.SetSpawnedKahanSin(false);
+                gm.SetKahanSinRoomSecond(false);
+                Im.LostSyukudai();
+
+                //SceneChange
+                //KahanSinRoom is No.22
+                gm.SetNowSpawnNum(22);
+                SceneManager.LoadScene("e-kahanshin");
+                gm.setPlayerSpawn = false;
+            }
+
+            
+
+            
 
             //下半身少女のコンテニュー
 

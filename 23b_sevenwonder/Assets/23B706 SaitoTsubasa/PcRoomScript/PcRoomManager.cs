@@ -86,4 +86,12 @@ public class PcRoomManager : MonoBehaviour
         //GameManagerにフラグ渡す
         gm.SetisPcKey(true);
     }
+
+    public void StartPcRoom(){
+        Debug.Log("PcRoomManager.cs : StartKABI");
+        gm.SetisFlag(24,true);
+    }
+    public void ClearPcRoom(){
+        gm.SetisFlag(24,false);
+    }
 }

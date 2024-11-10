@@ -35,7 +35,7 @@ public class KahaRoomManager : MonoBehaviour
         }else{Debug.Log("Not Found Player");}
 
         //二回目は会話達をなくす
-        if(gm.GetPcRoomSecond() == true){
+        if(gm.GetSpanwedKahanSin() == true){
             //会話をなくす
             HomeworkGetKaiwa.SetActive(false);
         }else{

@@ -146,7 +146,7 @@ public class PlayerController : MonoBehaviour
         if(col.gameObject.name == "Enemy" || col.gameObject.name == "Enemy(Clone)"){
             Debug.Log("hit Enemy");
             //シーンを変える処理
-            SceneManager.LoadScene("Title");
+            SceneManager.LoadScene("GameOver");
 
         }
         Debug.Log(col.gameObject.name);
