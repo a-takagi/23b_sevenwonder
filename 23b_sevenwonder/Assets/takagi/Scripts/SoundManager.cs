@@ -19,9 +19,9 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
     {
         "アナログパスワード入力_2", //ピ
         "魔法、星", //入手
-        "鍵の開く音", //鍵
-        "携帯電話のバイブレーション1", //携帯
-        "部屋のドアを開く・閉める" //ガチャ
+        //"鍵の開く音", //鍵
+        //"携帯電話のバイブレーション1", //携帯
+        //"部屋のドアを開く・閉める" //ガチャ
     };
 
     bool isFadeOut=false;
@@ -87,7 +87,7 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
                 //SelectBGM("Title");
                 break;
             case "GameOver":
-                SelectBGM("GameOver");
+                //SelectBGM("GameOver");
                 break;
             default:
                 break;
@@ -156,7 +156,7 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
     */
     public void SEPlay(string name)
     {
-        int i;
+        int i=0;
         Debug.Log("SEPlay:" + name + " length:" + SEFileName.Length);
         if (seaudiosource == null)
         {
@@ -171,13 +171,13 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
                 i = 1; //入手
                 break;
             case "鍵":
-                i = 2; //鍵
+                //i = 2; //鍵
                 break;
             case "携帯":
-                i = 3; //携帯
+                //i = 3; //携帯
                 break;
             case "ガチャ":
-                i = 4;//ガチャ
+                //i = 4;//ガチャ
                 break;
             default:
                 i = 0;

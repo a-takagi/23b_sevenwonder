@@ -40,6 +40,12 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     [SerializeField] bool KahanSinRoomSecond =false;//下半身少女教室に二回目の入室かどうか
 
 
+    //初回プレイかどうか
+    bool isFirstPlay = false;
+
+    //セーブデータをロードしたかどうか。初回GameManagerがロードされたときのみロードを行う
+    bool isLoadedSaveData = false;
+
     public void Awake()
     {
         if (this != Instance)
@@ -48,6 +54,21 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
             return;
         }
         DontDestroyOnLoad(gameObject);
+
+        //StartかContinueか
+        if (PlayerPrefs.GetInt("QuickLoad")==1)
+        {
+            //セーブデータをロードする
+            if (!isLoadedSaveData)
+            {
+                isLoadedSaveData = true;
+                LoadFlagData();
+            }
+        }
+        else
+        {
+            //セーブデータをロードしない
+        }
     }
 
     // Start is called before the first frame update
@@ -128,6 +149,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 
     }
     public bool GetLibrarySecond(){
+        LibrarySecond = GetisFlag(14);
         return LibrarySecond;
     }
 
@@ -138,6 +160,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     }
     public bool GetHealthRoomSecond()
     {
+        HealthRoomSecond = GetisFlag(20);
         return HealthRoomSecond;
     }
 
@@ -167,6 +190,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 
     public bool GetisKaiwaFirst()
     {
+        isKaiwaFirst = GetisFlag(18);
         return isKaiwaFirst;
     }
 
@@ -178,6 +202,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 
     public bool GetisHokenKey()
     {
+        isHokenKey = GetisFlag(12);
         return isHokenKey;
     }
 
@@ -189,6 +214,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 
     public bool GetisHokenOpen()
     {
+        isHokenOpen = GetisFlag(13);
         return isHokenOpen;
     }
 
@@ -199,6 +225,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     public void SetisFlag(int n, bool t)
     {
         isFlag[n] = t;
+        SaveFlagData();
     }
 
     public void SetisPcKey(bool t){
@@ -207,6 +234,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     }
 
     public bool GetisPcKey(){
+        isPcKey = GetisFlag(15);
         return isPcKey;
     }
 
@@ -216,6 +244,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     }
 
     public bool GetPcRoomSecond(){
+        PcRoomSecond = GetisFlag(16);
         return PcRoomSecond;
     }
 
@@ -225,6 +254,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     }
 
     public bool GetisHomeWork(){
+        isHomeWork = GetisFlag(17);
         return isHomeWork;
     }
 
@@ -234,6 +264,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     }
 
     public bool GetSpanwedKahanSin(){
+        SpawnedKahanSin = GetisFlag(19);
         return  SpawnedKahanSin;
     }
 
@@ -244,6 +275,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     }
 
     public bool GetKahanSinRoomSecond(){
+        KahanSinRoomSecond = GetisFlag(9);
         return KahanSinRoomSecond;
     }
 
@@ -264,9 +296,13 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
             }
             PlayerPrefs.SetInt("Flag" + i, tmp);
         }
+
+        PlayerPrefs.SetInt("NowSpawnNum", NowSpawnNum);
+
         PlayerPrefs.Save();
     }
 
+    //FlagをPlayerPrefsからロードする
     void LoadFlagData()
     {
         int tmp;
@@ -283,6 +319,9 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
                 isFlag[i] = false;
             }
         }
+        NowSpawnNum = PlayerPrefs.GetInt("NowSpawnNum");
+
     }
+
 
 }
