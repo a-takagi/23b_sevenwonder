@@ -41,7 +41,22 @@ public class wroom2Manager : MonoBehaviour
         {
             Debug.Log("wroom2Manager.cs: ItemManager��������܂���");
         }
-      
+
+        if(gm.GetisFlag(22)){
+            kaiwa12.SetActive(false);
+            Destroy(kaiwa13);
+            Destroy(kaiwa14);
+            kaiwa15.SetActive(false);
+        }else{
+            //10yenCoin
+            if(gm.GetisFlag(2)){
+                Destroy(kaiwa13);
+            }
+            //KokkuriSheet
+            if(gm.GetisFlag(3)){
+                Destroy(kaiwa14);
+            }
+        }
     }
 
     // Update is called once per frame
@@ -49,8 +64,10 @@ public class wroom2Manager : MonoBehaviour
     {   // kaiwa13 �� kaiwa14 ��null�iDestroy���ꂽ��ԁj�Ȃ�΁Akokkurisan���A�N�e�B�u������
         if (kaiwa13 == null && kaiwa14 == null)
         {
+            if(!gm.GetisFlag(22)){
             kokkurisan.SetActive(true);
             Debug.Log("kokkurisan activated after kaiwa13 and kaiwa14 were destroyed.");
+            }
         }
 
     }
@@ -60,12 +77,14 @@ public class wroom2Manager : MonoBehaviour
     public void Coin()
     {
         im.GetCoin();
+        gm.SetisFlag(2,true);
     }
 
     // �������肳��̎����擾
     public void KokkuriSheet()
     {
         im.GetKokkuriSheet();
+        gm.SetisFlag(3,true);
     }
 
     // ��������

@@ -7,35 +7,37 @@ public class Roka2Manager : MonoBehaviour
 
     GameManager gm;
 
-    //Šeíƒtƒ‰ƒO
-    bool isBaby; //Ô‚¿‚á‚ñ‚ğ“üè‚µ‚Ä‚¢‚é‚©i—H—ìŠÅŒì•w‚Æ‰ï‚¦‚½‚©‚Ç‚¤‚©j
-    bool isKagamiwithBaby; //‹¾‚Ì—H—ìÔ‚¿‚á‚ñ‚Æ‰ï‚¦‚½
-    bool isKokkuriCleared; //‚±‚Á‚­‚è‚³‚ñ‚ğƒNƒŠƒA‚µ‚½‚©‚Ç‚¤‚©i^–é’†‚Ìö‹ÆŠJnj
+    //ï¿½eï¿½ï¿½tï¿½ï¿½ï¿½O
+    bool isBaby; //ï¿½Ô‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½è‚µï¿½Ä‚ï¿½ï¿½é‚©ï¿½iï¿½Hï¿½ï¿½ÅŒï¿½wï¿½Æ‰ï‚¦ï¿½ï¿½ï¿½ï¿½ï¿½Ç‚ï¿½ï¿½ï¿½ï¿½j
+    bool isKagamiwithBaby; //ï¿½ï¿½ï¿½Ì—Hï¿½ï¿½Ô‚ï¿½ï¿½ï¿½ï¿½Æ‰ï‚¦ï¿½ï¿½
+    bool isKokkuriCleared; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½è‚³ï¿½ï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç‚ï¿½ï¿½ï¿½ï¿½iï¿½^ï¿½é’†ï¿½Ìï¿½ï¿½ÆŠJï¿½nï¿½j
+    bool isMayonakaKaiwaFirst; //Fist Mayonaka Kaiwa in Roka2
 
-    //‰ï˜bPrefab
-    [SerializeField] GameObject KagamiKaiwaFirst; //‹¾‚Ì•êÅ‰‚Ì‰ï˜b
-    [SerializeField] GameObject KagamiKaiwawithBaby; //‹¾‚Ì•êÔ‚¿‚á‚ñ‚ÆÄ‰ï‚Ì‰ï˜b
-    [SerializeField] GameObject KagamiRoukaStop; //‹¾‚Ì•ê‚Ì˜L‰ºƒXƒgƒbƒv
-    [SerializeField] GameObject MayonakaKaiwaFirst; //^–é’†‚Ìö‹ÆÅ‰‚Ì‰ï˜b
+    //ï¿½ï¿½bPrefab
+    [SerializeField] GameObject KagamiKaiwaFirst; //ï¿½ï¿½ï¿½Ì•ï¿½Åï¿½ï¿½Ì‰ï¿½b
+    [SerializeField] GameObject KagamiKaiwawithBaby; //ï¿½ï¿½ï¿½Ì•ï¿½Ô‚ï¿½ï¿½ï¿½ï¿½ÆÄ‰ï¿½Ì‰ï¿½b
+    [SerializeField] GameObject KagamiRoukaStop; //ï¿½ï¿½ï¿½Ì•ï¿½Ì˜Lï¿½ï¿½ï¿½Xï¿½gï¿½bï¿½v
+    [SerializeField] GameObject MayonakaKaiwaFirst; //ï¿½^ï¿½é’†ï¿½Ìï¿½ï¿½ÆÅï¿½ï¿½Ì‰ï¿½b
 
     // Start is called before the first frame update
     void Start()
     {
-        //GameManager‚Ìæ“¾
+        //GameManagerï¿½Ìæ“¾
         GameObject tmp;
         tmp = GameObject.Find("GameManager");
         gm = tmp.GetComponent<GameManager>();
         if (!gm)
         {
-            Debug.Log("Roka2Manager.cs: GameManager‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ");
+            Debug.Log("Roka2Manager.cs: GameManagerï¿½ï¿½ï¿½ï¿½ï¿½Â‚ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½");
         }
 
-        //ƒtƒ‰ƒOƒ`ƒFƒbƒN gm‚©‚çƒQƒbƒg‚·‚é
+        //ï¿½tï¿½ï¿½ï¿½Oï¿½`ï¿½Fï¿½bï¿½N gmï¿½ï¿½ï¿½ï¿½Qï¿½bï¿½gï¿½ï¿½ï¿½ï¿½
         isBaby = gm.GetisFlag(20);
         isKagamiwithBaby = gm.GetisFlag(21);
         isKokkuriCleared = gm.GetisFlag(22);
+        isMayonakaKaiwaFirst = gm.GetisFlag(28);
 
-        //Ô‚¿‚á‚ñ‚ğ“üè‚µ‚½‚©
+        //ï¿½Ô‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½è‚µï¿½ï¿½ï¿½ï¿½
         if (isBaby)
         {
             KagamiKaiwaFirst.SetActive(false);
@@ -50,8 +52,8 @@ public class Roka2Manager : MonoBehaviour
         }
 
 
-        //‚±‚Á‚­‚è‚³‚ñ‚ğƒNƒŠƒA‚µ‚½‚©
-        if (isKokkuriCleared)
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½è‚³ï¿½ï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        if (isKokkuriCleared && (!isMayonakaKaiwaFirst))
         {
             MayonakaKaiwaFirst.SetActive(true);
         }
@@ -76,6 +78,10 @@ public class Roka2Manager : MonoBehaviour
     public void KaiwaStop()
     {
         gm.KaiwaOwatade();
+    }
+
+    public void MayonakaKaiwaEnd(){
+        gm.SetisFlag(28,true);
     }
 
 }
