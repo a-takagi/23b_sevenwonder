@@ -54,6 +54,12 @@ EditorBuildSettings:
     path: Assets/Scenes/w-room4-4-2.unity
     guid: 096f276f858bd914c92f737ba3da965f
   - enabled: 1
+    path: Assets/Scenes/NormalEnd.unity
+    guid: 6a85c4b6a372677498c1787501817d59
+  - enabled: 1
+    path: Assets/Scenes/TrueEnd.unity
+    guid: 05071d394e36e9d4e8aa51c23eff6597
+  - enabled: 1
     path: Assets/Scenes/e-kahanshin.unity
     guid: 3a7513eacb2be7249a5485b66ebdc09a
   m_configObjects: {}

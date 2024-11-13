@@ -71,4 +71,10 @@ public class KahaRoomManager : MonoBehaviour
         //会話26出現
         KahansinKaiwa.SetActive(true);
     }
+
+    public void GetFamilyPhoto(){
+        //ItemManager GameManager のフラグをオンに
+        Im.GetFamilyPhoto();
+        gm.SetisFlag(29,true);
+    }
 }

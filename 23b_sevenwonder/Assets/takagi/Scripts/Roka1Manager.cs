@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Roka1Manager : MonoBehaviour
 {
 
     GameManager gm;
+    GameObject Player;
+    GameObject PlayerSprite;
 
     [SerializeField] GameObject KaiwaFirst;
     [SerializeField] GameObject StopRouka;
@@ -15,32 +18,45 @@ public class Roka1Manager : MonoBehaviour
     [SerializeField] GameObject Ghost1;
     [SerializeField] GameObject Ghost2;
     [SerializeField] GameObject ShokuinshitsuDoor;
+    [SerializeField] GameObject TrueEnd;
+    [SerializeField] GameObject NomalEnd;
+    [SerializeField] GameObject TrueEndObjects;
+    [SerializeField] GameObject NomalEndObjects;
 
 
-    //Šeíƒtƒ‰ƒO
-    bool isKaiwaFirst; //Å‰‚Ì‰ï˜b‚ğ•\¦‚µ‚½‚©‚Ç‚¤‚©
-    bool isLibrary; //Å‰‚Ì}‘ŠÙ‚É‚¢‚Á‚½‚©‚Ç‚¤‚©
-    bool isHokenKey; //•ÛŒ’º‚ÌƒJƒM‚ğ“üè‚µ‚½‚©‚Ç‚¤‚©
-    bool isHokenOpen; //•ÛŒ’º‚ªŠJ‚¢‚½‚©‚Ç‚¤‚©
+    //ï¿½eï¿½ï¿½tï¿½ï¿½ï¿½O
+    bool isKaiwaFirst; //ï¿½Åï¿½ï¿½Ì‰ï¿½bï¿½ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç‚ï¿½ï¿½ï¿½
+    bool isLibrary; //ï¿½Åï¿½ï¿½Ì}ï¿½ï¿½ï¿½Ù‚É‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç‚ï¿½ï¿½ï¿½
+    bool isHokenKey; //ï¿½ÛŒï¿½ï¿½ï¿½ï¿½ÌƒJï¿½Mï¿½ï¿½ï¿½ï¿½è‚µï¿½ï¿½ï¿½ï¿½ï¿½Ç‚ï¿½ï¿½ï¿½
+    bool isHokenOpen; //ï¿½ÛŒï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Jï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç‚ï¿½ï¿½ï¿½
+    bool isFamilyPhoto;
+    bool isGirl;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        //GameManager‚Ìæ“¾
+        //GameManagerï¿½Ìæ“¾
         GameObject tmp;
         tmp = GameObject.Find("GameManager");
         gm = tmp.GetComponent<GameManager>();
         if (!gm)
         {
-            Debug.Log("Roka1Manager.cs: GameManager‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ");
+            Debug.Log("Roka1Manager.cs: GameManagerï¿½ï¿½ï¿½ï¿½ï¿½Â‚ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½");
         }
 
-        //ƒtƒ‰ƒOƒ`ƒFƒbƒN gm‚©‚çƒQƒbƒg‚·‚é
+        Player = GameObject.Find("Player");
+        if(!Player){
+            Debug.Log("Roka1Manager.cs : Player Not Found");
+        }else{
+            PlayerSprite = Player.transform.Find("right").gameObject;
+        }
 
-        //Å‰‚Ì‰ï˜b•¶‚ª•\¦‚³‚ê‚Ä‚¢‚é‚©‚Ç‚¤‚©‚Ìˆ—
+        //ï¿½tï¿½ï¿½ï¿½Oï¿½`ï¿½Fï¿½bï¿½N gmï¿½ï¿½ï¿½ï¿½Qï¿½bï¿½gï¿½ï¿½ï¿½ï¿½
+
+        //ï¿½Åï¿½ï¿½Ì‰ï¿½bï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½é‚©ï¿½Ç‚ï¿½ï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½
         isKaiwaFirst = gm.GetisKaiwaFirst();
-        //isKaiwaFirst = gm.GetisFlag(10); //Å‰‚Ì‰ï˜b
+        //isKaiwaFirst = gm.GetisFlag(10); //ï¿½Åï¿½ï¿½Ì‰ï¿½b
 
         if (isKaiwaFirst)
         {
@@ -51,26 +67,26 @@ public class Roka1Manager : MonoBehaviour
             KaiwaFirst.SetActive(true);
         }
 
-        //}‘ŠÙ‚És‚Á‚½‚ ‚ÆBEˆõº‚És‚¯‚é‚æ‚¤‚É‚È‚é
+        //ï¿½}ï¿½ï¿½ï¿½Ù‚Ésï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÆBï¿½Eï¿½ï¿½ï¿½ï¿½ï¿½Ésï¿½ï¿½ï¿½ï¿½æ‚¤ï¿½É‚È‚ï¿½
         isLibrary = gm.GetLibrarySecond();
-        //isLibrary=gm.GetisFlag(11); //}‘ŠÙ
+        //isLibrary=gm.GetisFlag(11); //ï¿½}ï¿½ï¿½ï¿½ï¿½
         
         if (isLibrary)
         {
-            //Eˆõº‚ªŠJ‚­
+            //ï¿½Eï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Jï¿½ï¿½
             StopRouka.SetActive(false);
             ShokuinshitsuDoor.SetActive(true);
         }
         else
         {
-            //’Ê‚ê‚È‚¢
+            //ï¿½Ê‚ï¿½È‚ï¿½
             StopRouka.SetActive(true);
             ShokuinshitsuDoor.SetActive(false);
         }
 
-        //•ÛŒ’º‚ÌŒ®‚ğ“üè‚µ‚Ä‚¢‚é
+        //ï¿½ÛŒï¿½ï¿½ï¿½ï¿½ÌŒï¿½ï¿½ï¿½ï¿½ï¿½è‚µï¿½Ä‚ï¿½ï¿½ï¿½
         isHokenKey = gm.GetisHokenKey();
-        //isHokenKey= gm.GetisFlag(12); //•ÛŒ’º‚ÌƒJƒM
+        //isHokenKey= gm.GetisFlag(12); //ï¿½ÛŒï¿½ï¿½ï¿½ï¿½ÌƒJï¿½M
 
         if (isHokenKey)
         {
@@ -86,9 +102,9 @@ public class Roka1Manager : MonoBehaviour
         }
 
 
-        //•ÛŒ’º‚ªŠJ‚¢‚Ä‚¢‚é
+        //ï¿½ÛŒï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Jï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½
         isHokenOpen= gm.GetisHokenOpen();
-        //isHokenOpen=gm.GetisFlag(13); //•ÛŒ’º‚ªŠJ‚¢‚Ä‚¢‚é
+        //isHokenOpen=gm.GetisFlag(13); //ï¿½ÛŒï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Jï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½
         if (isHokenOpen)
         {
             HokenshitsuDoor.SetActive(true);
@@ -102,6 +118,19 @@ public class Roka1Manager : MonoBehaviour
             HokenshitsuDoor.SetActive(false);
             Ghost1.SetActive(true);
             Ghost2.SetActive(false);
+        }
+
+        //GameClerObjects
+        isGirl = gm.GetSpanwedKahanSin();
+        if(gm.GetSpanwedKahanSin()){
+            isFamilyPhoto = gm.GetisFlag(29);
+            if(isFamilyPhoto){
+                //TrueEnd
+                TrueEnd.SetActive(true);
+            }else{
+                //NomalEnd
+                NomalEnd.SetActive(true);
+            }
         }
 
     }
@@ -142,5 +171,23 @@ public class Roka1Manager : MonoBehaviour
     public void SetisHokenOpen()
     {
         gm.SetisHokenOpen(true);
+    }
+
+    public void StartNomalEnding(){
+        PlayerSprite.GetComponent<Renderer>().enabled = false;
+        NomalEndObjects.SetActive(true);
+    }
+
+    public void EndNomalEnding(){
+        SceneManager.LoadScene("NormalEnd");
+    }
+
+    public void StartTrueEnding(){
+        PlayerSprite.GetComponent<Renderer>().enabled = false;
+        TrueEndObjects.SetActive(true);
+    }
+
+    public void EndTrueEnding(){
+        SceneManager.LoadScene("TrueEnd");
     }
 }

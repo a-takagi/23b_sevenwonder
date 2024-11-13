@@ -121,7 +121,8 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     private IEnumerator SpawnKahanSin(){
         yield return new WaitForSeconds(1.0f);
         string SceneName = SceneManager.GetActiveScene().name.ToString();
-        if(SceneName == "roka-1"  || SceneName == "raka-2" || SceneName == "roka-3" || SceneName == "e-kahanshin"){
+        Debug.Log("GameManager.cs : SpawnKahanSin,SceneName:"+SceneName);
+        if(SceneName == "roka-1"  || SceneName == "roka-2" || SceneName == "roka-3" || SceneName == "e-kahanshin"){
         //下半身少女のフラグがONの時1秒後に下半身少女出現
         Instantiate(KahanSinSyouzyo, SpawnPointPos[NowSpawnNum], Quaternion.identity);
         Debug.Log("GameManager:KahanSinSyouzyo: StartPosition:" + NowSpawnNum);

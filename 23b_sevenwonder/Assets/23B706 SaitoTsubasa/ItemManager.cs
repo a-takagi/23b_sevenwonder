@@ -49,6 +49,8 @@ public class ItemManager : SingletonMonoBehaviour<ItemManager>
     private Sprite SyukudaiSprite;
     [SerializeField]
     private Sprite PcKeySprite;
+    [SerializeField]
+    private Sprite FamiryPhotoSprite;
 
     //コンストラクタ
     public ItemManager(){
@@ -76,6 +78,7 @@ public class ItemManager : SingletonMonoBehaviour<ItemManager>
         Items.Add(new ItemData(4, "こっくりさんの紙", "こっくりさんを呼び出すのに必要な用紙", KokkuriSheetSprite));
         Items.Add(new ItemData(5, "宿題", "提出しないと先生に怒られちゃう！[3]", SyukudaiSprite));
         Items.Add(new ItemData(6, "PC教室の鍵","PC教室の鍵。扉から逃げろ！！", PcKeySprite));
+        Items.Add(new ItemData(7, "誰かの家族写真","",FamiryPhotoSprite));
 
 
         GameObject tmp;
@@ -290,6 +293,15 @@ public class ItemManager : SingletonMonoBehaviour<ItemManager>
 
     public void LostPcKey(){
         Items[5].SetFlag(0);
+    }
+
+    //家族写真用
+    public void GetFamilyPhoto(){
+        Items[6].SetFlag(1);
+    }
+
+    public void LostFamilyPhoto(){
+        Items[6].SetFlag(0);
     }
 
 

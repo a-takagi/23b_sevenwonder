@@ -22,6 +22,12 @@ public class PcKiraKira : MonoBehaviour
     }
 
     IEnumerator Talk(){
+        if(kaiwa == null){
+            Debug.Log("PcKiraKira.cs : Kaiwa is Null");
+        }
+        if(flowchart ==null){
+            Debug.Log("PcKiraKira.cs : FlowChart is Null");
+        }
         flowchart.SendFungusMessage(message);
         yield return new WaitUntil(() => flowchart.GetExecutingBlocks().Count == 0);
         this.gameObject.SetActive(false);
