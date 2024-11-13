@@ -291,11 +291,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 722019334}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cafc33e70a274a644b4d06d4ca95e634, type: 3}
+  m_Script: {fileID: 11500000, guid: 2f1ed8c24df62a64b84c751e55737a8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kaiwa1: {fileID: 0}
-  kaiwa2: {fileID: 417974712}
+  EndingEnded: 0
+  Kaiwa1: {fileID: 417974712}
 --- !u!1 &815790215
 GameObject:
   m_ObjectHideFlags: 0
