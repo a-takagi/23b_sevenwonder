@@ -8,6 +8,8 @@ public class HealthRoomManager : MonoBehaviour
     //会話のオブジェクトたち
     [SerializeField] GameObject KangoKaiwa;
 
+    [SerializeField] GameObject Nurse;
+
     //会話のフラグ
     private bool isHokenSecond;
 
@@ -40,7 +42,7 @@ public class HealthRoomManager : MonoBehaviour
         Debug.Log(isHokenSecond.ToString());
         if(isHokenSecond){
             KangoKaiwa.SetActive(false);
-
+            Nurse.SetActive(false);
         //一回目の入室時
         }else{
             KangoKaiwa.SetActive(true);
@@ -53,6 +55,10 @@ public class HealthRoomManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void NurseDelete(){
+        Nurse.SetActive(false);
     }
 
     public void InHokenRoom(){
