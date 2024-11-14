@@ -119,7 +119,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     }
 
     private IEnumerator SpawnKahanSin(){
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(2.0f);
         string SceneName = SceneManager.GetActiveScene().name.ToString();
         Debug.Log("GameManager.cs : SpawnKahanSin,SceneName:"+SceneName);
         if(SceneName == "roka-1"  || SceneName == "roka-2" || SceneName == "roka-3" || SceneName == "e-kahanshin"){

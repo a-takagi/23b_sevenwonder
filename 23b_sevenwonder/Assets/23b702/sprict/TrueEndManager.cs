@@ -20,7 +20,7 @@ public class TrueEndManager : MonoBehaviour
     {
         if(GameObject.Find("GameManager") != null){
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
-        GameManager = GameObject.Find("GameManger");
+        GameManager = GameObject.Find("GameManager");
         Debug.Log("Get GameManager");
         }else{Debug.Log("Not Found GameManager");}
         

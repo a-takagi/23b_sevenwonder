@@ -124,15 +124,19 @@ public class Roka1Manager : MonoBehaviour
         isGirl = gm.GetSpanwedKahanSin();
         if(gm.GetSpanwedKahanSin()){
             isFamilyPhoto = gm.GetisFlag(29);
-            if(isFamilyPhoto){
-                //TrueEnd
-                TrueEnd.SetActive(true);
-            }else{
-                //NomalEnd
-                NomalEnd.SetActive(true);
-            }
+            Invoke("Ending",0.1f);
         }
 
+    }
+
+    void Ending(){
+        if(isFamilyPhoto){
+            //TrueEnd
+            TrueEnd.SetActive(true);
+        }else{
+            //NomalEnd
+             NomalEnd.SetActive(true);
+        }
     }
 
     // Update is called once per frame
@@ -175,6 +179,12 @@ public class Roka1Manager : MonoBehaviour
 
     public void StartNomalEnding(){
         PlayerSprite.GetComponent<Renderer>().enabled = false;
+        GameObject Girl = GameObject.Find("Enemy(Clone)");
+        if(Girl == null){
+            Debug.Log("Roka1Manager.cs : Enemy Not Found");
+        }else{
+            Girl.SetActive(false);
+        }
         NomalEndObjects.SetActive(true);
     }
 
@@ -184,6 +194,12 @@ public class Roka1Manager : MonoBehaviour
 
     public void StartTrueEnding(){
         PlayerSprite.GetComponent<Renderer>().enabled = false;
+        GameObject Girl = GameObject.Find("Enemy(Clone)");
+        if(Girl == null){
+            Debug.Log("Roka1Manager.cs : Enemy Not Found");
+        }else{
+            Girl.SetActive(false);
+        }
         TrueEndObjects.SetActive(true);
     }
 

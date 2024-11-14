@@ -7,7 +7,9 @@ public class Roka3Manager : MonoBehaviour
     //会話のオブジェクトたち
     [SerializeField] private GameObject PcRoomEndKaiwa;
     [SerializeField] private GameObject PcRoomDoor;
+    [SerializeField] private GameObject PcRoomDoorStoper;
     [SerializeField] private GameObject KahanshinDoor;
+    [SerializeField] private GameObject KahanshinDoorStoper;
 
     //参照系
     private GameManager gm;
@@ -41,7 +43,9 @@ public class Roka3Manager : MonoBehaviour
                 gm.SetisFlag(27,true);
             }
             PcRoomDoor.SetActive(true);
+            PcRoomDoorStoper.SetActive(false);
             KahanshinDoor.SetActive(true);
+            KahanshinDoorStoper.SetActive(false);
         }
     }
 
@@ -49,6 +53,10 @@ public class Roka3Manager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void PcRoomClear(){
+        gm.SetisFlag(24,false);
     }
 
      //会話を始めた時用メソッド

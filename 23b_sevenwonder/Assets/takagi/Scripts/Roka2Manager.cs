@@ -12,12 +12,15 @@ public class Roka2Manager : MonoBehaviour
     bool isKagamiwithBaby; //���̗H��Ԃ����Ɖ��
     bool isKokkuriCleared; //�������肳����N���A�������ǂ����i�^�钆�̎��ƊJ�n�j
     bool isMayonakaKaiwaFirst; //Fist Mayonaka Kaiwa in Roka2
+    bool isKagamiCleared; //MirrorMother End?
 
     //��bPrefab
     [SerializeField] GameObject KagamiKaiwaFirst; //���̕�ŏ��̉�b
     [SerializeField] GameObject KagamiKaiwawithBaby; //���̕�Ԃ����ƍĉ�̉�b
     [SerializeField] GameObject KagamiRoukaStop; //���̕�̘L���X�g�b�v
     [SerializeField] GameObject MayonakaKaiwaFirst; //�^�钆�̎��ƍŏ��̉�b
+    [SerializeField] GameObject MayonakaDoor;
+    [SerializeField] GameObject MayonakaDoorStoper;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +39,7 @@ public class Roka2Manager : MonoBehaviour
         isKagamiwithBaby = gm.GetisFlag(21);
         isKokkuriCleared = gm.GetisFlag(22);
         isMayonakaKaiwaFirst = gm.GetisFlag(28);
+        isKagamiCleared = gm.GetisFlag(30);
 
         //�Ԃ�������肵����
         if (isBaby)
@@ -62,6 +66,19 @@ public class Roka2Manager : MonoBehaviour
             MayonakaKaiwaFirst.SetActive(false);
         }
 
+        //MayonakaDoor SetActive
+        if(isKokkuriCleared){
+            MayonakaDoor.SetActive(true);
+            MayonakaDoorStoper.SetActive(false);
+        }else{
+            MayonakaDoor.SetActive(false);
+            MayonakaDoorStoper.SetActive(true);
+        }
+
+        if(isKagamiCleared){
+            KagamiKaiwawithBaby.SetActive(false);
+        }
+
     }
 
     // Update is called once per frame
@@ -82,6 +99,10 @@ public class Roka2Manager : MonoBehaviour
 
     public void MayonakaKaiwaEnd(){
         gm.SetisFlag(28,true);
+    }
+
+    public void KagamiMotherEnd(){
+        gm.SetisFlag(30,true);
     }
 
 }

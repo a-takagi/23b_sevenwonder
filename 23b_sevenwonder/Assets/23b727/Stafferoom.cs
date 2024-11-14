@@ -9,25 +9,31 @@ public class Stafferoom : MonoBehaviour
 
     ItemManager im;
 
+    [SerializeField] GameObject KeyKiraKira;
+
     // Start is called before the first frame update
     void Start()
     {
-        //GameManager‚Ìæ“¾
+        //GameManagerï¿½Ìæ“¾
         GameObject tmp;
         tmp = GameObject.Find("GameManager");
         gm=tmp.GetComponent<GameManager>();
         if (!gm)
         {
-            Debug.Log("Stafferoom.cs: GameManager‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ");
+            Debug.Log("Stafferoom.cs: GameManagerï¿½ï¿½ï¿½ï¿½ï¿½Â‚ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½");
         }
                 
-        //ItemManager‚Ìæ“¾
+        //ItemManagerï¿½Ìæ“¾
         GameObject imp;
         imp = GameObject.Find("ItemManger");
         im=imp.GetComponent<ItemManager>();
         if (!im)
         {
-            Debug.Log("Library.cs: ItemManger‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ");
+            Debug.Log("Library.cs: ItemMangerï¿½ï¿½ï¿½ï¿½ï¿½Â‚ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½");
+        }
+
+        if(gm.GetisHokenKey()){
+            KeyKiraKira.SetActive(false);
         }
                
     }
@@ -38,12 +44,12 @@ public class Stafferoom : MonoBehaviour
         
     }
 
-    //‰ï˜b‚ğn‚ß‚½—pƒƒ\ƒbƒh
+    //ï¿½ï¿½bï¿½ï¿½ï¿½nï¿½ß‚ï¿½ï¿½ï¿½ï¿½pï¿½ï¿½ï¿½\ï¿½bï¿½h
     public void KaiwaNau(){
         gm.KaiwaNau();
     }
 
-    //‰ï˜bI‚í‚Á‚½—pƒƒ\ƒbƒh
+    //ï¿½ï¿½bï¿½Iï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½pï¿½ï¿½ï¿½\ï¿½bï¿½h
     public void KaiwaOwatade(){
         gm.KaiwaOwatade();
     }
