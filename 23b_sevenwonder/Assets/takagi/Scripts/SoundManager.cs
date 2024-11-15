@@ -10,7 +10,8 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
     //Assets/Resources/Sound/BGMの中に入れること
     string[] BGMFileName = new string[]
     {
-        "ed（仮）", //ゲームオーバー
+        "186_BPM80", //全体のBGM
+        "迫りくる危機", //追いかけられてるとき
     };
 
     //SEのファイル名　拡張子無し
@@ -18,8 +19,9 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
     string[] SEFileName = new string[]
     {
         "アナログパスワード入力_2", //ピ
-        "魔法、星", //入手
-        //"鍵の開く音", //鍵
+        "Horror_START_2", //スタート音
+        "怪談オープニング風SE", //赤ちゃんの泣き声に
+        "不気味なピアノの音", //入手
         //"携帯電話のバイブレーション1", //携帯
         //"部屋のドアを開く・閉める" //ガチャ
     };
@@ -126,8 +128,11 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
         }
         switch (name)
         {
-            case "GameOver":
-                i = 0; //GameOver
+            case "通常":
+                i = 0; //通常
+                break;
+            case "追っかけ":
+                i = 1; //追いかけられる時
                 break;
             default:
                 i = 0;
@@ -167,14 +172,14 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
             case "ピ":
                 i = 0; //ピ
                 break;
+            case "スタート":
+                i = 1; //スタート
+                break;
+            case "赤ちゃん":
+                i = 2; //赤ちゃん
+                break;
             case "入手":
-                i = 1; //入手
-                break;
-            case "鍵":
-                //i = 2; //鍵
-                break;
-            case "携帯":
-                //i = 3; //携帯
+                i = 3; //入手不気味なピアノ
                 break;
             case "ガチャ":
                 //i = 4;//ガチャ
